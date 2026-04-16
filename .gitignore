@@ -1,0 +1,11 @@
+# 개인 시나리오·포지션 — 커밋 금지
+scenarios/
+.private/
+*.local.md
+*.positions.*
+portfolio.*.json
+
+# 시스템
+.DS_Store
+*.swp
+*.swo
