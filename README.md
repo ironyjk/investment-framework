@@ -31,7 +31,7 @@ investment-framework/
 ## 사용
 
 ```
-/investment <상황 설명>
+/money <상황 설명>
 ```
 
 메타 라우터가 신호를 매핑해 1~3개 프레임워크를 선택, Skill 툴로 실행·합성한다.
@@ -41,7 +41,7 @@ investment-framework/
 - 개별 종목·펀드 추천
 - 시장 전망·예측 (언제 오를지)
 - 단기 매매·트레이딩 시그널
-- 부동산 (→ `real-estate`)
+- 부동산 (→ `realty`)
 - 사업 전략 (→ `think`)
 - 심리·감정 상담 (→ `counsel`)
 
