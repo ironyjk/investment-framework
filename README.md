@@ -36,6 +36,8 @@ investment-framework/
 
 메타 라우터가 신호를 매핑해 1~3개 프레임워크를 선택, Skill 툴로 실행·합성한다.
 
+> 💡 **짧은 이름**: [래퍼 설정](https://github.com/ironyjk/claude-frameworks-marketplace#짧은-이름으로-쓰기-optional) 후 `/money`로 호출 가능
+
 ## 범위 바깥
 
 - 개별 종목·펀드 추천
