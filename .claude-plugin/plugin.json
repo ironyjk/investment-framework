@@ -1,0 +1,27 @@
+{
+  "name": "investment-framework",
+  "description": "Personal investment decision meta-router — 12 frameworks (MPT, All Weather, Bogleheads, Barbell, Value Investing, Factor Investing, DCA, Rebalancing, Behavioral Biases, Kelly Criterion, Korean Tax Optimization, Korean FIRE). Built on Korean tax regime (ISA, IRP, pension, health insurance). NOT investment advice. Invoke /money.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Choi Hee Chul",
+    "email": "ironyjk@gmail.com"
+  },
+  "homepage": "https://github.com/ironyjk/investment-framework",
+  "repository": "https://github.com/ironyjk/investment-framework",
+  "license": "CC-BY-NC-4.0",
+  "keywords": ["investment", "portfolio", "korean-tax", "fire", "markowitz", "dalio", "korean"],
+  "skills": [
+    "./all-weather",
+    "./barbell-strategy",
+    "./behavioral-biases",
+    "./bogleheads",
+    "./dollar-cost-averaging",
+    "./factor-investing",
+    "./fire-korean",
+    "./kelly-criterion",
+    "./korean-tax-optimization",
+    "./modern-portfolio-theory",
+    "./rebalancing",
+    "./value-investing"
+  ]
+}
