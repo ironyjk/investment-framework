@@ -1,165 +1,165 @@
 ---
 name: rebalancing
 version: "0.1.0"
-description: "Rebalancing — 목표 자산배분에서 이탈한 비중을 다시 맞추는 규칙적 행위. 주기(calendar) vs 밴드(threshold) 방식. 평균회귀 활용, 리스크 통제, 행동 편향 제어. 세금·수수료 트레이드오프."
+description: "Rebalancing — the disciplined act of restoring portfolio weights that have drifted from their target allocation. Calendar vs. threshold (band) methods. Exploits mean reversion, controls risk, curbs behavioral biases. Trade-offs with taxes and fees."
 ---
 
 # Rebalancing
 
-## 한 줄 요약
+## One-Line Summary
 
-**"가장 오른 걸 팔고, 가장 빠진 걸 사라."** 목표 비중에서 벗어난 포트폴리오를 주기적으로 되돌리는 행위. 수익률 향상보다는 *리스크 유지·감정 제어·평균회귀 활용*이 본질. 하지만 세금·수수료와 트레이드오프.
+**"Sell what rose the most, buy what fell the most."** The act of periodically returning a portfolio that has drifted from its target weights. The essence is not return enhancement but rather *risk maintenance, emotional control, and exploitation of mean reversion*. But it trades off against taxes and fees.
 
-## 이론 기원
+## Theoretical Origins
 
-- **Harry Markowitz (1952)** — MPT. 목표 비중 이탈 시 효율 프런티어 이탈 → 복귀 필요.
-- **William Sharpe (1991)** — "The Arithmetic of Active Management". 시장 균형과 리밸런싱의 수학.
-- **Robert Shiller** — 평균회귀 증거 제공. 고평가 자산 매도, 저평가 자산 매수의 이론적 근거.
-- Vanguard, Swensen(Yale) — 실무에서 리밸런싱의 핵심성 강조.
+- **Harry Markowitz (1952)** — MPT. Deviations from target weights push the portfolio off the efficient frontier → return needed.
+- **William Sharpe (1991)** — "The Arithmetic of Active Management". The mathematics of market equilibrium and rebalancing.
+- **Robert Shiller** — Provided evidence of mean reversion. The theoretical basis for selling overvalued assets and buying undervalued ones.
+- Vanguard, Swensen (Yale) — Emphasized the centrality of rebalancing in practice.
 
-## 핵심 개념
+## Core Concepts
 
-### 1. 왜 리밸런싱 하는가
+### 1. Why Rebalance
 
-- **리스크 통제**: 주식이 올라 비중이 60%→80% 되면 설계한 위험 수준 초과
-- **평균회귀(mean reversion)** 활용: 오래 오른 건 내려올 확률, 오래 빠진 건 오를 확률 (약하게)
-- **규율(discipline)**: 감정적 매수·매도 대신 *규칙* 따름 (→ `behavioral-biases`)
-- **세금·수수료 유발**: 매도 발생 → 양도세·수수료 (단점)
+- **Risk control**: If equities rise and the weight shifts from 60%→80%, the portfolio exceeds its designed risk level
+- Exploits **mean reversion**: Assets that have risen for a long time are more likely to fall, and assets that have fallen for a long time are more likely to rise (weakly)
+- **Discipline**: Following *rules* instead of emotional buying and selling (→ `behavioral-biases`)
+- **Triggers taxes and fees**: Sales incur capital gains tax and commissions (a downside)
 
-### 2. 두 가지 방식
+### 2. Two Methods
 
-#### A. Calendar Rebalancing (주기식)
-- 연 1회, 반기, 분기 등 정해진 주기에 무조건 실행
-- 단순·자동화 쉬움
-- 단점: 비중이 거의 안 변해도 실행되거나, 급변 중이어도 주기 아니면 대기
+#### A. Calendar Rebalancing
+- Execute unconditionally on a fixed schedule: annually, semi-annually, quarterly, etc.
+- Simple and easy to automate
+- Downside: Executes even when weights have barely changed, or waits through rapid shifts if they fall outside the schedule
 
-#### B. Threshold Rebalancing (밴드식)
-- 목표 비중 대비 ±X% 밴드 이탈 시에만 실행
-- 예: 주식 60% ±5%p → 55~65% 밴드 내에선 불개입
-- 세금·수수료 최소화
-- 단점: 지속 모니터링 필요
+#### B. Threshold Rebalancing
+- Execute only when weights deviate by ±X% from the target
+- Example: Equities 60% ±5%p → no action within the 55~65% band
+- Minimizes taxes and fees
+- Downside: Requires continuous monitoring
 
 #### C. Hybrid
-- 최소 연 1회 + 밴드 이탈 시 중간 실행
-- 실무에서 가장 많이 사용
+- At least once a year + interim execution on band breach
+- The most commonly used approach in practice
 
-### 3. 리밸런싱의 수익 기여
+### 3. Rebalancing's Contribution to Returns
 
-- Vanguard 연구: 장기 CAGR 변화는 대체로 **±0.5%p 이내**
-- 주된 이득은 **리스크 조정 수익률**: Sharpe Ratio 개선
-- 리밸런싱 프리미엄은 *변동성 큰 자산 + 상관 낮은 자산* 조합에서 큼
+- Vanguard research: Long-term CAGR changes are generally **within ±0.5%p**
+- The main benefit is **risk-adjusted return**: improvement in Sharpe Ratio
+- The rebalancing premium is largest in combinations of *high-volatility assets + low-correlation assets*
 
-### 4. 세금 효율적 리밸런싱
+### 4. Tax-Efficient Rebalancing
 
-- **신규 현금으로 저비중 자산 매수** (매도 없이 비중 조정)
-- 배당·분배금으로 저비중 자산 매수
-- 세제 유리 계좌(ISA·연금저축)에서 매도 리밸런싱 우선
-- 일반 계좌에선 매도 최소화
+- **Buy underweighted assets with new cash** (adjust weights without selling)
+- Use dividends and distributions to buy underweighted assets
+- Prioritize sell-side rebalancing in tax-advantaged accounts (ISA, pension savings (연금저축))
+- Minimize sales in taxable accounts
 
-## 언제 쓰나
+## When to Use
 
-- 자산배분 있는 모든 포트폴리오 (MPT, All Weather, Bogleheads 공통)
-- 큰 랠리·폭락 이후 비중이 크게 이탈
-- 라이프 스테이지 변경 (결혼·자녀·은퇴 접근)
-- 연말 세금 최적화 시점 (손실상계)
+- Any portfolio with an asset allocation (MPT, All Weather, Bogleheads — all in common)
+- After a major rally or crash when weights have drifted significantly
+- Life-stage changes (marriage, children, approaching retirement)
+- Year-end tax optimization timing (loss harvesting)
 
-## 실전 적용
+## Practical Application
 
-### 리밸런싱 규칙 설계
-
-```
-1. 목표 배분 고정
-   예: 주식 60 / 채권 30 / 금 10
-
-2. 밴드 설정 (5/25 규칙 권장 — Swensen)
-   - 절대 밴드 5%p 또는 상대 밴드 25%
-   - 예: 주식 60 → 55~65% 밴드
-
-3. 주기 결정
-   - 최소 연 1회 + 밴드 이탈 시
-
-4. 실행 우선순위
-   a) 세제 유리 계좌(연금·ISA) 내 매도 리밸런싱
-   b) 신규 투입금으로 저비중 매수
-   c) 배당·분배금으로 저비중 매수
-   d) 일반 계좌 매도는 최후
-
-5. 세금 영향 계산
-   - 매도 시 양도차익에 대한 세금 > 리밸런싱 이득이면 재검토
-   - 손실상계(Tax-Loss Harvesting) 기회 확인
-```
-
-### 세금-의식적 리밸런싱 예시
+### Designing a Rebalancing Rule
 
 ```
-상황: 주식 65% (목표 60%), 채권 25% (목표 30%), 금 10%
+1. Fix the target allocation
+   Example: Equities 60 / Bonds 30 / Gold 10
 
-나쁜 접근: 주식 5% 매도 → 양도세 발생
-좋은 접근:
-  - 다음 3~6개월 신규 투입금 전액 채권·금으로
-  - 연금저축 내 주식→채권 리밸런싱 (세금 없음)
-  - 연말 손실 종목 있다면 교체매매로 세금 상쇄
+2. Set bands (5/25 rule recommended — Swensen)
+   - Absolute band 5%p or relative band 25%
+   - Example: Equities 60 → 55~65% band
+
+3. Decide frequency
+   - At least annually + on band breach
+
+4. Execution priority
+   a) Sell-side rebalancing within tax-advantaged accounts (pension, ISA)
+   b) Buy underweighted assets with new contributions
+   c) Buy underweighted assets with dividends and distributions
+   d) Sales in taxable accounts as a last resort
+
+5. Calculate tax impact
+   - If capital gains tax on sales > rebalancing benefit, reconsider
+   - Check opportunities for Tax-Loss Harvesting
 ```
 
-## 한국 맥락
+### Tax-Conscious Rebalancing Example
 
-### 1. 한국 세제와 리밸런싱
+```
+Situation: Equities 65% (target 60%), Bonds 25% (target 30%), Gold 10%
 
-- **국내 주식 매도**: 양도세 없음 (대주주 제외) → 자유롭게 리밸런싱 가능
-- **해외 주식 매도**: 양도차익 22% (250만원 공제) → 매도 리밸런싱 비싸다
-- **국내 ETF 매도**: 배당소득세 15.4% (분배금 + 보유기간 과표 증가분) — 2026년 기준
-- **연금저축·IRP 내 리밸런싱**: 세금 이연, 완전 비과세 리밸런싱 가능
-- **ISA 내 리밸런싱**: 만기 시 종합과세 혜택, 운용 중 비과세
+Bad approach: Sell 5% of equities → triggers capital gains tax
+Good approach:
+  - Direct next 3~6 months of new contributions entirely to bonds and gold
+  - Rebalance equities→bonds within pension savings (연금저축) (no tax)
+  - If there are loss-making positions at year-end, use swap trades to offset taxes
+```
 
-### 2. 한국형 세금 효율 리밸런싱 순서
+## Korean Context
 
-1. **연금저축·IRP** 내에서 먼저 (세금 없음)
-2. **ISA** 내에서 그 다음 (운용 중 비과세)
-3. **일반 계좌의 국내 주식·ETF** — 매도 자유 (배당·분배금 과세는 별도)
-4. **해외 주식·해외ETF** — 최후, 연 250만원 공제 한도 내에서만
+### 1. Korean Tax Code and Rebalancing
 
-### 3. 한국 특수 상황
+- **Selling domestic equities**: No capital gains tax (except for large shareholders) → can rebalance freely
+- **Selling foreign equities**: 22% capital gains tax (with a 2.5M KRW deduction) → sell-side rebalancing is expensive
+- **Selling domestic ETFs**: 15.4% dividend income tax (on distributions + increase in holding-period tax basis) — as of 2026
+- **Rebalancing within pension savings (연금저축)·IRP**: Tax deferred, fully tax-free rebalancing possible
+- **Rebalancing within ISA**: Benefits from comprehensive taxation at maturity, tax-free during operation
 
-- **달러 자산 리밸런싱**: 환율 변동이 비중에 영향. 환 기여도 분리해서 판단.
-- **부동산 리밸런싱 어려움**: 일괄 매도 불가, 유동성 낮음 → 금융자산 쪽에서 흡수
-- **국민연금·퇴직연금 미고려 실수**: 이것들도 자산배분 일부. 전체 관점에서 리밸런싱 필요.
+### 2. Korean Tax-Efficient Rebalancing Order
 
-## 안티패턴 & 과적용
+1. Within **pension savings (연금저축)·IRP** first (no tax)
+2. Within **ISA** next (tax-free during operation)
+3. **Domestic equities and ETFs in taxable accounts** — free to sell (dividend/distribution taxes are separate)
+4. **Foreign equities and foreign ETFs** — last, only within the annual 2.5M KRW deduction limit
 
-- **너무 잦은 리밸런싱** — 월 단위 리밸런싱은 수수료·세금만 증가, 이득 미미
-- **너무 뜸한 리밸런싱** — 3~5년 방치 시 위험 수준 크게 이탈
-- **밴드 너무 좁게** — 1%p 밴드는 노이즈 추적으로 비용만 발생
-- **세금 무시** — 일반계좌에서 매년 대량 리밸런싱은 세후 수익률 악화
-- **감정 리밸런싱** — "주식 많이 올랐으니 팔자" 규칙 없이 임의 판단 = 타이밍
-- **하락장에서 리밸런싱 포기** — 본질적 순간(저가 매수)을 놓침
-- **Tactical 리밸런싱 오남용** — "매크로 전망상 채권 비중 늘린다" = 사실상 마켓타이밍
+### 3. Korea-Specific Situations
 
-## 한계
+- **Dollar-denominated asset rebalancing**: FX fluctuations affect weights. Separate out and judge the FX contribution.
+- **Real estate rebalancing is hard**: Lump-sum sales are impossible, liquidity is low → absorb adjustments on the financial-asset side
+- **Failing to account for National Pension and retirement pensions**: These are also part of the asset allocation. Rebalancing must be viewed from a total portfolio perspective.
 
-1. **수익률 향상은 작음** — 주된 효과는 리스크 통제, 수익 향상 기대는 금물
-2. **긴 트렌드 구간에서 손해** — 90년대 미국 주식 독주기 같은 장기 상승장에선 리밸런싱이 수익 손실
-3. **세금 비용이 프리미엄 초과 가능** — 고세율 구간·해외자산 많을 때
-4. **최적 주기·밴드는 이론적으로 결정 불가** — 과거 데이터 기반 경험칙
-5. **심리적 어려움** — 오른 자산 파는 것, 빠진 자산 사는 것 모두 감정 역행
-6. **비용 편향 조정**: 세금·수수료 고려하면 리밸런싱 프리미엄이 사라진다는 연구도 존재
+## Antipatterns & Overapplication
 
-## 이 프레임워크와 함께 쓰는 것들
+- **Rebalancing too often** — Monthly rebalancing only increases fees and taxes, with minimal benefit
+- **Rebalancing too rarely** — Leaving a portfolio alone for 3~5 years causes large deviations from the intended risk level
+- **Bands too narrow** — A 1%p band chases noise and only incurs costs
+- **Ignoring taxes** — Large annual rebalancing in taxable accounts worsens after-tax returns
+- **Emotional rebalancing** — "Equities have risen a lot, let's sell" with no rule = market timing
+- **Giving up on rebalancing in a down market** — Missing the essential moment (buying at low prices)
+- **Abusing tactical rebalancing** — "Given the macro outlook, I'll raise bond weights" = effectively market timing
 
-- `modern-portfolio-theory` / `all-weather` / `bogleheads` — 모든 자산배분 전략의 실행 메커니즘
-- `dollar-cost-averaging` — 신규 투입금 DCA는 최선의 리밸런싱 방법
-- `korean-tax-optimization` — 세금 효율 리밸런싱 설계
-- `behavioral-biases` — 감정 매매 대신 규칙 매매
+## Limitations
 
-## 이 프레임워크가 *틀렸을 때*
+1. **Return enhancement is small** — The main effect is risk control; do not expect return enhancement
+2. **Loses out in long trend regimes** — In extended bull markets like the 1990s US equity dominance, rebalancing results in lost returns
+3. **Tax costs can exceed the premium** — In high-tax brackets or with many foreign assets
+4. **Optimal frequency and band cannot be theoretically determined** — Rules of thumb based on historical data
+5. **Psychological difficulty** — Selling risen assets and buying fallen assets both run against emotion
+6. **Cost-adjusted bias**: Some research shows the rebalancing premium disappears once taxes and fees are considered
 
-- 단일 자산 집중 투자 → 리밸런싱 개념 자체 불필요
-- 포지션 사이징 문제 → `kelly-criterion`
-- 목표 비중 자체가 틀렸을 때 → `modern-portfolio-theory` / `all-weather`로 돌아가 재설계
-- 매매 타이밍 의도 → 그건 리밸런싱 아님
+## Used Together With
 
-## 추가 학습
+- `modern-portfolio-theory` / `all-weather` / `bogleheads` — The execution mechanism for all asset allocation strategies
+- `dollar-cost-averaging` — DCA with new contributions is the best rebalancing method
+- `korean-tax-optimization` — Designing tax-efficient rebalancing
+- `behavioral-biases` — Rule-based trading instead of emotional trading
 
-- Swensen, D. (2005). *Unconventional Success*. — 개인 투자자용 리밸런싱 프레임.
-- Vanguard (2010). "Best practices for portfolio rebalancing." — 실증 백서.
-- Jaconetti, C. et al. (Vanguard). "Sub-optimal is not always bad" — 세금 고려 리밸런싱.
-- 한국 적용: 김성일 *마법의 돈 굴리기* 내 한국 ETF 기반 리밸런싱.
+## When This Framework Is *Wrong*
+
+- Single-asset concentrated investing → the concept of rebalancing itself is unnecessary
+- Position sizing issues → `kelly-criterion`
+- When the target allocation itself is wrong → go back to `modern-portfolio-theory` / `all-weather` to redesign
+- Intent to time the market → that is not rebalancing
+
+## Further Learning
+
+- Swensen, D. (2005). *Unconventional Success*. — A rebalancing framework for individual investors.
+- Vanguard (2010). "Best practices for portfolio rebalancing." — Empirical white paper.
+- Jaconetti, C. et al. (Vanguard). "Sub-optimal is not always bad" — Tax-aware rebalancing.
+- Korean application: Kim Sung-il, *Magical Money Management (마법의 돈 굴리기)* — rebalancing based on Korean ETFs.

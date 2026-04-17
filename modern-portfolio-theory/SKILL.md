@@ -1,135 +1,135 @@
 ---
 name: modern-portfolio-theory
 version: "0.1.0"
-description: "Modern Portfolio Theory (Markowitz 1952) — 포트폴리오 전체 위험·수익을 최적화. Efficient Frontier, 상관관계 기반 분산, Sharpe 비율. 자산 배분 의사결정의 이론적 출발점."
+description: "Modern Portfolio Theory (Markowitz 1952) — optimize overall portfolio risk and return. Efficient Frontier, correlation-based diversification, Sharpe ratio. The theoretical starting point for asset allocation decisions."
 ---
 
 # Modern Portfolio Theory (MPT)
 
-## 한 줄 요약
+## One-Line Summary
 
-"얼마나 버는가"가 아니라 **"같은 수익을 얻으면서 얼마나 변동성을 줄이는가"**. 자산 간 **상관관계**를 활용해 *공짜 점심*(분산 이득)을 얻는 것이 MPT의 핵심.
+Not "how much do you earn" but **"how much can you reduce volatility while achieving the same return"**. The core of MPT is exploiting **correlations** between assets to obtain a *free lunch* (diversification benefit).
 
-## 이론 기원
+## Theoretical Origins
 
-- **Harry Markowitz (1952)** — "Portfolio Selection", *Journal of Finance*. 1990 노벨경제학상.
+- **Harry Markowitz (1952)** — "Portfolio Selection", *Journal of Finance*. 1990 Nobel Prize in Economics.
 - **William Sharpe (1964)** — CAPM, Sharpe Ratio.
-- **James Tobin (1958)** — Separation Theorem, 무위험자산 도입.
-- 현대 포트폴리오 이론의 **출발점**. All-Weather, Risk Parity, Factor Investing 모두 MPT의 변주나 확장.
+- **James Tobin (1958)** — Separation Theorem, introduction of the risk-free asset.
+- The **starting point** of modern portfolio theory. All-Weather, Risk Parity, and Factor Investing are all variations or extensions of MPT.
 
-## 핵심 개념
+## Core Concepts
 
-### 1. 기대수익 vs 변동성
-- 개별 자산의 수익(E[R])과 변동성(σ) 두 숫자로 요약
-- **위험 = 변동성(표준편차)**으로 단순화 — MPT의 가장 큰 단순화이자 한계
-- **정규분포 · iid 가정**: 수익률이 정규분포를 따르고 각 기간 독립동일분포라는 전제. 실제 금융시계열은 (1) 자기상관·군집변동성(volatility clustering), (2) 음의 왜도(negative skew), (3) 초과첨도(excess kurtosis, fat tail)를 보임. 2008·2020·2022 같은 6σ+ 사건이 수십 년에 한 번씩 관측.
+### 1. Expected Return vs. Volatility
+- Summarize each asset with two numbers: return (E[R]) and volatility (σ)
+- **Risk = volatility (standard deviation)** as a simplification — MPT's biggest simplification and limitation
+- **Normal distribution · iid assumption**: the premise that returns follow a normal distribution and are independently and identically distributed across periods. Actual financial time series exhibit (1) autocorrelation and volatility clustering, (2) negative skew, (3) excess kurtosis (fat tails). Events of 6σ+ like 2008, 2020, and 2022 are observed once every few decades.
 
-### 2. 상관관계(ρ)가 마법
-- 두 자산 수익이 완벽 동조(ρ=1)면 분산 이득 없음
-- **ρ < 1이면 포트폴리오 변동성이 가중평균보다 낮음** — 수학적으로 증명됨
-- 음의 상관(ρ<0) 자산 조합이 가장 강력
+### 2. Correlation (ρ) Is the Magic
+- If two asset returns move in perfect sync (ρ=1), there is no diversification benefit
+- **If ρ < 1, portfolio volatility is lower than the weighted average** — mathematically proven
+- Combinations of negatively correlated (ρ<0) assets are the most powerful
 
 ### 3. Efficient Frontier
-- "같은 위험에서 최대 수익" 혹은 "같은 수익에서 최소 위험"을 만족하는 포트폴리오들의 곡선
-- 이 곡선 *위쪽*은 존재 불가, *아래쪽*은 비효율
-- 실전 자산배분은 이 곡선 위의 한 점을 고르는 문제
+- The curve of portfolios that satisfy "maximum return for the same risk" or "minimum risk for the same return"
+- *Above* this curve is impossible, *below* it is inefficient
+- Real-world asset allocation is the problem of choosing a single point on this curve
 
 ### 4. Sharpe Ratio
 $$\text{Sharpe} = \frac{E[R] - R_f}{\sigma}$$
-- 단위 위험당 초과수익. 포트폴리오 평가의 표준 지표
-- **정규분포 가정의 함정**: 실제 수익률은 왼쪽 꼬리가 두꺼움(negative skew, excess kurtosis). 같은 Sharpe라도 헤지펀드·옵션매도 전략은 꼬리 손실이 Sharpe에 반영 안 됨 → 과대평가.
-- 대안 지표: **Sortino Ratio** (하방 변동성만), **Calmar Ratio** (MDD 기준), **Omega Ratio** (전체 분포 기반). MPT의 Sharpe는 *분포가 정규에 가까울 때만* 신뢰.
+- Excess return per unit of risk. The standard metric for portfolio evaluation
+- **The normal distribution trap**: actual returns have heavy left tails (negative skew, excess kurtosis). Even with the same Sharpe, hedge funds and option-selling strategies have tail losses that are not reflected in Sharpe → overvaluation.
+- Alternative metrics: **Sortino Ratio** (downside volatility only), **Calmar Ratio** (MDD-based), **Omega Ratio** (based on the full distribution). MPT's Sharpe is reliable *only when the distribution is close to normal*.
 
-### 5. 무위험자산 + 위험자산 조합 (Capital Market Line)
-- 무위험자산(현금·국채)과 접선 포트폴리오를 섞으면 Frontier보다 더 좋아짐
-- 레버리지·디레버리지로 위험 수준을 스케일링
+### 5. Risk-Free Asset + Risky Asset Combination (Capital Market Line)
+- Mixing a risk-free asset (cash or government bonds) with the tangent portfolio beats the Frontier
+- Scale the risk level with leverage or deleverage
 
-## 언제 쓰나
+## When to Use
 
-- "주식:채권:금 비중 어떻게 잡지?" — 자산군 배분 의사결정
-- "한 자산에 몰빵해도 돼?" 반박 논리
-- 기존 포트폴리오의 Sharpe 비율 평가
-- 새 자산 추가 시 *상관관계로 분산 이득이 생기는지* 체크
-- 기관 투자자 IPS(Investment Policy Statement)의 이론적 기반
+- "How do I set my stock:bond:gold allocation?" — asset class allocation decisions
+- Counter-argument to "Is it OK to put it all in one asset?"
+- Evaluating the Sharpe ratio of an existing portfolio
+- Checking *whether diversification benefits arise from correlation* when adding a new asset
+- The theoretical foundation of an institutional investor's IPS (Investment Policy Statement)
 
-## 실전 적용
+## Practical Application
 
 ```
-1. 자산군 정의 (5~10개)
-   예: 한국주식, 해외주식(선진), 해외주식(신흥), 한국채권, 해외채권, 금, REITs, 현금
-2. 각 자산의 기대수익·변동성·상관관계 추정
-   - 과거 10~20년 데이터가 출발점 (하지만 미래 예측 아님)
-3. Efficient Frontier 시뮬레이션
-   - 엑셀·Python(pandas, scipy.optimize)·온라인 툴(Portfolio Visualizer)
-4. 자신의 위험감내 수준에 맞는 점 선택
-   - 변동성 10% 이하? 15%? 20%?
-5. 월/분기 단위로 실제 수익·변동성 체크, 이론과 괴리 크면 가정 재검토
+1. Define asset classes (5-10)
+   e.g., Korean equities, developed-market equities, emerging-market equities, Korean bonds, foreign bonds, gold, REITs, cash
+2. Estimate expected return, volatility, and correlation for each asset
+   - 10-20 years of historical data is the starting point (but not a prediction of the future)
+3. Simulate the Efficient Frontier
+   - Excel, Python (pandas, scipy.optimize), online tools (Portfolio Visualizer)
+4. Select a point matching your risk tolerance
+   - Under 10% volatility? 15%? 20%?
+5. Check actual returns and volatility on a monthly/quarterly basis; if the gap from theory is large, revisit the assumptions
 ```
 
-## 한국 맥락
+## Korean Context
 
-### 한국 투자자의 MPT 적용 주의점
-- **KOSPI·코스닥은 미국·유럽 주식과 상관 높음** (글로벌화). 순수 "국내주식" 분산 효과 제한적.
-- **원화자산 편향(home bias)** — 한국 투자자 자산 80%+가 원화. 환헤지 관점에서 해외자산은 이미 *분산*에 기여.
-- **부동산 비중이 포트폴리오의 실세**: 평균 한국 가계 자산의 70%+가 부동산. MPT 계산에서 빼면 현실과 괴리.
-- **채권 접근성**: 미국 국채 ETF(TLT, IEF)는 원화 투자자에게 환 리스크 포함됨. KODEX 국고채 등 원화 채권 ETF와 구분.
-- **금투세·배당세**: 세후 수익률 기준으로 Sharpe를 재계산해야 한국 현실.
+### Caveats When Korean Investors Apply MPT
+- **KOSPI and KOSDAQ have high correlation with US and European equities** (globalization). The diversification effect of pure "domestic stocks" is limited.
+- **KRW asset bias (home bias)** — 80%+ of Korean investors' assets are in KRW. From a currency-hedge perspective, foreign assets already contribute to *diversification*.
+- **Real estate weight is the true driver of the portfolio**: the average Korean household has 70%+ of its assets in real estate. Excluding it from MPT calculations creates a gap with reality.
+- **Bond accessibility**: US Treasury ETFs (TLT, IEF) carry currency risk for KRW investors. Distinguish them from KRW bond ETFs such as KODEX Korea Treasury Bond.
+- **Financial investment tax (금투세) and dividend tax**: Sharpe should be recalculated on an after-tax return basis to reflect Korean reality.
 
-### 한국 투자자를 위한 일반적 프레임 (추천 아님, 예시)
-- 공격형(20·30대): 해외주식 60 / 국내주식 20 / 금·REITs 10 / 현금·채권 10
-- 균형형(40대): 해외주식 40 / 국내주식 15 / 채권 25 / 금·대체 10 / 현금 10
-- 보수형(50대+): 해외주식 25 / 국내주식 10 / 채권 45 / 금 10 / 현금 10
-- 위는 *예시*이며 부동산·퇴직금·국민연금을 포함한 전체 자산 맥락에서 재계산해야 한다.
+### General Frames for Korean Investors (Not a Recommendation, Just Examples)
+- Aggressive (20s-30s): 60 foreign equities / 20 domestic equities / 10 gold·REITs / 10 cash·bonds
+- Balanced (40s): 40 foreign equities / 15 domestic equities / 25 bonds / 10 gold·alternatives / 10 cash
+- Conservative (50s+): 25 foreign equities / 10 domestic equities / 45 bonds / 10 gold / 10 cash
+- The above are *examples* and must be recalculated in the context of overall assets including real estate, retirement benefits, and National Pension.
 
-## 안티패턴 & 과적용
+## Antipatterns & Overapplication
 
-- **과거 데이터로 미래를 그대로 예측** — 10년 Sharpe가 1.2라고 앞으로도 1.2 아님
-- **Efficient Frontier 정확도 믿기** — 입력 5% 오차 → 출력 30% 차이 (모델 민감도 극심)
-- **상관관계가 정적이라는 가정** — 위기 시 상관관계 모두 1로 수렴 (분산 효과 사라짐)
-- **변동성 = 위험이라는 단순화** — 상승 변동성도 "위험"으로 계산됨. 꼬리 리스크 미반영.
-- **개별 종목 수준 적용** — MPT는 자산군 배분에 유용, 종목 10개 선택엔 부적합
-- **재계산 강박** — 매월 Frontier 다시 돌리고 비중 조정하면 거래비용·세금으로 이득 상쇄
+- **Predicting the future directly from historical data** — just because the 10-year Sharpe was 1.2 doesn't mean it will be 1.2 going forward
+- **Trusting Efficient Frontier accuracy** — a 5% input error → a 30% output difference (extreme model sensitivity)
+- **Assuming correlations are static** — during a crisis all correlations converge to 1 (the diversification effect disappears)
+- **The simplification volatility = risk** — upside volatility is also counted as "risk". Tail risk is not reflected.
+- **Applying it at the individual stock level** — MPT is useful for asset class allocation, but unsuitable for picking 10 stocks
+- **Recalculation compulsion** — if you re-run the Frontier and rebalance every month, transaction costs and taxes offset the gains
 
-## 한계
+## Limitations
 
-1. **정규분포 가정** — 실제 수익률은 fat tail. 극단 사건을 과소추정.
-2. **과거 = 미래 가정** — 체제 전환(금리·인플레·지정학)에 취약.
-3. **변동성 = 위험 가정** — Taleb이 가장 강하게 비판. 진짜 위험은 영구 손실.
-4. **거래비용·세금 무시** — 이론엔 없지만 실전에선 결정적.
-5. **투자자 효용이 평균-분산 효용이라는 가정** — 실제 인간은 손실회피·후회회피 편향 (→ `behavioral-biases`).
-6. **입력값 민감도** — 기대수익 입력이 약간만 틀려도 최적해가 크게 바뀜 (Michaud의 "error maximization" 비판).
+1. **Normal distribution assumption** — actual returns have fat tails. Underestimates extreme events.
+2. **Past = future assumption** — vulnerable to regime changes (interest rates, inflation, geopolitics).
+3. **Volatility = risk assumption** — criticized most strongly by Taleb. True risk is permanent loss.
+4. **Ignores transaction costs and taxes** — absent in theory, but decisive in practice.
+5. **Assumption that investor utility is mean-variance utility** — actual humans have loss aversion and regret aversion biases (→ `behavioral-biases`).
+6. **Input sensitivity** — slight errors in expected return inputs lead to drastically different optimal solutions (Michaud's "error maximization" critique).
 
-## 현대 MPT 진전 (참고)
+## Modern MPT Advances (Reference)
 
-Markowitz 원론의 한계를 보완한 현대 기법:
+Modern techniques that address the limitations of Markowitz's original work:
 
-- **Black-Litterman 모델 (1990)**: CAPM 균형 수익률을 사전분포로, 투자자 view를 posterior로 결합. 입력 민감도·극단 비중 문제 완화.
-- **Resampled Efficient Frontier (Michaud 1998)**: 몬테카를로로 여러 frontier 평균. 안정적 비중.
-- **Risk Parity** (→ `all-weather`): 기대수익 추정 의존 제거.
-- **Hierarchical Risk Parity (López de Prado 2016)**: 머신러닝 클러스터링으로 상관구조 계층화. 전통 MPT의 역행렬 불안정 문제 회피.
-- **Robust Optimization**: 입력 불확실성을 명시 제약으로 내재화.
+- **Black-Litterman Model (1990)**: combines CAPM equilibrium returns as a prior with investor views as a posterior. Mitigates input sensitivity and extreme-weight issues.
+- **Resampled Efficient Frontier (Michaud 1998)**: averages multiple frontiers via Monte Carlo. Stable weights.
+- **Risk Parity** (→ `all-weather`): removes dependence on expected return estimates.
+- **Hierarchical Risk Parity (López de Prado 2016)**: hierarchizes the correlation structure via machine-learning clustering. Avoids the matrix-inversion instability of traditional MPT.
+- **Robust Optimization**: embeds input uncertainty as explicit constraints.
 
-개인 투자자 시사점: Efficient Frontier 소프트웨어의 결과를 *최적*으로 받아들이지 말 것. 현대 연구자들도 MPT 원론을 그대로 쓰지 않는다.
+Implication for individual investors: do not accept the output of Efficient Frontier software as *optimal*. Modern researchers don't use the original MPT as-is either.
 
-## 이 프레임워크와 함께 쓰는 것들
+## What to Use With This Framework
 
-- `all-weather` — MPT의 상관관계 철학을 경제 체제별로 재구성한 응용
-- `bogleheads` — MPT를 최소 비용·3펀드로 단순화한 실천판
-- `factor-investing` — MPT의 기대수익 설명을 팩터로 분해한 확장
-- `rebalancing` — MPT가 지정한 비중을 유지하는 실행 메커니즘
+- `all-weather` — an application reorganizing MPT's correlation philosophy by economic regime
+- `bogleheads` — a practical simplification of MPT into minimum-cost, 3-fund form
+- `factor-investing` — an extension decomposing MPT's expected-return explanation into factors
+- `rebalancing` — the execution mechanism that maintains the weights MPT specifies
 
-## 이 프레임워크가 *틀렸을 때*
+## When This Framework Is *Wrong*
 
-- 꼬리 리스크·블랙스완 대비 → `barbell-strategy`
-- 행동·심리 문제 → `behavioral-biases`
-- 개별주 저평가 찾기 → `value-investing`
-- 한국 세후 수익률 → `korean-tax-optimization`
-- 매수 타이밍 분할 → `dollar-cost-averaging`
+- Preparing for tail risk and black swans → `barbell-strategy`
+- Behavioral and psychological issues → `behavioral-biases`
+- Finding undervalued individual stocks → `value-investing`
+- Korean after-tax returns → `korean-tax-optimization`
+- Staggered-buy timing → `dollar-cost-averaging`
 
-## 추가 학습
+## Further Learning
 
 - Markowitz, H. (1952). "Portfolio Selection." *Journal of Finance*.
-- Bernstein, W. *The Intelligent Asset Allocator* (2000). — MPT 대중서 걸작.
-- Swensen, D. *Pioneering Portfolio Management* (2000). — 예일대 기금 적용.
-- 온라인: Portfolio Visualizer (portfoliovisualizer.com) — Efficient Frontier 시뮬레이션 무료.
-- 비판: Taleb *The Black Swan* — MPT 한계의 대표적 비판서.
+- Bernstein, W. *The Intelligent Asset Allocator* (2000). — A masterpiece of MPT popularization.
+- Swensen, D. *Pioneering Portfolio Management* (2000). — The Yale Endowment application.
+- Online: Portfolio Visualizer (portfoliovisualizer.com) — free Efficient Frontier simulation.
+- Criticism: Taleb *The Black Swan* — the representative critique of MPT's limitations.

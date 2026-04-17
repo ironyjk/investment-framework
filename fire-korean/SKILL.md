@@ -1,240 +1,240 @@
 ---
 name: fire-korean
 version: "0.1.0"
-description: "한국형 FIRE (Financial Independence, Retire Early) — 4% 룰의 한국 적용, 부동산 비중·국민연금·건강보험·연금저축 크로스오버, 연금 크레바스(55~65세), 한국 특수 변수 반영 경로 설계."
+description: "Korean-style FIRE (Financial Independence, Retire Early) — adapting the 4% rule to Korea, with real estate weighting, National Pension (국민연금), health insurance premium (건보료), pension savings (연금저축) crossover, the pension crevasse (ages 55–65), and path design reflecting Korea-specific variables."
 ---
 
-# FIRE for Korea (한국형 경제적 자립·조기 은퇴)
+# FIRE for Korea (Korean-Style Financial Independence and Early Retirement)
 
-## 한 줄 요약
+## One-Line Summary
 
-**미국 FIRE 공식은 한국에 그대로 적용 불가.** 부동산 비중, 국민연금, 건강보험(건보료), 연금저축·IRP 수령 시점, 55~65세의 "연금 크레바스"를 모두 고려해야 한다. 4% 룰은 *한국에서 3~3.5% 룰*에 가깝다는 견해가 주류.
+**The U.S. FIRE formula cannot be applied directly to Korea.** You must factor in real estate weighting, National Pension (국민연금), health insurance premium (건보료), the timing of pension savings (연금저축)·IRP withdrawals, and the "pension crevasse" between ages 55–65. The mainstream view is that the 4% rule is closer to a *3–3.5% rule in Korea*.
 
-## 이론 기원
+## Theoretical Origins
 
-- **William Bengen (1994)** — "Determining Withdrawal Rates Using Historical Data". 4% 룰 원조.
-- **Trinity Study (1998)** — Cooley, Hubbard, Walz. 50% 주식 / 50% 채권 포트폴리오에서 4% 인출 30년 성공률 분석.
-- **Vicki Robin, Joe Dominguez** *Your Money or Your Life* (1992) — FIRE 운동 사상적 뿌리.
-- **MMM (Mr. Money Mustache)** 블로그 (2011~) — FIRE 대중화.
-- 한국 적용 논의: 강환국·김성일 등 국내 FIRE 저자들의 수정 적용.
+- **William Bengen (1994)** — "Determining Withdrawal Rates Using Historical Data." The original 4% rule.
+- **Trinity Study (1998)** — Cooley, Hubbard, Walz. Analyzed the 30-year success rate of 4% withdrawals from a 50% stock / 50% bond portfolio.
+- **Vicki Robin, Joe Dominguez** *Your Money or Your Life* (1992) — Ideological root of the FIRE movement.
+- **MMM (Mr. Money Mustache)** blog (2011~) — Popularized FIRE.
+- Korean adaptation discussions: Modified applications by domestic FIRE authors such as Kang Hwan-kook and Kim Seong-il.
 
-## FIRE 기본 공식
+## FIRE Basic Formulas
 
-### 1. 4% 룰
+### 1. The 4% Rule
 
-$$\text{필요 자산} = \text{연간 지출} \times 25$$
+$$\text{Required Assets} = \text{Annual Spending} \times 25$$
 
-- 은퇴 자산의 4%씩 매년 인출 (물가 연동)
-- 50/50 포트폴리오 기준 30년 성공률 ≈ 95% (미국 과거 데이터)
-- 예: 연 4천만 원 지출 → 10억 원 필요
+- Withdraw 4% of retirement assets each year (inflation-linked)
+- 30-year success rate for a 50/50 portfolio ≈ 95% (based on historical U.S. data)
+- Example: ₩40M annual spending → ₩1B required
 
-### 2. FIRE 변종
+### 2. FIRE Variants
 
-- **Lean FIRE**: 최소 생계 기준 (연 2~3천만 원 지출, 6~8억)
-- **Fat FIRE**: 여유 있는 은퇴 (연 8천~1억+, 20억+)
-- **Barista FIRE**: 파트타임 병행, 완전 은퇴 아님
-- **Coast FIRE**: 추가 저축 없이 복리만으로 정식 은퇴시점까지 도달
+- **Lean FIRE**: Bare-bones living standard (₩20–30M annual spending, ₩600–800M)
+- **Fat FIRE**: Comfortable retirement (₩80M–100M+, ₩2B+)
+- **Barista FIRE**: Combined with part-time work, not full retirement
+- **Coast FIRE**: Reaching traditional retirement age through compounding alone, without additional saving
 
-### 3. Safe Withdrawal Rate (SWR) 재검토
+### 3. Reviewing the Safe Withdrawal Rate (SWR)
 
-- Bengen 본인도 후에 4.5~4.7% 상향 (성장주 포함 포트폴리오)
-- 최근 연구: 저금리·고밸류에이션 시대엔 **3~3.5%**가 안전 (Blanchett, Finke)
-- **한국 적용 시 보수적**: 3~3.5% 권장
+- Bengen himself later revised upward to 4.5–4.7% (portfolios including growth stocks)
+- Recent research: **3–3.5%** is safer in an era of low interest rates and high valuations (Blanchett, Finke)
+- **Conservative when applied to Korea**: 3–3.5% recommended
 
-## 한국형 FIRE 특수 변수
+## Korea-Specific FIRE Variables
 
-### 1. 국민연금 (공적연금)
+### 1. National Pension (Public Pension)
 
-- **수령 개시**: 1953~56년생 61세 / 1957~60년생 62세 / 1961~64년생 63세 / 1965~68년생 64세 / **1969년생~ 65세** (단계적 상향)
-- **평균 수령액**: 2025년 기준 노령연금 월평균 약 60~65만 원 (가입기간·납부액에 따라, 국민연금공단 공표 — *확인 필요, 매년 갱신*)
-- **20년+ 가입자**: 월 100~150만 원 수준 흔함
-- **FIRE 관점**: 65세 이후 *보장된 현금흐름*이므로 필요 자산 규모 축소 효과
-- **예상 수령액 조회**: 국민연금공단 홈페이지
+- **Payment commencement**: Age 61 for those born 1953–56 / Age 62 for 1957–60 / Age 63 for 1961–64 / Age 64 for 1965–68 / **Age 65 for those born 1969 onward** (phased increase)
+- **Average benefit**: As of 2025, the average old-age pension is approximately ₩600,000–650,000/month (varies by contribution period and amount, per National Pension Service disclosures — *verification needed, updated annually*)
+- **For 20+ year contributors**: ₩1,000,000–1,500,000/month is common
+- **From a FIRE perspective**: Since this is a *guaranteed cash flow* after age 65, it has the effect of reducing the required asset size
+- **Check expected benefits**: National Pension Service website
 
-### 2. 퇴직연금 / IRP
+### 2. Retirement Pension / IRP
 
-- 퇴직금은 대부분 IRP로 이전 가능
-- 55세 이후 연금 수령 시 세율 3.3~5.5% (낮음)
-- **FIRE 관점**: IRP·연금저축 합 900만 원×20년 = 1.8억+ 누적 (세액공제 포함 실효 더 큼)
-- **크레바스 해결에 핵심**
+- Retirement allowances can mostly be transferred to an IRP
+- When received as pension after age 55, the tax rate is 3.3–5.5% (low)
+- **From a FIRE perspective**: IRP + pension savings (연금저축) combined at ₩9M × 20 years = ₩180M+ accumulated (effective amount larger when tax credits are included)
+- **Central to solving the crevasse**
 
-### 3. 건강보험 (건보료)
+### 3. Health Insurance (건보료)
 
-- **피부양자 유지 조건 (2022.9 개편, 2026.4 기준)** — 하나라도 위반 시 탈락:
-  - 연 합산소득(근로·사업·연금·금융·기타) **2천만 원 이하**
-  - **금융소득(이자+배당) 연 1천만 원 초과 시 전액 소득으로 인식** — 1천 이하면 0 처리
-  - 재산 과세표준 **5.4억 이하** (단 5.4억 초과 + 소득 1천 초과면 탈락)
-  - 재산 과세표준 **9억 초과 시 소득 무관 탈락**
-  - 사업소득 발생 시 탈락
-- 탈락 시 **지역가입자**: 소득·재산 기준 월 20~60만 원 부담
-- **FIRE 실행 시 피부양자 자격 유지 여부가 핵심 변수**
-- 인출률 설계 시 건보료 경계 신경써야 (특히 금융소득 1천만 원 경계)
+- **Dependent status retention criteria (Sept 2022 reform, as of April 2026)** — loss of status if any one is violated:
+  - Combined annual income (earned, business, pension, financial, other) of **₩20M or less**
+  - **If financial income (interest + dividends) exceeds ₩10M per year, the entire amount is recognized as income** — treated as 0 if ₩10M or below
+  - Property tax base of **₩540M or less** (loss of status if property exceeds ₩540M AND income exceeds ₩10M)
+  - **Loss of status regardless of income if property tax base exceeds ₩900M**
+  - Loss of status if business income arises
+- Upon loss of status, as a **regional subscriber**: monthly burden of ₩200,000–600,000 based on income and property
+- **Whether dependent status can be maintained is a key variable when executing FIRE**
+- When designing withdrawal rates, mind the health insurance premium (건보료) boundaries (especially the ₩10M financial income threshold)
 
-### 4. 부동산 비중
+### 4. Real Estate Weighting
 
-- 한국 FIRE 시도자 대부분이 **자가 거주 + 금융자산 병행**
-- 자가의 경우 월세 지출 없음 → 지출 연 2천~3천만 원도 가능 (Lean FIRE)
-- 단, 재산세·관리비·수리비 고려 필요
-- **주택연금** 활용 가능: 60세+ 자가 보유, 종신 월 지급
+- Most Korean FIRE practitioners combine **homeownership + financial assets**
+- For homeowners, no rent outlay → annual spending of ₩20–30M possible (Lean FIRE)
+- However, property tax, management fees, and repair costs must be factored in
+- **Reverse mortgage (주택연금)** available: aged 60+ with owned home, lifetime monthly payments
 
-### 5. 55~65세 연금 크레바스
+### 5. The Pension Crevasse, Ages 55–65
 
-- 한국 공적연금은 63~65세부터 시작
-- 조기 은퇴 시 **55~65세 10년 구간이 최대 난관**
-- 이 구간에선 금융자산 순수 인출
-- **해결책**: 이 구간을 위한 별도 버킷(현금·단기채) 준비
+- Korean public pensions begin at ages 63–65
+- In early retirement, **the 10-year stretch between ages 55 and 65 is the biggest challenge**
+- During this period, financial assets are withdrawn purely
+- **Solution**: Prepare a separate bucket (cash·short-term bonds) for this period
 
-### 6. 기대여명과 은퇴 기간
+### 6. Life Expectancy and Retirement Duration
 
-- 한국인 기대여명 (2023년 생명표, 통계청 2024 발표): 남 80.6세, 여 86.4세 (*매년 갱신 — 확인 필요*)
-- 55세 은퇴 시 25~35년 인출 기간
-- Trinity 30년 기준 초과 가능 → 3% 룰 더 권장
+- Korean life expectancy (2023 life table, announced by Statistics Korea in 2024): Male 80.6 / Female 86.4 (*updated annually — verification needed*)
+- Retiring at 55 → 25–35 years of withdrawals
+- May exceed the Trinity 30-year basis → 3% rule more strongly recommended
 
-## 한국형 SWR 재계산
+## Recalculated Korean-Style SWR
 
-| 시나리오 | 미국 4% 룰 | 한국 권장 | 근거 |
+| Scenario | U.S. 4% Rule | Korea Recommended | Rationale |
 |---|---|---|---|
-| 전통 은퇴 (65세, 30년 인출) | 4.0% | 3.5~4.0% | Trinity + 한국 기대여명 + 저수익환경 |
-| 조기 은퇴 (55세, 40년 인출) | 3.3% | **3.0%** | Blanchett(2013) · Pfau(2012) 저금리 조정 |
-| 초조기 (45세, 50년 인출) | 3.0% | **2.5~3.0%** | 50년 Monte Carlo · Sequence risk |
-| 부동산 자가 + 국민연금 반영 | — | **필요자산 25~35% 축소** | 국민연금 PV + 월세 지출 제거 효과 |
+| Traditional retirement (age 65, 30-year withdrawals) | 4.0% | 3.5–4.0% | Trinity + Korean life expectancy + low-yield environment |
+| Early retirement (age 55, 40-year withdrawals) | 3.3% | **3.0%** | Blanchett (2013) · Pfau (2012) low-rate adjustment |
+| Ultra-early (age 45, 50-year withdrawals) | 3.0% | **2.5–3.0%** | 50-year Monte Carlo · Sequence risk |
+| Homeownership + National Pension factored in | — | **Reduces required assets by 25–35%** | National Pension PV + elimination of rent outlays |
 
-**SWR 산정에 반드시 들어가야 할 변수**:
-- 기대수익(μ)·변동성(σ) 가정의 출처
-- 인플레이션 가정 (한국 장기 평균 2.0~2.5% 가정이 타당한지)
-- Sequence-of-returns 리스크 (첫 10년 시장 환경)
-- 의료비·장기요양비 증가 추세
-- 국민연금 지급률 개편 시나리오 (2055년 기금 소진 논의, 지급률 하향·개시 연령 상향 리스크)
+**Variables that must be incorporated in SWR calculation**:
+- Sources for expected-return (μ) and volatility (σ) assumptions
+- Inflation assumption (whether a 2.0–2.5% long-run Korean average is reasonable)
+- Sequence-of-returns risk (market environment in the first 10 years)
+- Rising medical and long-term care expense trends
+- Scenarios for National Pension payment rate reform (discussions of 2055 fund depletion, risks of rate cuts and later commencement)
 
-→ 연 5천만 원 지출, 자가 보유, 국민연금 월 100만 원 예상 시:
-- 순수 4% 룰: 12.5억 필요
-- 한국형 조정: **7~9억**도 가능 (국민연금 + 자가)
+→ For ₩50M annual spending, homeownership, and expected National Pension of ₩1M/month:
+- Pure 4% rule: ₩1.25B required
+- Korean-style adjusted: **₩700M–900M** is also feasible (National Pension + homeownership)
 
-## 한국형 FIRE 경로 설계
+## Designing a Korean-Style FIRE Path
 
-### 축적기 (20·30대)
-1. **저축률 최대화**: 실수령 대비 50% 이상 목표
-2. **연금저축·IRP 한도 전액 납입** (연 900만)
-3. **ISA 연 2천만 원 한도 활용**
-4. **주식형 인덱스 비중 70~80%** (→ `bogleheads`)
-5. **주택 구입 vs 저축 투자 비교** (생애주기 관점, 지역에 따라 상이)
+### Accumulation (20s·30s)
+1. **Maximize savings rate**: Target 50%+ of take-home pay
+2. **Fully fund pension savings (연금저축)·IRP limits** (₩9M/year)
+3. **Use the ISA ₩20M annual limit**
+4. **Equity index weighting of 70–80%** (→ `bogleheads`)
+5. **Home purchase vs. savings/investment comparison** (life-cycle perspective, varies by region)
 
-### 축적 중반 (30대 후반~40대)
-1. **자산 배분 리밸런싱** (→ `rebalancing`)
-2. **부동산·금융자산 비중 점검** (→ `modern-portfolio-theory`)
-3. **FIRE 목표 규모 계산 + 크레바스 버킷 설계**
-4. **근로소득 정점 활용 — 사교육 vs 저축 트레이드오프** (울산 교육 환경 이슈와 연동될 수 있음)
+### Mid-Accumulation (late 30s–40s)
+1. **Rebalance asset allocation** (→ `rebalancing`)
+2. **Review real estate / financial asset weighting** (→ `modern-portfolio-theory`)
+3. **Calculate FIRE target size + design the crevasse bucket**
+4. **Leverage peak earned income — private education vs. savings trade-off** (may be linked to Ulsan education environment issues)
 
-### 은퇴 전 (FIRE 임박 5년)
-1. **보수적 자산배분으로 이동** (주식 60→40~50)
-2. **55세까지의 현금흐름 플랜** (연금 개시 전 구간)
-3. **건보료 설계** — 소득 인식 구조 최소화
-4. **Sequence-of-returns 리스크 대비** — 첫 5년 하락장은 치명적
+### Pre-Retirement (final 5 years before FIRE)
+1. **Shift to conservative asset allocation** (equities 60→40–50)
+2. **Cash flow plan through age 55** (pre-pension-commencement period)
+3. **Health insurance premium (건보료) design** — minimize the structure of income recognition
+4. **Prepare for sequence-of-returns risk** — a drawdown in the first 5 years is fatal
 
-### 은퇴 후 (인출기)
-1. **Bucket Strategy (한국 세제 연동)**:
-   - **Bucket 1 (2~3년치 생활비)**: 현금·MMF·정기예금 — 일반계좌 (유동성 최우선)
-   - **Bucket 2 (5~7년치)**: 단기·중기 국채 ETF·배당 ETF — ISA 내 운용 (분리과세·비과세 200만)
-   - **Bucket 3 (나머지, 장기 성장)**: 글로벌 주식 인덱스 — 연금저축/IRP (55세+ 3.3~5.5% 세율)
-   - **인출 순서**: Bucket 1 → 배당/분배금 → Bucket 2 → Bucket 3 (세율 역순)
-   - **피부양자 경계 유지**: 연금저축 인출액이 연 1,500만 이하면 분리과세, 건보료 피부양자 유지 가능성↑
-   - 55세 이전 조기 은퇴 시: 연금계좌 접근 불가 → Bucket 1·2가 55세까지 유지돼야 (크레바스)
-2. **동적 인출률 (Guyton-Klinger Rules)**:
-   - **Capital Preservation Rule**: 현재 인출률이 초기의 120% 초과 시 인출 10% 삭감 (시장 하락 후 비중이 커진 경우)
-   - **Prosperity Rule**: 인출률이 초기의 80% 이하 시 인출 10% 상향
-   - **Withdrawal Rule**: 전년도 포트폴리오 수익 음수이면 물가연동 동결
-   - **Portfolio Management Rule**: 상승 자산 먼저 매도 (저가 자산 보존)
-   - 한국판: 건보료 피부양자 경계(연 2천만·금융 1천만) 유지를 추가 제약으로
-3. **연금 크레바스 해결**: 55~63세 금융자산 집중 인출, 63세+ 국민연금으로 인출률 하향
+### Post-Retirement (Withdrawal Phase)
+1. **Bucket Strategy (linked to Korean tax structure)**:
+   - **Bucket 1 (2–3 years of living expenses)**: Cash·MMF·time deposits — general account (liquidity first)
+   - **Bucket 2 (5–7 years)**: Short·medium-term Treasury ETFs·dividend ETFs — operated within ISA (separate taxation·₩2M tax-free)
+   - **Bucket 3 (remainder, long-term growth)**: Global equity index — pension savings (연금저축)/IRP (3.3–5.5% tax rate from age 55+)
+   - **Withdrawal order**: Bucket 1 → dividends/distributions → Bucket 2 → Bucket 3 (reverse order of tax rates)
+   - **Maintaining the dependent-status boundary**: If pension savings (연금저축) withdrawals are ₩15M or less per year, separate taxation applies, improving likelihood of retaining health insurance (건보료) dependent status
+   - For early retirement before age 55: pension accounts inaccessible → Buckets 1·2 must last until age 55 (the crevasse)
+2. **Dynamic withdrawal rate (Guyton-Klinger Rules)**:
+   - **Capital Preservation Rule**: Cut withdrawals by 10% if the current withdrawal rate exceeds 120% of the initial (case where weighting grew after a market drop)
+   - **Prosperity Rule**: Raise withdrawals by 10% if the rate falls to 80% or less of the initial
+   - **Withdrawal Rule**: Freeze inflation adjustment if prior-year portfolio return was negative
+   - **Portfolio Management Rule**: Sell appreciating assets first (preserve depressed assets)
+   - Korean version: Add maintenance of health insurance premium (건보료) dependent-status boundaries (₩20M annual / ₩10M financial) as an additional constraint
+3. **Solving the pension crevasse**: Concentrate financial-asset withdrawals between ages 55–63, then lower the withdrawal rate via National Pension from age 63+
 
-## 한국 가족 구조 특수 (사용자 맥락 반영)
+## Korea-Specific Family Structure (Reflecting User Context)
 
-- **자녀 교육비 미확정성**: 대학·유학 지원 여부에 따라 필요 자산 ±3~5억
-- **울산→이사 등 주거 변동**: 부동산 자산 재평가 필요
-- **연소득 1.8억 근로소득자 × 자녀 3 시나리오**:
-  - 세후 실수령 연 1.2~1.3억 추정 (2026 과세·4대보험·지방세 기준)
-  - 자녀 3 양육비(사교육 포함) 연 4~6천만 원
-  - 주거비(관리비·재산세·대출이자) 연 1.5~2.5천만 원
-  - 기본 생활비 연 3~4천만 원
-  - **잔여 저축 가능액 연 3~5천만 원** (이상적 상황, 실제는 변동 큼)
-  - 10년 복리(실질 4% 가정) 축적: 4~6억 금융자산
-  - **현실적 FIRE 목표**: 45~50세 Coast FIRE + 국민연금·자가 보유 + 60대 초반 은퇴
-- **자녀 3명 특수**: 교육비·독립지원(결혼·주택) 고려 시 *Lean FIRE 비현실적*. **Coast FIRE 또는 Barista FIRE**가 합리적.
-- **울산 갈아타기 자금 = 단기 유동성 버킷** 취급. 투자 포트폴리오에서 분리해 MMF·단기채·예금으로.
+- **Uncertainty in child education expenses**: ±₩300–500M in required assets depending on university·study abroad support
+- **Residential changes such as moving out of Ulsan**: Real estate asset revaluation needed
+- **Scenario of ₩180M earned-income wage-earner × 3 children**:
+  - Estimated after-tax take-home ₩120–130M/year (based on 2026 taxation·4 major insurances·local tax)
+  - Child-rearing costs for 3 (including private education) ₩40–60M/year
+  - Housing costs (management fees·property tax·loan interest) ₩15–25M/year
+  - Basic living expenses ₩30–40M/year
+  - **Remaining savings potential ₩30–50M/year** (ideal case; actual varies widely)
+  - 10-year compounded (4% real return assumption) accumulation: ₩400–600M in financial assets
+  - **Realistic FIRE target**: Coast FIRE at age 45–50 + National Pension·homeownership + retirement in early 60s
+- **Three-child specifics**: Considering education costs·independence support (marriage·housing), *Lean FIRE is unrealistic*. **Coast FIRE or Barista FIRE** is reasonable.
+- **Ulsan trade-up funds = short-term liquidity bucket**. Separate from the investment portfolio and hold in MMF·short-term bonds·deposits.
 
-### 시뮬레이션 예시 (추천 아님, 구조 이해용)
+### Simulation Example (Not a Recommendation, for Structural Understanding)
 
 ```
-현재 (2026):
-- 연소득 1.8억, 세후 1.25억, 연 저축 4천만
-- 금융자산 가정: 2억 (연금 + ISA + 일반)
-- 자가 시세 가정: 7억 (울산), 대출 2억
+Current (2026):
+- Annual income ₩180M, after-tax ₩125M, annual savings ₩40M
+- Financial assets assumption: ₩200M (pension + ISA + general)
+- Homeownership market value assumption: ₩700M (Ulsan), loan ₩200M
 
-목표: 55세 Barista FIRE (부분 은퇴)
-  - 55세 필요 자금 = 연 지출 × 25 × 0.7 (국민연금·자가 반영)
-  - 연 지출 5천만 원 가정 → 자산 8.75억 목표
+Target: Barista FIRE (partial retirement) at age 55
+  - Required funds at age 55 = Annual spending × 25 × 0.7 (National Pension·homeownership adjustment)
+  - Assuming ₩50M annual spending → ₩875M asset target
 
-경로:
-  - 향후 15년 연 저축 4천 + 연 6% 복리
-  - FV = 2억 × 1.06^15 + 4천 × ((1.06^15-1)/0.06)
-  - ≈ 4.8억 + 9.3억 = 14억 (명목)
-  - 실질(인플레 2.5% 조정) ≈ 9.7억 → 목표 달성 범위
+Path:
+  - Over next 15 years, annual savings ₩40M + 6% compounding
+  - FV = ₩200M × 1.06^15 + ₩40M × ((1.06^15-1)/0.06)
+  - ≈ ₩480M + ₩930M = ₩1.4B (nominal)
+  - Real (adjusted for 2.5% inflation) ≈ ₩970M → within target range
 
-리스크:
-  - 자녀 대학·유학 지원 시 -2~5억
-  - 하락장 sequence risk (55세 직전 40% 하락)
-  - 갈아타기 시 부동산 자산 변동
-  - 근로소득 중단 리스크 (해고·건강)
+Risks:
+  - -₩200–500M if supporting children for university·study abroad
+  - Drawdown sequence risk (40% drop just before age 55)
+  - Real estate asset fluctuation during trade-up
+  - Earned-income interruption risk (layoff·health)
 ```
 
-*이는 구조 설명 예시이며, 실제 플랜은 매년 재계산 필요. 모든 숫자는 가정치.*
+*This is an example for structural explanation; the actual plan must be recalculated annually. All numbers are assumptions.*
 
-## 안티패턴 & 과적용
+## Anti-Patterns & Over-Application
 
-- **미국 4% 룰 복붙** — 한국 저금리·고령화 반영 안 됨
-- **국민연금 무시** — 자산 계산에서 빼면 과도 저축
-- **부동산 없이 계산** — 한국 자가 소유 효과 큼
-- **Lean FIRE 강박** — 극단 절약 → 번아웃 → FIRE 포기 사례 많음
-- **근로소득 0 설계** — Barista FIRE처럼 일부 일하는 게 심리·건보료·리스크 모두 유리한 경우 많음
-- **아이 셋인데 Lean FIRE 목표** — 비현실적. Fat FIRE 또는 Coast FIRE 재검토
-- **단일 시장 집중** — 한국 주식 100%로 FIRE 시도 → 일본식 장기 정체에 취약
-- **은퇴 시점 집중 매도** — 대규모 양도세·건보료 동시 타격
+- **Copy-pasting the U.S. 4% rule** — Does not reflect Korean low rates·aging
+- **Ignoring National Pension** — Over-saving if excluded from asset calculation
+- **Calculating without real estate** — The homeownership effect in Korea is large
+- **Lean FIRE obsession** — Extreme frugality → burnout → many cases of abandoning FIRE
+- **Designing for zero earned income** — Having some work, like Barista FIRE, is often advantageous psychologically·for health insurance premium (건보료)·and risk-wise
+- **Lean FIRE target with three children** — Unrealistic. Revisit as Fat FIRE or Coast FIRE
+- **Single-market concentration** — Attempting FIRE with 100% Korean equities → vulnerable to Japan-style long-term stagnation
+- **Concentrated selling at retirement point** — Simultaneous hit from massive capital gains tax·health insurance premium (건보료)
 
-## 한계
+## Limitations
 
-1. **미래 제도 불확실성** — 국민연금 지급률·개시 연령·세제 모두 변경 가능
-2. **인플레 시나리오** — 고인플레 시 SWR 유효성 흔들림
-3. **의료비 예측 불가** — 노년 의료비는 FIRE 계산의 최대 불확실성
-4. **자녀 지원 범위** — 결혼·주택 지원 여부가 수억 단위 차이
-5. **심리적 어려움** — FIRE 달성 후 의미·정체성 상실 이슈 (post-FIRE depression)
-6. **4% 룰 실증 기반**: 미국 20세기 데이터. 한국 실증은 데이터 부족
-7. **한국 부동산 사이클 영향**: 자산의 70%가 부동산인 경우 주택 사이클이 FIRE 전체를 지배
+1. **Future institutional uncertainty** — National Pension payment rate·commencement age·tax system all subject to change
+2. **Inflation scenarios** — SWR validity shakes under high inflation
+3. **Medical expenses unpredictable** — Elderly medical expenses are the greatest uncertainty in FIRE calculations
+4. **Scope of child support** — Whether to support marriage·housing makes hundreds-of-millions difference
+5. **Psychological difficulty** — Loss of meaning·identity after FIRE achievement (post-FIRE depression)
+6. **Empirical basis of the 4% rule**: U.S. 20th-century data. Korean empirical data is scarce
+7. **Influence of Korean real estate cycles**: If 70% of assets are in real estate, the housing cycle dominates FIRE as a whole
 
-## 이 프레임워크와 함께 쓰는 것들
+## What to Use with This Framework
 
-- `bogleheads` — FIRE 축적의 표준 엔진
-- `korean-tax-optimization` — 계좌 구조 설계
-- `rebalancing` — 인출기 bucket rebalancing
-- `all-weather` — 인출기 방어적 배분
-- `dollar-cost-averaging` — 축적 자동화
-- `behavioral-biases` — 장기 20년+ 지속을 위한 심리 구조
+- `bogleheads` — Standard engine for FIRE accumulation
+- `korean-tax-optimization` — Account structure design
+- `rebalancing` — Bucket rebalancing in the withdrawal phase
+- `all-weather` — Defensive allocation in the withdrawal phase
+- `dollar-cost-averaging` — Accumulation automation
+- `behavioral-biases` — Psychological structure for 20+ year persistence
 
-## 이 프레임워크가 *틀렸을 때*
+## When This Framework Is *Wrong*
 
-- 자산 1~2억 미만 — FIRE 계산보다 *저축률 자체 높이기*가 먼저
-- 사업·자영업 → 소득 불안정성 별도 고려. 단순 4% 룰 적용 불가.
-- 부동산 90%+ 자산 집중 → `realty` 프레임으로 별도 설계
-- 극심한 변동성 혐오 → Lean FIRE보다 *오래 일하는 편*이 심리적으로 나을 수 있음
+- Assets under ₩100–200M — *Raising the savings rate itself* comes first, before FIRE calculations
+- Self-employed·small business → income volatility must be considered separately. Simple 4% rule inapplicable.
+- 90%+ real estate concentration → design separately with the `realty` framework
+- Extreme volatility aversion → *working longer* may be psychologically better than Lean FIRE
 
-## 추가 학습
+## Further Study
 
 - Bengen, W. (1994). "Determining Withdrawal Rates Using Historical Data."
 - Cooley, Hubbard, Walz. "Trinity Study" (1998).
-- Blanchett, D. & Finke, M. — 현대 SWR 재검토 논문들.
+- Blanchett, D. & Finke, M. — Modern SWR review papers.
 - Robin, V. & Dominguez, J. *Your Money or Your Life*.
-- 한국 적용:
-  - 강환국 *하면 된다! 퀀트투자*, *거인의 포트폴리오* — 한국 백테스트 FIRE
-  - 김성일 *마법의 돈 굴리기*
-  - 박곰희 유튜브 — 한국 FIRE 실무
-- 국민연금공단 노후준비서비스 — 공식 예상수령액 조회
-- **주의**: 모든 수치는 2026년 4월 기준. 제도·세제·연금 개시연령 모두 변경 가능.
+- Korean adaptations:
+  - Kang Hwan-kook *You Can Do It! Quant Investing*, *Portfolio of Giants* — Korean backtested FIRE
+  - Kim Seong-il *The Magic of Rolling Money*
+  - Park Gomhee YouTube — Korean FIRE practice
+- National Pension Service Retirement Preparation Service — Official expected benefits inquiry
+- **Note**: All figures are as of April 2026. The system·tax code·pension commencement age are all subject to change.

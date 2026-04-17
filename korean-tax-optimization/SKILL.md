@@ -1,229 +1,229 @@
 ---
 name: korean-tax-optimization
 version: "0.1.0"
-description: "한국 투자자의 세제 최적화 — ISA(일반·중개형·서민형), 연금저축, IRP, 해외주식 양도세, 배당·이자소득세, 금투세 논의, 건보료 영향. 계좌 우선순위와 세후 수익률 최대화 프레임."
+description: "Tax optimization for Korean investors — ISA (general/brokerage/low-income), pension savings (연금저축), IRP, overseas stock capital gains tax, dividend/interest income tax, financial investment tax discussions, health insurance premium (건보료) impact. Account prioritization and after-tax return maximization framework."
 ---
 
 # Korean Tax Optimization
 
-## 한 줄 요약
+## One-Line Summary
 
-**한국에선 수익률보다 세후 수익률이 중요하다.** ISA·연금저축·IRP 같은 세제 유리 계좌를 **순서대로** 채우는 것만으로 장기 자산의 15~30%를 더 남길 수 있다. 종목 선택보다 *계좌 구조*가 먼저.
+**In Korea, after-tax returns matter more than nominal returns.** Simply filling tax-advantaged accounts like ISA, pension savings (연금저축), and IRP **in the right order** can preserve 15–30% more of your long-term assets. *Account structure* comes before stock selection.
 
-## 기본 원칙
+## Core Principles
 
-1. **과세 구조부터 이해** — 수익의 종류·시점·한도가 모두 다르게 과세됨
-2. **계좌 우선순위** — 세제 혜택이 큰 계좌부터 한도까지 채운다
-3. **세후 수익률 관점** — 액면 수익률 비교는 거짓말
-4. **제도는 변한다** — 2026년 4월 기준이며 매년 바뀔 수 있음
-5. **건보료·종합과세** 효과 — 피부양자 탈락 시 수백만 원 비용
+1. **Understand the tax structure first** — Income type, timing, and limits are all taxed differently
+2. **Account priority** — Fill accounts with the largest tax benefits first, up to their limits
+3. **After-tax return perspective** — Comparing nominal returns is a lie
+4. **The system changes** — Based on April 2026, subject to annual changes
+5. **Health insurance premium (건보료) · comprehensive taxation effects** — Losing dependent status can cost millions of won
 
-## 한국 투자 소득 과세 체계 (2026년 4월 기준, 변동 가능)
+## Korean Investment Income Tax System (As of April 2026, Subject to Change)
 
-> **검증 원칙**: 아래 수치·한도는 2026년 4월 시점 공개 정보 기준. 세법은 매년 개정되며 시행령·고시로 세부 변경 잦음. **실제 세무 판단 전 국세청 홈택스·세무사 확인 필수**. 이 문서는 구조 이해용.
+> **Verification Principle**: Figures and limits below are based on publicly available information as of April 2026. Tax law is revised annually with frequent detailed changes via enforcement decrees and notifications. **Must verify with National Tax Service Hometax or a tax accountant before actual tax decisions**. This document is for structural understanding.
 
 
-### 1. 배당·이자소득 (금융소득)
-- **15.4% 원천징수** (이자·배당소득세 14% + 지방소득세 1.4%)
-- **연 2천만 원 초과 시 종합과세** — 누진세율(6~45%) 적용
-- 건강보험 피부양자 탈락 가능 (연 2천만 원 초과)
+### 1. Dividend/Interest Income (Financial Income)
+- **15.4% withholding tax** (interest/dividend income tax 14% + local income tax 1.4%)
+- **Comprehensive taxation if exceeding KRW 20 million/year** — Progressive rates (6–45%) apply
+- Possible loss of health insurance dependent status (exceeding KRW 20 million/year)
 
-### 2. 국내 주식·국내 주식형 ETF 매매차익
-- 개인 **비과세** (대주주 제외: 코스피 기준 한 종목 보유가액 50억 이상 또는 지분율 1% 이상 — 2023년 말 10억→50억으로 상향 후 2026.4 기준 유지. *매년 시행령 확인 필요*)
-- **금투세**: 2024년 12월 국회 폐지 확정 (2025 시행 무산). 2026년 4월 현재 **미도입**. 단, 향후 재도입 논의 가능성 상존 — *매년 확인 필요*
-- 증권거래세: 2024년 0.18% → 2025년 0.15% → 2026년 0.15% 유지 (농특세 0.15% 포함, 코스피 기준). 코스닥은 별도. *매년 인하 스케줄 확인 필요*
+### 2. Domestic Stocks · Domestic Stock-Type ETF Capital Gains
+- **Tax-exempt for individuals** (excluding major shareholders: KOSPI basis, single stock holdings of KRW 5 billion+ or ownership ratio of 1%+ — raised from KRW 1 billion → 5 billion at end of 2023, maintained as of 2026.4. *Annual enforcement decree check required*)
+- **Financial investment tax**: Abolition confirmed by National Assembly in December 2024 (2025 implementation cancelled). As of April 2026, **not introduced**. However, possibility of future reintroduction discussions remains — *annual verification required*
+- Securities transaction tax: 0.18% in 2024 → 0.15% in 2025 → maintained at 0.15% in 2026 (including 0.15% rural development tax, KOSPI basis). KOSDAQ separate. *Annual reduction schedule verification required*
 
-### 3. 국내 주식형 이외 ETF (해외주식 ETF, 채권 ETF, 원자재 ETF, 리츠)
-- **배당소득세 15.4%** (매매차익도 과세 대상, 보유기간 과표 증가분 기준)
-- 종합과세 한도 포함
+### 3. Non-Domestic Stock-Type ETFs (Overseas Stock ETFs, Bond ETFs, Commodity ETFs, REITs)
+- **Dividend income tax 15.4%** (capital gains also taxable, based on holding period taxable base increase)
+- Included in comprehensive taxation limit
 
-### 4. 해외 주식 (직접투자)
-- **양도세 22%** (지방세 포함) — 매도 시 실현된 양도차익 대상
-- **연 250만 원 공제**
-- 배당은 현지 원천징수(미국 15%) + 한국 추가 없음 (조세조약)
-- 단, 배당소득이 연 2천만 원 초과 시 종합과세 대상
+### 4. Overseas Stocks (Direct Investment)
+- **Capital gains tax 22%** (including local tax) — Applies to realized capital gains upon sale
+- **KRW 2.5 million annual deduction**
+- Dividends are withheld at source (US 15%) with no additional Korean tax (tax treaty)
+- However, if dividend income exceeds KRW 20 million/year, subject to comprehensive taxation
 
-### 5. 금 현물 (KRX)
-- **매매차익 비과세** (2026년 기준)
-- 세제상 유리 (단 수수료·스프레드 고려)
+### 5. Physical Gold (KRX)
+- **Capital gains tax-exempt** (as of 2026)
+- Tax-advantageous (consider fees and spreads)
 
-### 6. 암호화폐
-- 과세 예정이었으나 계속 유예. 2027년 이후 도입 여부 주시.
+### 6. Cryptocurrency
+- Taxation was planned but continuously deferred. Watch for introduction after 2027.
 
-## 세제 유리 계좌
+## Tax-Advantaged Accounts
 
-### 1. 연금저축 (개인연금)
+### 1. Pension Savings (연금저축, Personal Pension)
 
-- **연 600만 원 세액공제 한도** (2023년 세법 개정 후, 이전 400만에서 상향). IRP 합산 **900만 원**까지 세액공제.
-- 납입 한도(총액)는 연 1,800만 원 — 세액공제는 600만까지만, 초과 납입은 이연 과세만 활용
-- **세액공제율**: 종합소득 4,500만 이하(근로 5,500만 이하) **16.5%**, 초과 **13.2%** (지방세 포함)
-- 운용 중 **과세 이연**
-- **수령 시 연금소득세 나이별 차등** (55세 이후, 5년 이상 + 연금수령한도 내 + 연 1,500만 원 이하 분할수령 시):
-  - 55~69세: 5.5% (지방세 포함)
-  - 70~79세: 4.4%
-  - 80세 이상: 3.3%
-  - 연 1,500만 초과 시 종합과세 또는 16.5% 분리과세 선택 (2024년 개정 후).
-- **중도 해지 시 기타소득세 16.5%** — 세액공제 받은 원금 + 운용수익 모두 페널티 대상
-- 투자 가능 자산: 공모펀드, ETF (주식형 포함), 예금, 채권
-- **핵심 혜택**: 세액공제 즉시 + 과세 이연 + 낮은 연금소득세
-- *확인 필요*: 2026년 세법 개정 동향 — 공제 한도·세율·연금 수령 기준은 매년 변경 가능
+- **KRW 6 million annual tax credit limit** (after 2023 tax law revision, up from previous KRW 4 million). Combined with IRP, tax credit up to **KRW 9 million**.
+- Contribution limit (total) is KRW 18 million annually — tax credit only up to KRW 6 million; excess contributions only utilize tax deferral
+- **Tax credit rate**: 16.5% for comprehensive income under KRW 45 million (earned income under KRW 55 million), **13.2%** for exceeding (including local tax)
+- **Tax deferral** during operation
+- **Differentiated pension income tax by age upon receipt** (after age 55, 5+ years, within pension receipt limit + annual KRW 15 million or less in installments):
+  - Ages 55–69: 5.5% (including local tax)
+  - Ages 70–79: 4.4%
+  - Age 80+: 3.3%
+  - If exceeding KRW 15 million/year, choice between comprehensive taxation or 16.5% separate taxation (after 2024 revision).
+- **Early termination: other income tax 16.5%** — Both tax-credited principal and operating gains subject to penalty
+- Eligible assets: public funds, ETFs (including stock-type), deposits, bonds
+- **Key benefits**: Immediate tax credit + tax deferral + low pension income tax
+- *Verification needed*: 2026 tax law revision trends — credit limits, rates, and pension receipt criteria subject to annual change
 
-### 2. IRP (개인형 퇴직연금)
+### 2. IRP (Individual Retirement Pension)
 
-- **연 900만 원까지 세액공제** (연금저축과 합산)
-- 운용 중 **과세 이연**
-- 수령 시 연금소득세 55~69세 5.5% / 70~79세 4.4% / 80세+ 3.3% (퇴직금 원천 이전분은 퇴직소득세 30~40% 감면 별도 체계)
-- **투자 자산 제약**: 위험자산(주식형) 70% 상한
-- **중도 인출 제한**: 무주택자 주택 구입 등 예외만
-- 퇴직금 이전·추가납입 모두 가능
+- **Tax credit up to KRW 9 million annually** (combined with pension savings)
+- **Tax deferral** during operation
+- Upon receipt: pension income tax 5.5% ages 55–69 / 4.4% ages 70–79 / 3.3% ages 80+ (retirement severance source transfers have separate 30–40% retirement income tax reduction system)
+- **Investment asset restrictions**: 70% cap on risk assets (stock-type)
+- **Early withdrawal restrictions**: Only exceptions like first-time home purchase
+- Both retirement fund transfers and additional contributions allowed
 
 ### 3. ISA (Individual Savings Account)
 
-- **연 2천만 원 납입 한도**, 최대 **1억 원**
-- 3년 의무 보유
-- **200만 원 비과세** (서민형 400만 원, 농어민형 400만 원)
-- **9.9% 분리과세** (한도 초과 수익)
-- 종합과세 회피 효과 큼
-- 2024년부터 국내상장 해외ETF·국내주식 투자 가능
-- **종류**:
-  - 신탁형: 은행·증권사에서 직접 매매
-  - 중개형: 주식·ETF 직접 매매 가능 (개인이 운용)
-  - 일임형: 운용사가 관리
-- **중개형 ISA**가 개인 투자자에게 가장 유리한 선택
+- **KRW 20 million annual contribution limit**, maximum **KRW 100 million**
+- 3-year mandatory holding period
+- **KRW 2 million tax-exempt** (low-income: KRW 4 million, farmer/fisher: KRW 4 million)
+- **9.9% separate taxation** (income exceeding limit)
+- Large comprehensive taxation avoidance effect
+- From 2024, domestic-listed overseas ETFs and domestic stocks can be invested
+- **Types**:
+  - Trust type: Direct trading at banks/securities firms
+  - Brokerage type: Direct stock/ETF trading possible (managed by individual)
+  - Discretionary type: Managed by asset manager
+- **Brokerage ISA** is the most advantageous choice for individual investors
 
-### 4. 퇴직연금 DC/DB
-- 회사 부담분 별도
-- DC형은 본인 운용 가능 (IRP와 유사)
-- 퇴직 시 IRP로 이전
+### 4. Retirement Pension DC/DB
+- Company contribution separate
+- DC type allows self-management (similar to IRP)
+- Transfer to IRP upon retirement
 
-### 5. 장기주택저축, 청년도약계좌 등 생애주기 상품
-- 해당자만 활용
-- 청년도약계좌는 조건 맞으면 연 최대 864만 원 정부 기여
+### 5. Long-term Housing Savings, Youth Leap Account, etc. Life-cycle Products
+- Use only if eligible
+- Youth Leap Account can receive up to KRW 8.64 million in government contributions annually if conditions are met
 
-## 계좌 우선순위 (일반적 프레임)
-
-```
-1순위: 연금저축 세액공제 한도 (600만 원)
-  → 즉시 세액공제 13.2~16.5% (연 79~99만 환급)
-  → "돌려받는 세금"이 즉시 수익 (동일 ETF 기준 일반계좌 대비 연 +13~16%p 실효수익)
-
-2순위: IRP 추가 세액공제 (연금저축 합산 900만 원)
-  → 추가 300만 × 13.2~16.5% = 연 40~49만 환급
-  → 단, 유동성 제약 큼 (55세 이전 인출 사실상 불가)
-
-3순위: ISA 2천만 원 (중개형)
-  → 9.9% 분리과세 + 200만 원 비과세 (서민형 400만)
-  → 종합과세·건보료 방어 이중 효과
-  → 만기 연금저축 이전 시 추가 세액공제 300만 가능
-
-4순위: 일반 위탁계좌 (국내 주식·ETF 중심)
-  → 국내 주식형은 매매차익 비과세 (금투세 미도입 2026.4 기준)
-  → 유동성 자유
-
-5순위: 일반 위탁계좌 (해외 직투)
-  → 양도세 22% 각오. 250만 원 공제 매년 활용.
-  → 교체매매로 과세기준가 step-up
-```
-
-**주의**:
-- 젊은 층(20·30대)은 유동성 확보 필요 → 연금계좌 올인 금지. 일반 계좌도 병행.
-- 중장년층(40대+)은 연금계좌 한도 최대로 활용이 유리.
-
-## 세후 수익률 계산 프레임
+## Account Priority (General Framework)
 
 ```
-세후 CAGR = (명목 수익률 × (1 - 실효 세율)) × (1 - 비용률)
+1st Priority: Pension savings tax credit limit (KRW 6 million)
+  → Immediate tax credit 13.2–16.5% (KRW 790K–990K annual refund)
+  → "Refunded taxes" are immediate returns (vs. general account with same ETF, effective annual return +13–16%p)
 
-예시: 해외 ETF 직투, 연 7% 수익, 보수 0.1%
-- 양도세 22%: 매도 시점만 발생 → 20년 보유 시 실효 세율 낮음
-- 실효 세율 (20년 보유, 매도 시 일괄): ≈ 8~10% 누적
-- 세후 연평균 ≈ 6.2~6.5%
+2nd Priority: IRP additional tax credit (combined with pension savings, KRW 9 million)
+  → Additional KRW 3 million × 13.2–16.5% = KRW 400K–490K annual refund
+  → However, major liquidity constraint (effectively no withdrawal before age 55)
 
-동일 투자 연금저축 내:
-- 운용 중 과세 이연
-- 55세+ 연금수령 시 3.3~5.5%
-- 세액공제 16.5% 즉시 환급 포함 → 세후 실효 CAGR 8~9% 상당
+3rd Priority: ISA KRW 20 million (brokerage type)
+  → 9.9% separate taxation + KRW 2 million tax-exempt (low-income KRW 4 million)
+  → Dual effect: comprehensive taxation · health insurance premium defense
+  → Additional KRW 3 million tax credit possible upon transfer to pension savings at maturity
+
+4th Priority: General brokerage account (centered on domestic stocks/ETFs)
+  → Domestic stock-type capital gains tax-exempt (financial investment tax not introduced as of 2026.4)
+  → Free liquidity
+
+5th Priority: General brokerage account (direct overseas investment)
+  → Accept 22% capital gains tax. Use KRW 2.5 million deduction annually.
+  → Step-up taxable base through replacement trading
 ```
 
-→ 같은 자산에 투자해도 *계좌만 다르면* 연 1.5~2.5%p 차이. 20년 누적은 40~60% 차이.
+**Cautions**:
+- Young people (20s, 30s) need liquidity → no all-in on pension accounts. Parallel general accounts too.
+- Middle-aged and older (40s+) benefit from maximum pension account utilization.
 
-## 한국 특수 세제 이슈
+## After-Tax Return Calculation Framework
 
-### 1. 건강보험 피부양자 탈락 (2022.9 개편 이후 체계, 2026.4 기준)
+```
+After-tax CAGR = (Nominal return × (1 - Effective tax rate)) × (1 - Cost ratio)
 
-- 배우자·자녀가 피부양자 → 건보료 납부 없음
-- **탈락 기준** (하나라도 해당 시):
-  - 연 합산소득 2천만 원 초과 (사업·근로·연금·금융·기타 전체)
-  - **금융소득(이자+배당) 연 1천만 원 초과 시에도 소득 인식** — 1천 이하는 0으로 간주, 초과 시 전액 합산 (주의!)
-  - 재산 과세표준 5.4억 초과 + 소득 1천만 원 초과
-  - 재산 과세표준 9억 초과 (소득 무관)
-  - 사업자등록 있고 사업소득 발생
-- 탈락 시 지역가입자로 소득·재산 합산 건보료 월 20~60만+ 발생 (연 수백만 원)
-- **금융소득 2천만 원 경계뿐 아니라 "1천만 원 경계"도 중요** — ISA 비과세·분리과세 범위 내 수익과 연금저축·IRP의 분리과세 연금수령액(연 1,500만 이하)은 피부양자 소득 산정에서 **일반적으로 제외**되므로 세제 유리 계좌 활용이 이중 방어 (*건보공단 세부 고시 변경 가능, 확인 필요*)
+Example: Overseas ETF direct investment, 7% annual return, 0.1% fees
+- 22% capital gains tax: Only at sale → Low effective tax rate for 20-year holding
+- Effective tax rate (20-year holding, lump-sum sale): ≈ 8–10% cumulative
+- After-tax annual average ≈ 6.2–6.5%
 
-### 2. 금융소득 종합과세 (연 2천만 원 경계)
+Same investment within pension savings:
+- Tax deferral during operation
+- Pension receipt 3.3–5.5% at age 55+
+- Including 16.5% immediate tax credit refund → equivalent to 8–9% after-tax effective CAGR
+```
 
-- 배당·이자 초과분 종합과세
-- 누진세율 6~45% + 지방세 → 최고 49.5%
-- **대응**: ISA 활용, 분리과세 상품(장기저축성보험·비상장 채권 등) 활용, 배당 대신 성장 ETF 선호
+→ Investing in the same asset, *just changing the account* creates a 1.5–2.5%p annual difference. Over 20 years cumulative, a 40–60% difference.
 
-### 3. 양도세 250만 원 공제 전략
+## Korean-Specific Tax Issues
 
-- 매년 해외주식 양도차익 250만 원까진 면세
-- 수익 난 종목 일부 팔고 다시 사기(교체매매) = 과세 기준 올리기(step-up)
-- 손실 종목은 당해에 매도 → 이익 종목과 상계 (손실상계)
+### 1. Loss of Health Insurance Dependent Status (System after September 2022 reform, as of April 2026)
 
-### 4. ISA 만기 연금계좌 전환
+- Spouse/children as dependents → no health insurance premium payments
+- **Disqualification criteria** (if any one applies):
+  - Combined annual income exceeds KRW 20 million (business, earned, pension, financial, other all combined)
+  - **Income recognized even when financial income (interest+dividends) exceeds KRW 10 million/year** — treated as 0 if under KRW 10 million, fully combined when exceeded (caution!)
+  - Property tax base exceeds KRW 540 million + income exceeds KRW 10 million
+  - Property tax base exceeds KRW 900 million (regardless of income)
+  - Business registration with business income
+- Upon disqualification, regional subscribers have income/property combined health insurance premiums of KRW 200K–600K+ monthly (several million won annually)
+- **Not only the KRW 20 million financial income boundary but also the "KRW 10 million boundary" matters** — ISA tax-exempt/separate taxation range income and pension savings/IRP separate taxation pension receipts (within KRW 15 million annually) are **generally excluded** from dependent income calculation, making tax-advantaged accounts a dual defense (*detailed Health Insurance Corporation notification subject to change, verification needed*)
 
-- ISA 만기 해지금을 60일 내 연금계좌로 납입 시 **전환금액의 10% (연 최대 300만 원) 세액공제** 추가 인정
-- 기존 연금저축·IRP 900만 세액공제 한도와는 별도 추가분
-- **ISA → 연금계좌 롤오버**가 고급 세테크 (확인 필요: 시행령 조건 매년 변경 가능)
+### 2. Financial Income Comprehensive Taxation (KRW 20 million annual boundary)
 
-### 5. 금투세 도입 시 시나리오
+- Dividend/interest excess subject to comprehensive taxation
+- Progressive rates 6–45% + local tax → maximum 49.5%
+- **Response**: ISA utilization, separate taxation products (long-term savings insurance, non-listed bonds, etc.), prefer growth ETFs over dividends
 
-- 도입 시: 국내 주식형 매매차익 5천만 원 초과분 22~27.5% 과세
-- 해외 주식과 손익 통산
-- 손실 이월공제 5년
-- **도입 시점 확인 필수** — 현재(2026.4) 미도입이지만 재논의 지속
+### 3. KRW 2.5 Million Capital Gains Tax Deduction Strategy
 
-## 안티패턴 & 과적용
+- Up to KRW 2.5 million overseas stock capital gains tax-exempt annually
+- Sell some winning stocks and rebuy (replacement trading) = raise taxable base (step-up)
+- Sell loss stocks in the year → offset against winning stocks (loss offset)
 
-- **한도 계산 안 하고 ISA 개설** — 중복 개설 불가·한도 활용 실패
-- **연금저축 중도 해지** — 16.5% 기타소득세로 공제분 회수당함. 유동성 필요하면 처음부터 안 넣어야.
-- **IRP 내 주식 100%** — 위험자산 70% 상한 위반, 추가 납입 제한
-- **해외 직투 + 고배당** — 배당 종합과세 + 양도세 이중 부담
-- **건보료 무시** — 연 2천만 원 초과 설계는 피부양자 탈락 비용 재계산 필수
-- **세금 중심으로 투자 왜곡** — "세금 때문에" 비합리적 자산 배분. 세금은 *보조 변수*지 지배 변수 아님.
-- **2천만 원 경계 집착 실패** — ETF 분배금 누적 예측 안 하다 경계 넘김
+### 4. ISA Maturity Pension Account Conversion
 
-## 한계
+- When ISA maturity redemption amount is contributed to pension account within 60 days, **additional tax credit recognized for 10% of conversion amount (max KRW 3 million/year)**
+- Additional benefit separate from existing pension savings/IRP KRW 9 million tax credit limit
+- **ISA → pension account rollover** is advanced tax optimization (verification needed: enforcement decree conditions subject to annual change)
 
-1. **제도는 매년 바뀐다** — 금투세·ISA 한도·연금저축 공제율 모두 유동적
-2. **개인 상황별 최적해 다름** — 소득·자산·세율 구간·부양 상태에 따라 순서가 바뀜
-3. **세무사 조언의 한계** — 소액 투자자엔 세무 상담 비용이 이득 초과
-4. **국제조세 변화** — FATCA, CRS, 조세조약 변화
-5. **세금 최적화가 리스크 감수로 유도** — 고세율 피하려 ELS·파생 상품 선택 → 다른 리스크
-6. **실거주 연계성** — 부동산 세제(재산세·종부세·양도세·취득세)와 연동해서 보지 않으면 왜곡
+### 5. Financial Investment Tax Introduction Scenarios
 
-## 이 프레임워크와 함께 쓰는 것들
+- If introduced: 22–27.5% tax on domestic stock-type capital gains exceeding KRW 50 million
+- Profit/loss consolidation with overseas stocks
+- Loss carryforward for 5 years
+- **Must verify introduction timing** — currently (2026.4) not introduced, but ongoing reconsideration
 
-- `bogleheads` — 저비용 인덱스를 세제 유리 계좌에서 운용하면 시너지 극대
-- `fire-korean` — 한국 FIRE 경로는 세제 설계 없이 불가
-- `rebalancing` — 세금 효율 리밸런싱 순서
-- `dollar-cost-averaging` — 자동이체 DCA를 세제 유리 계좌에서
+## Anti-patterns & Over-application
 
-## 이 프레임워크가 *틀렸을 때*
+- **Opening ISA without calculating limits** — duplicate opening impossible, limit utilization fails
+- **Early termination of pension savings** — 16.5% other income tax recaptures credited amount. If liquidity is needed, don't contribute in the first place.
+- **100% stocks in IRP** — violates 70% risk asset cap, additional contribution restrictions
+- **Direct overseas investment + high dividends** — double burden of dividend comprehensive taxation + capital gains tax
+- **Ignoring health insurance premium** — designs exceeding KRW 20 million/year must recalculate dependent disqualification costs
+- **Distorting investment around taxes** — irrational asset allocation "because of taxes". Taxes are an *auxiliary variable*, not a dominant variable.
+- **Failure in KRW 20 million boundary obsession** — crossing the boundary without predicting ETF distribution accumulation
 
-- 세금보다 수익 구조 자체가 문제 → `modern-portfolio-theory` 등으로 돌아가 재설계
-- 자산이 너무 적음(수천만 원 미만) → 세제보다 *저축률 자체*가 지배 변수
-- 사업자·임대사업 복합 → 종합 세무사 상담 필수 (이 프레임 외)
-- 부동산 중심 자산 → `realty` 스킬과 세제 통합 설계
+## Limitations
 
-## 추가 학습
+1. **The system changes annually** — Financial investment tax, ISA limits, pension savings credit rates all fluctuate
+2. **Optimal solution varies by individual situation** — order changes based on income, assets, tax brackets, dependency status
+3. **Limits of tax accountant advice** — tax consultation costs exceed benefits for small investors
+4. **International tax changes** — FATCA, CRS, tax treaty changes
+5. **Tax optimization induces risk-taking** — choosing ELS/derivatives to avoid high tax rates → different risks
+6. **Residential linkage** — distorted without integrated view with real estate taxes (property tax, comprehensive real estate tax, capital gains tax, acquisition tax)
 
-- 국세청 홈택스 (hometax.go.kr) — 공식 세법·한도 확인
-- 금융투자협회 ISA/연금저축 안내 (kofia.or.kr)
-- 국민연금공단 — 국민연금 예상 수령액 조회
-- 택스워치·세정신문·조세일보 — 정책 변화 추적
-- 한국 세무 책: 택스코디 *세금계산기*, 제네시스박 *ISA·연금 사용법*
-- **주의**: 모든 세무 판단은 본인 사정 반영해 세무사·FP 확인 필수. 이 문서는 교육 목적.
+## What to Use with This Framework
+
+- `bogleheads` — synergy maximized when low-cost index is operated in tax-advantaged accounts
+- `fire-korean` — Korean FIRE path impossible without tax design
+- `rebalancing` — tax-efficient rebalancing order
+- `dollar-cost-averaging` — automatic transfer DCA in tax-advantaged accounts
+
+## When This Framework is *Wrong*
+
+- Problem is the return structure itself rather than taxes → return to `modern-portfolio-theory` etc. for redesign
+- Assets too small (under tens of millions of won) → *savings rate itself* is the dominant variable over taxation
+- Business owner/rental business complex → comprehensive tax accountant consultation essential (outside this framework)
+- Real estate-centered assets → integrated tax design with `realty` skill
+
+## Further Learning
+
+- National Tax Service Hometax (hometax.go.kr) — official tax law and limit verification
+- Korea Financial Investment Association ISA/pension savings guide (kofia.or.kr)
+- National Pension Service — National Pension expected receipt inquiry
+- Tax Watch, Sejong Newspaper, Joseilbo — policy change tracking
+- Korean tax books: Tax Coordi *Tax Calculator*, Genesis Park *How to Use ISA/Pension*
+- **Caution**: All tax decisions must be verified with tax accountants/FPs reflecting personal circumstances. This document is for educational purposes.
