@@ -1,151 +1,151 @@
 ---
 name: dollar-cost-averaging
 version: "0.1.0"
-description: "Dollar-Cost Averaging (DCA) — 일정 금액을 일정 주기로 나눠 매수. 타이밍 실패 리스크 분산, 행동 편향 제어. 이론적으로 기대값은 Lump-Sum보다 낮지만 감정 안정성·실행 가능성이 큰 장점."
+description: "Dollar-Cost Averaging (DCA) — buy at fixed intervals with fixed amounts. Diversifies timing-failure risk and controls behavioral bias. Theoretically has lower expected value than Lump-Sum, but offers major advantages in emotional stability and executability."
 ---
 
 # Dollar-Cost Averaging (DCA)
 
-## 한 줄 요약
+## One-Line Summary
 
-**"언제 살지 모르면 나눠 사라."** 일정 금액을 일정 주기로 매수. 고점 매수 리스크와 패닉 회피 리스크를 *시간 분산*으로 상쇄. 수학적으로 최적은 아니지만 *실행 가능성*에서 압도적.
+**"If you don't know when to buy, split your purchases."** Buy fixed amounts at fixed intervals. Offsets the risk of buying at peaks and the risk of panic avoidance through *time diversification*. Not mathematically optimal, but overwhelmingly superior in *executability*.
 
-## 이론 기원
+## Theoretical Origins
 
-- **Benjamin Graham** — *The Intelligent Investor*에서 소개 ("formula plan").
-- 학술 연구: Constantinides(1979)는 이론적으로 Lump-Sum이 더 우월하다고 증명. 단, 심리·정보 비대칭 조건 무시.
-- 현대 행동재무 관점: Thaler, Shefrin — 후회회피·손실회피 극복 수단.
-- Vanguard, Morningstar 리서치: 역사적으로 2/3 경우 Lump-Sum이 DCA보다 수익 높으나 *변동성·최악 시나리오*는 DCA가 유리.
+- **Benjamin Graham** — introduced in *The Intelligent Investor* ("formula plan").
+- Academic research: Constantinides (1979) theoretically proved Lump-Sum is superior. However, ignores psychological/information asymmetry conditions.
+- Modern behavioral finance perspective: Thaler, Shefrin — a tool for overcoming regret aversion and loss aversion.
+- Vanguard, Morningstar research: historically, Lump-Sum outperforms DCA in 2/3 of cases, but DCA is superior in *volatility and worst-case scenarios*.
 
-## 핵심 개념
+## Core Concepts
 
-### 1. 수학적 본질
-- 시장 상승 추세 → Lump-Sum(일시불) 유리
-- 시장 횡보·하락 시작 → DCA 유리
-- **평균 매수 단가가 낮아지는** 효과 (저가에 더 많은 주식 매수)
+### 1. The Mathematical Essence
+- Rising market trend → Lump-Sum (one-time investment) advantageous
+- Sideways/declining market → DCA advantageous
+- Effect of **lowering the average purchase price** (buying more shares at lower prices)
 
 ### 2. DCA vs Lump-Sum (LSI)
-- Vanguard 2012 연구: 미국 시장 1926~2011, 10년 기준 **LSI가 2/3 확률로 승리** (평균 2.3%p)
-- 그러나 LSI의 최악 drawdown은 DCA보다 훨씬 큼
-- **기대수익**은 LSI, **효용(utility)**은 DCA가 우위일 수 있음
+- Vanguard 2012 study: U.S. market 1926–2011, 10-year horizon, **LSI wins with 2/3 probability** (average 2.3%p)
+- However, LSI's worst-case drawdown is far larger than DCA's
+- **Expected return** favors LSI; **utility** may favor DCA
 
-### 3. DCA의 진짜 가치
-- 수익률 향상이 아닌 *행동 제어*
-- 시장 타이밍 유혹 차단
-- 하락장에서 매수 계속 = 평균 단가 하락
-- 자동화 가능 → 감정 개입 최소
+### 3. DCA's True Value
+- Not return enhancement but *behavioral control*
+- Blocking the temptation of market timing
+- Continuing to buy in a downturn = lowering average price
+- Can be automated → minimizing emotional intervention
 
-### 4. Value Averaging (변형)
+### 4. Value Averaging (Variant)
 - Michael Edleson (1988)
-- 포트폴리오 가치가 목표 증가선에 맞도록 매수·매도 금액 조정
-- 하락 시 더 많이 매수, 상승 시 덜 매수
-- DCA보다 약간 우월하나 복잡도↑
+- Adjusts purchase/sale amounts so portfolio value tracks a target growth line
+- Buy more on declines, buy less on rises
+- Slightly superior to DCA but higher complexity
 
-## 언제 쓰나
+## When to Use
 
-- **매월 급여에서 적립** — DCA가 자연스러운 구조
-- 목돈 들어왔는데 *시장이 고평가로 느껴질 때* — 심리적 DCA
-- 처음 투자 시작하는 사람 — 한 번에 넣기 두려울 때
-- 변동성 공포 큰 사람 (→ `behavioral-biases`)
-- 장기 투자 자산 누적 (퇴직연금·연금저축·ISA)
+- **Accumulating monthly from salary** — DCA is the natural structure
+- When a lump sum comes in but *the market feels overvalued* — psychological DCA
+- First-time investors — when afraid to deploy all at once
+- Those with strong volatility fear (→ `behavioral-biases`)
+- Long-term asset accumulation (retirement pensions, pension savings (연금저축), ISA)
 
-## 실전 적용
+## Practical Application
 
-### 표준 DCA 실행
+### Standard DCA Execution
 
 ```
-1. 매월(or 격주) 고정 금액 결정
-   예: 월 100만원 S&P500 ETF 매수
-2. 자동이체 설정
-   - 증권사 자동투자 서비스 (국민·미래·한국·키움 등 지원)
-   - ISA·연금저축·IRP 자동매수 활용
-3. 매수 전략
-   - 목표 자산 배분 비중에 맞춰 여러 ETF 분산 매수
-4. "그만 두지 않기"
-   - 하락장일수록 *계속* 사야 평균 단가 하락
-   - 중단·축소는 DCA의 본질 파괴
-5. 리밸런싱은 분리
-   - DCA는 매수만. 비중 조정은 별도 규칙(→ `rebalancing`)
+1. Decide a fixed monthly (or bi-weekly) amount
+   e.g., 1,000,000 KRW/month buying S&P500 ETF
+2. Set up automatic transfers
+   - Brokerage auto-investment services (supported by Kookmin, Mirae Asset, Korea Investment, Kiwoom, etc.)
+   - Leverage ISA, pension savings (연금저축), IRP auto-purchase
+3. Purchase strategy
+   - Diversify purchases across multiple ETFs per target allocation weights
+4. "Don't quit"
+   - The deeper the downturn, the more you must *keep* buying to lower the average price
+   - Stopping/reducing destroys the essence of DCA
+5. Separate rebalancing
+   - DCA is buy-only. Weight adjustments follow separate rules (→ `rebalancing`)
 ```
 
-### Lump-Sum vs DCA 선택 프레임워크
+### Lump-Sum vs DCA Selection Framework
 
-| 조건 | 선택 |
+| Condition | Choice |
 |---|---|
-| 목돈이 이미 손에 있음 + 장기 투자 | **LSI** (기대값 우월) |
-| 목돈 + 변동성 공포 큼 | **6~12개월 DCA** (심리 안정) |
-| 월 급여에서 적립 | **DCA** (자연스러운 구조) |
-| 시장이 명백한 버블로 보임 | **12~24개월 DCA + 일부 안전자산 유지** |
-| 확신 없음 | **DCA** (후회 최소화) |
+| Lump sum already in hand + long-term investment | **LSI** (superior expected value) |
+| Lump sum + strong volatility fear | **6–12 month DCA** (psychological stability) |
+| Accumulating from monthly salary | **DCA** (natural structure) |
+| Market clearly looks like a bubble | **12–24 month DCA + retain some safe assets** |
+| No conviction | **DCA** (minimize regret) |
 
-### 기간 설계
-- 너무 짧음(3개월 이하) → Lump-Sum과 차이 미미
-- 너무 김(3년+) → 기회비용 과다
-- **6~18개월**이 일반적 권장 범위
+### Period Design
+- Too short (≤3 months) → little difference from Lump-Sum
+- Too long (3+ years) → excessive opportunity cost
+- **6–18 months** is the generally recommended range
 
-## 한국 맥락
+## Korean Context
 
-### 1. 한국에서 DCA 실행의 이점
-- **급여 소득자 구조**에 자연스럽게 맞음
-- ISA·연금저축·IRP 자동이체 시 세제 혜택 극대화
-- 거래 수수료 낮음 (국내 ETF 0.015~0.1%)
-- 소액 자동매수 가능 (1주 미만 소수점 매수 일부 증권사 지원)
+### 1. Benefits of Executing DCA in Korea
+- Naturally fits the **salaried-income structure**
+- Maximizes tax benefits when combined with ISA, pension savings (연금저축), IRP auto-transfers
+- Low transaction fees (domestic ETFs 0.015–0.1%)
+- Small-amount auto-purchase possible (fractional share purchases under 1 share supported by some brokerages)
 
-### 2. 한국 특유 DCA 주의점
-- **환 DCA**: 해외주식 DCA는 환율 분산 효과 포함. 원화 강세기엔 환 차익.
-- **세금 주기**: 해외주식은 1월 1일~12월 31일 기준 양도세 계산. 매수 시점 무관하나 매도 시점 조정 가능
-- **연 2천만원 배당·이자 소득 한도**: 분산 매수해도 누적 평가익·배당이 한도 초과하면 종합과세. ISA·연금계좌 우선.
-- **국내 ETF의 배당재투자 아님**: 분배금이 현금으로 나와 재투자 수동 필요 → 자동재투자 서비스 있는 계좌 활용
+### 2. Korea-Specific DCA Caveats
+- **Currency DCA**: DCA on overseas stocks includes a currency-diversification effect. FX gains during KRW strength.
+- **Tax cycle**: Overseas stock capital gains tax is calculated on a Jan 1 – Dec 31 basis. Purchase timing doesn't matter, but sale timing can be adjusted.
+- **Annual 20M KRW dividend/interest income ceiling**: Even with diversified purchases, if cumulative valuation gains and dividends exceed the ceiling, comprehensive taxation applies. Prioritize ISA and pension accounts.
+- **Domestic ETFs don't auto-reinvest dividends**: Distributions are paid out as cash, requiring manual reinvestment → use accounts with auto-reinvestment services.
 
-### 3. 실전 한국형 DCA 우선순위 (2026.4 기준)
-1. **연금저축 세액공제 한도 600만 원** → 월 50만 자동이체
-2. **IRP 추가 300만 원** (연금저축 합산 900만 상한) → 월 25만 자동이체
-3. **ISA 연 2천만 원 한도** (중개형) → 월 166만 자동이체 (한도 도달 후 대기)
-4. 일반 위탁계좌에서 추가 매수
+### 3. Practical Korea-Style DCA Priorities (as of 2026.4)
+1. **Pension savings (연금저축) tax credit limit of 6M KRW** → 500K KRW/month auto-transfer
+2. **IRP additional 3M KRW** (combined cap with pension savings (연금저축): 9M KRW) → 250K KRW/month auto-transfer
+3. **ISA annual 20M KRW limit** (brokerage type) → 1.66M KRW/month auto-transfer (wait after hitting limit)
+4. Additional purchases in a regular brokerage account
 
-### 4. ISA 한도 제약과 DCA 설계
+### 4. ISA Limit Constraints and DCA Design
 
-- ISA 연 납입 한도 2천만 원 = **DCA가 사실상 강제**되는 구조
-- 연초 lump-sum 2천만 → 당해 한도 소진, 이후 11개월 대기
-- 월 166만 DCA → 1년간 분산 + 세제 혜택 + 심리 안정
-- **ISA 만기(3년+) 시 누적 1억 원 한도까지 활용 가능** (연 2천만 × 5년), 이후 연금계좌로 롤오버 시 **전환금액의 10% (최대 300만 원) 세액공제 추가** 인정
-- **주의**: ISA 중개형에서 국내 주식·ETF는 매매차익 비과세이지만, 해외상장 ETF는 ISA 대상 아님. 국내상장 해외추종 ETF(KODEX 미국S&P500 등)로 대체.
+- ISA annual contribution limit of 20M KRW = structure that **effectively forces DCA**
+- Lump-sum 20M at year start → exhausts the year's limit, then 11 months of waiting
+- 1.66M/month DCA → full-year diversification + tax benefit + psychological stability
+- **At ISA maturity (3+ years), you can utilize up to a cumulative 100M KRW limit** (20M × 5 years), and rolling over to a pension account grants an **additional tax credit of 10% of the converted amount (up to 3M KRW)**
+- **Caveat**: In brokerage-type ISAs, capital gains on domestic stocks/ETFs are tax-exempt, but overseas-listed ETFs are not ISA-eligible. Substitute with domestically-listed overseas-tracking ETFs (KODEX S&P500, etc.).
 
-## 안티패턴 & 과적용
+## Anti-Patterns & Over-Application
 
-- **"대기"로서의 DCA** — "시장 내려올 때까지 기다리자"는 DCA 아닌 타이밍
-- **하락장 중단** — 정확히 반대 행동. DCA 핵심 가치 포기
-- **매주·매일 DCA** — 거래비용만 증가, 기대값 변화 미미
-- **5년+ DCA** — 기회비용 과다. 1~2년 내 완료 권장
-- **급여 DCA인데 감정 매매** — 자동화 없이 "이번 달은 비싸 보여 건너뛰자"는 DCA 아님
-- **LSI가 무조건 나쁘다 오해** — 장기 상승장에선 LSI가 수학적 우위
+- **DCA as "waiting"** — "Let's wait until the market drops" is not DCA but timing
+- **Stopping in a downturn** — exactly the wrong behavior. Abandoning DCA's core value
+- **Weekly/daily DCA** — only increases transaction costs with minimal change in expected value
+- **5+ year DCA** — excessive opportunity cost. Complete within 1–2 years recommended
+- **Salary DCA with emotional trading** — "This month looks expensive, let's skip" without automation is not DCA
+- **Misconception that LSI is always bad** — LSI has mathematical superiority in long-term bull markets
 
-## 한계
+## Limitations
 
-1. **기대수익 손실** — LSI 대비 평균 2~3%p 낮음 (Vanguard 연구)
-2. **상승장에서 손해** — 시장이 일관되게 오르면 초기 매수가 유리
-3. **하락장 심리 실패** — 하락 중 매수 지속이 이론이지만 실제 중단 빈번
-4. **금액 고정의 비합리성** — Value Averaging 대비 단순성의 대가
-5. **주기·금액 고정은 임의** — "월 100"이 수학적 최적 아님, 편의성 선택
-6. **목돈 보유자에게 차선책** — 기회비용 대가로 심리 평화를 사는 셈
+1. **Expected return loss** — average 2–3%p lower than LSI (Vanguard study)
+2. **Disadvantage in bull markets** — early purchases are favorable if the market rises consistently
+3. **Psychological failure in downturns** — continuing to buy during declines is theory, but actual discontinuation is frequent
+4. **Irrationality of fixed amounts** — the price of simplicity compared to Value Averaging
+5. **Fixed interval/amount is arbitrary** — "100/month" is not mathematically optimal, chosen for convenience
+6. **Second-best for lump-sum holders** — trading opportunity cost for psychological peace
 
-## 이 프레임워크와 함께 쓰는 것들
+## Used Alongside This Framework
 
-- `bogleheads` — DCA는 Bogleheads의 표준 실행 방식
-- `behavioral-biases` — DCA의 진짜 가치는 편향 제어
-- `rebalancing` — DCA(매수)와 리밸런싱(비중 조정)은 분리 운영
-- `korean-tax-optimization` — 세제 유리 계좌 DCA 우선순위
+- `bogleheads` — DCA is the standard execution method of Bogleheads
+- `behavioral-biases` — DCA's true value is bias control
+- `rebalancing` — DCA (buying) and rebalancing (weight adjustment) operate separately
+- `korean-tax-optimization` — DCA priorities for tax-advantaged accounts
 
-## 이 프레임워크가 *틀렸을 때*
+## When This Framework Is *Wrong*
 
-- 목돈 + 장기 + 시장 중립 상태 → Lump-Sum이 기대값 우위
-- 단기 투기·트레이딩 목적 → DCA 부적합
-- 포지션 사이징 문제 → `kelly-criterion`
-- 시장 전체 버블 판단 → `value-investing` / `barbell-strategy`
+- Lump sum + long-term + neutral market conditions → Lump-Sum has expected-value advantage
+- Short-term speculation/trading purposes → DCA unsuitable
+- Position sizing problem → `kelly-criterion`
+- Overall market bubble judgment → `value-investing` / `barbell-strategy`
 
-## 추가 학습
+## Further Learning
 
-- Graham, B. (1973). *The Intelligent Investor* — formula plan 원전.
-- Vanguard (2012). "Dollar-cost averaging just means taking risk later." (연구 백서)
-- Edleson, M. (2006). *Value Averaging*. — 변형 버전 원전.
-- 한국 적용: 국내 증권사 블로그·보고서 (미래에셋·KB·NH) — 한국 ETF 대상 DCA 백테스트.
+- Graham, B. (1973). *The Intelligent Investor* — original source of the formula plan.
+- Vanguard (2012). "Dollar-cost averaging just means taking risk later." (research white paper)
+- Edleson, M. (2006). *Value Averaging*. — original source of the variant version.
+- Korean application: domestic brokerage blogs and reports (Mirae Asset, KB, NH) — DCA backtests on Korean ETFs.

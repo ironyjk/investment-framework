@@ -1,87 +1,87 @@
 ---
 name: factor-investing
 version: "0.1.0"
-description: "Factor Investing (Fama-French 3/5 factor) — 초과수익을 소수의 체계적 '팩터'로 설명. Value, Size, Momentum, Quality, Low-Vol. 스마트베타 ETF의 이론적 기반. 개별 종목 분석 대체."
+description: "Factor Investing (Fama-French 3/5 factor) — explaining excess returns through a small number of systematic 'factors': Value, Size, Momentum, Quality, Low-Vol. The theoretical foundation of smart-beta ETFs. A substitute for individual stock analysis."
 ---
 
 # Factor Investing
 
-## 한 줄 요약
+## One-Line Summary
 
-개별 종목의 알파는 운이지만, **특정 속성(팩터)을 가진 종목군은 장기 초과수익을 내는 경향**이 있다는 실증 결과. Value·Size·Momentum·Quality·Low-Volatility 등 팩터에 체계적으로 노출시키는 전략. Bogleheads(패시브)와 Value(액티브) 사이의 중간 지점.
+Alpha from individual stocks is luck, but empirical research shows that **baskets of stocks sharing certain attributes (factors) tend to generate long-run excess returns**. A strategy that systematically exposes the portfolio to factors such as Value, Size, Momentum, Quality, and Low-Volatility. The midpoint between Bogleheads (passive) and Value (active).
 
-## 이론 기원
+## Theoretical Origins
 
-- **Eugene Fama & Kenneth French (1993)** — 3-factor model. 시장·사이즈·가치로 주식 수익률 ~90% 설명.
-- **Fama-French (2015)** — 5-factor model 추가 (Profitability, Investment).
+- **Eugene Fama & Kenneth French (1993)** — 3-factor model. Market, size, and value explain ~90% of stock returns.
+- **Fama-French (2015)** — Added 5-factor model (Profitability, Investment).
 - **Narasimhan Jegadeesh & Sheridan Titman (1993)** — Momentum factor.
 - **Robert Haugen, Andrew Ang** — Low-volatility anomaly.
-- CAPM(단일 팩터)의 확장. EMH와 호환되면서 이상현상(anomaly) 인정하는 중도적 입장.
+- An extension of CAPM (single factor). A centrist position that remains compatible with EMH while acknowledging anomalies.
 
-## 핵심 팩터
+## Core Factors
 
 ### 1. Market (Beta)
-- 시장 전체에 대한 노출. CAPM의 단일 팩터.
-- Sharpe(1964)·Lintner(1965) CAPM: $E[R_i] - R_f = \beta_i (E[R_m] - R_f)$. Fama-French는 이 "단일 베타" 설명력의 한계에서 출발.
+- Exposure to the overall market. The single factor of CAPM.
+- Sharpe (1964) / Lintner (1965) CAPM: $E[R_i] - R_f = \beta_i (E[R_m] - R_f)$. Fama-French begins from the limits of this "single-beta" explanatory power.
 
 ### 2. Size (SMB: Small Minus Big)
-- 소형주가 대형주 대비 장기 초과수익
-- 단, 2010년 이후 프리미엄 축소 논쟁
+- Small caps deliver long-run excess returns over large caps.
+- However, there has been debate over the shrinking premium since 2010.
 
 ### 3. Value (HML: High Minus Low)
-- 낮은 P/B (높은 book-to-market) 주식이 성장주 대비 초과수익
-- → `value-investing`의 팩터 버전
+- Stocks with low P/B (high book-to-market) deliver excess returns over growth stocks.
+- → The factor version of `value-investing`.
 
 ### 4. Momentum (MOM)
-- 최근 6~12개월 상승한 종목이 다음 6~12개월도 상승 경향
-- 단, 반전 시 손실 크고 변동성 높음
+- Stocks that have risen over the past 6–12 months tend to keep rising over the next 6–12 months.
+- However, reversals bring large losses and high volatility.
 
 ### 5. Profitability / Quality
-- ROE·ROIC 높고 이익 안정적인 기업이 초과수익
-- 5-factor에서 추가됨
+- Firms with high ROE/ROIC and stable earnings deliver excess returns.
+- Added in the 5-factor model.
 
 ### 6. Low Volatility
-- 저변동성 주식이 고변동성 주식보다 초과수익 (CAPM과 상충하는 이상현상)
-- Betting-Against-Beta (Frazzini-Pedersen)
+- Low-volatility stocks outperform high-volatility stocks (an anomaly inconsistent with CAPM).
+- Betting-Against-Beta (Frazzini-Pedersen).
 
 ### 7. Investment
-- 자본투자(설비투자·자산 증가) 적은 기업이 초과수익 (5-factor 추가)
+- Firms with low capital investment (low capex / asset growth) deliver excess returns (added in 5-factor).
 
-## 팩터 프리미엄 사이즈 (참고)
+## Factor Premium Sizes (Reference)
 
-| 팩터 | 연 프리미엄 (미국, 장기) | 변동성 |
+| Factor | Annual Premium (U.S., long-term) | Volatility |
 |---|---|---|
-| Market | 5~6% | 높음 |
-| Value | 3~5% | 중 |
-| Size | 1~3% | 중 |
-| Momentum | 4~8% | 매우 높음 |
-| Quality | 3~4% | 낮음 |
-| Low-Vol | 2~3% | 낮음 |
+| Market | 5–6% | High |
+| Value | 3–5% | Medium |
+| Size | 1–3% | Medium |
+| Momentum | 4–8% | Very High |
+| Quality | 3–4% | Low |
+| Low-Vol | 2–3% | Low |
 
-- *과거 데이터 기반, 미래 보장 없음. 최근 10년 대부분 팩터 프리미엄 축소.*
+- *Based on historical data; no guarantee of the future. Most factor premia have contracted over the past 10 years.*
 
-## 언제 쓰나
+## When to Use It
 
-- Bogleheads(시장 인덱스)만으로는 부족하다고 느낄 때
-- 개별 종목 분석 시간·능력 없지만 *초과수익은 원할 때*
-- 포트폴리오 팩터 노출 진단 (이미 특정 팩터에 과노출은 아닌가)
-- 스마트베타 ETF 선택의 기준
-- 기관·연기금 수준의 체계 투자
+- When Bogleheads (market index) alone feels insufficient.
+- When you lack the time or ability for individual stock analysis but *still want excess returns*.
+- Diagnosing factor exposure in your portfolio (am I already over-exposed to a particular factor?).
+- As a criterion for selecting smart-beta ETFs.
+- Systematic investing at the institutional / pension fund level.
 
-## 실전 적용
+## Practical Application
 
-### 스마트베타 ETF 예시 (추천 아님 — 각 팩터에 노출되는 대표 상품 학습용)
+### Smart-Beta ETF Examples (not recommendations — educational examples of products exposed to each factor)
 
-| 팩터 | 미국 ETF | 국내 ETF (있으면) |
+| Factor | U.S. ETF | Domestic ETF (if available) |
 |---|---|---|
 | Value | VLUE, IUSV | TIGER 미국가치 |
 | Size (Small) | VB, IJR | KODEX 코스닥150 |
-| Momentum | MTUM | - (제한적) |
+| Momentum | MTUM | – (limited) |
 | Quality | QUAL, DGRO | TIGER 미국퀄리티배당 |
 | Low-Vol | USMV, SPLV | KODEX 미국S&P500 저변동성 |
-| Multi-factor | DFAX, GSLC | - |
+| Multi-factor | DFAX, GSLC | – |
 
-### 팩터 포트폴리오 예시 (Equal-weight multi-factor)
+### Factor Portfolio Example (Equal-weight multi-factor)
 
 ```
 Total Market: 40%
@@ -92,74 +92,74 @@ Small-cap: 10%
 Low-vol: 10%
 ```
 
-### Dimensional Fund Advisors (DFA) / Avantis 접근
+### Dimensional Fund Advisors (DFA) / Avantis Approach
 
-- Fama-French 원전 기반 펀드 운용사
-- 팩터 tilt 과학적으로 설계, 낮은 비용
-- 개인 접근 제한적이지만 철학은 학습 가치
+- Fund managers built on the original Fama-French research.
+- Scientifically designed factor tilts with low costs.
+- Individual access is limited, but the philosophy is worth studying.
 
-## 한국 맥락
+## Korean Context
 
-### 1. 한국 시장에서 팩터 유효성
-- **Value**: 한국에서 역사적으로 강한 팩터 (코리아 디스카운트 + 가치주 반등기 존재)
-- **Momentum**: 한국 증시 변동성 높아 팩터 노이즈 큼
-- **Small**: 코스닥 중소형주 과거 초과수익 있으나 최근 축소
-- **Quality**: 2020년 이후 상대적으로 유효
+### 1. Factor Validity in the Korean Market
+- **Value**: Historically a strong factor in Korea (Korea discount + episodes of value-stock rebounds).
+- **Momentum**: High volatility in the Korean market creates significant factor noise.
+- **Small**: KOSDAQ small/mid caps historically delivered excess returns, but recently diminished.
+- **Quality**: Relatively effective since 2020.
 
-### 2. 국내 팩터 ETF 제약
+### 2. Constraints on Domestic Factor ETFs
 
-- 종류 제한적 (미국 대비 1/10 수준)
-- 보수 상대적으로 높음 (0.3~0.5%)
-- 운용 규모 작아 유동성 이슈
-- 해외 팩터 ETF 직구 시 환·세제 고려 필요
+- Limited product variety (roughly 1/10 of the U.S. offering).
+- Relatively high expense ratios (0.3–0.5%).
+- Small AUM leads to liquidity issues.
+- When buying foreign factor ETFs directly, FX and tax considerations are required.
 
-### 3. 한국 투자자 팩터 전략
+### 3. Factor Strategies for Korean Investors
 
-- **글로벌 팩터 ETF 직구** + **한국 가치/배당 ETF** 조합
-- **밸류업 프로그램 수혜주** = 한국판 Value+Quality 하이브리드
-- **중소형주 편향**은 한국에서 유동성·세금(양도세 대주주) 이슈로 제한
+- Combining **direct purchase of global factor ETFs** with **domestic value/dividend ETFs**.
+- **Beneficiaries of the Value-Up program (밸류업 프로그램)** = a Korean-style Value+Quality hybrid.
+- **Small-cap tilts** are constrained in Korea by liquidity and tax issues (capital gains tax on major shareholders).
 
-## 안티패턴 & 과적용
+## Anti-Patterns & Over-Application
 
-- **단일 팩터 몰빵** — Value 100% 포트폴리오는 2010~2020 10년간 시장 패배
-- **팩터 타이밍** — "지금은 Value 시점" 예측은 일반적으로 실패
-- **과거 프리미엄 연장** — 장기 데이터의 팩터 프리미엄이 미래에도 유지된다는 가정 위험
-- **"팩터는 무조건 이긴다"** — 팩터도 10~15년 underperform 구간 존재
-- **팩터 과다 조합** — 5개, 10개 팩터 섞으면 결국 시장 인덱스와 유사해지며 비용만 증가
-- **데이터 마이닝 (Factor Zoo)**: 학술적으로 300+ 팩터가 발견됨, 대부분 실거래로는 재현 안 됨
-  - Harvey, Liu, Zhu(2016): t-statistic 임계값을 기존 2.0이 아닌 **3.0 이상**으로 상향해야 진짜 팩터
-  - McLean & Pontiff(2016): 학술 발표 후 프리미엄이 평균 **32% 하락**, publication 후 **58%** 하락
-  - Bailey & López de Prado(2014): 백테스트 n회 시도 시 유의 p값이 거짓양성일 확률 계산 (deflated Sharpe)
-  - **개인 투자자 적용**: 새 팩터·테마 ETF 볼 때 "내가 이 데이터를 수천 번 본 연구자 중 하나인가?"를 먼저 의심
+- **All-in on a single factor** — a 100% Value portfolio lost to the market over 2010–2020.
+- **Factor timing** — predicting "now is the time for Value" generally fails.
+- **Extrapolating past premia** — assuming long-run factor premia persist into the future is risky.
+- **"Factors always win"** — factors also have 10–15 year stretches of underperformance.
+- **Factor over-mixing** — combining 5 or 10 factors ultimately resembles the market index while only raising costs.
+- **Data mining (Factor Zoo)**: academia has discovered 300+ factors, most of which cannot be reproduced in live trading.
+  - Harvey, Liu, Zhu (2016): the t-statistic threshold should be raised to **at least 3.0**, not the traditional 2.0, to qualify as a genuine factor.
+  - McLean & Pontiff (2016): after academic publication, premia fall by an average of **32%**, and by **58%** post-publication.
+  - Bailey & López de Prado (2014): calculates the probability that a significant p-value is a false positive after n backtest trials (deflated Sharpe).
+  - **Application for individual investors**: when looking at a new factor or themed ETF, first ask, "Am I one of thousands of researchers who have looked at this data?"
 
-## 한계
+## Limitations
 
-1. **팩터 프리미엄 축소 논쟁** — 학술 발표 후 프리미엄이 절반 이상 줄어든다는 연구 (McLean-Pontiff)
-2. **거래비용·세금** — 리밸런싱 빈도 높을수록 팩터 프리미엄 잠식
-3. **장기 underperform 구간** — Value의 2010년대, Momentum의 2009년 반전 등
-4. **단일 국가·기간 편향** — 미국 데이터 중심. 다른 시장·기간엔 약한 팩터 존재.
-5. **실행 슬리피지** — 소형주·저유동성 팩터 실제 매매 시 프리미엄 상당 부분 증발
-6. **팩터 정의 불일치** — Value를 P/B로 볼지 P/E로 볼지 EV/EBIT로 볼지에 따라 성과 다름
+1. **Debate over shrinking factor premia** — research indicating premia fall by more than half after academic publication (McLean-Pontiff).
+2. **Transaction costs and taxes** — higher rebalancing frequency erodes factor premia.
+3. **Long underperformance stretches** — Value in the 2010s, Momentum's 2009 reversal, etc.
+4. **Single-country / single-period bias** — centered on U.S. data. Some factors are weak in other markets or periods.
+5. **Execution slippage** — for small-cap / low-liquidity factors, much of the premium evaporates in actual trading.
+6. **Inconsistent factor definitions** — Value computed via P/B, P/E, or EV/EBIT produces different performance.
 
-## 이 프레임워크와 함께 쓰는 것들
+## Works Well With
 
-- `modern-portfolio-theory` — 팩터는 MPT 프레임의 체계적 확장
-- `bogleheads` — 팩터 tilt를 추가한 Bogleheads = "Fama-French Boglehead"
-- `value-investing` — 가치투자의 정량·체계 버전
-- `rebalancing` — 팩터 비중 유지 필수
+- `modern-portfolio-theory` — factors are a systematic extension of the MPT frame.
+- `bogleheads` — Bogleheads with factor tilts = "Fama-French Boglehead."
+- `value-investing` — the quantitative, systematic version of value investing.
+- `rebalancing` — essential for maintaining factor weights.
 
-## 이 프레임워크가 *틀렸을 때*
+## When This Framework Is *Wrong*
 
-- 팩터 리서치 시간·관심 없음 → `bogleheads`
-- 개별 기업 분석이 목적 → `value-investing`
-- 거시 자산배분 문제 → `modern-portfolio-theory` / `all-weather`
-- 꼬리 리스크 → `barbell-strategy`
+- No time or interest for factor research → `bogleheads`.
+- Goal is analyzing individual companies → `value-investing`.
+- Macro asset-allocation problem → `modern-portfolio-theory` / `all-weather`.
+- Tail risk → `barbell-strategy`.
 
-## 추가 학습
+## Further Reading
 
 - Fama, E. & French, K. (1993). "Common Risk Factors in the Returns on Stocks and Bonds."
 - Fama, E. & French, K. (2015). "A Five-Factor Asset Pricing Model."
-- Ang, A. (2014). *Asset Management: A Systematic Approach to Factor Investing*. — 종합 교재.
-- Asness, C. et al. "Fact, Fiction, and Value Investing" (AQR 리서치).
-- 비판: Harvey, Liu, Zhu (2016). "...and the Cross-Section of Expected Returns." — factor zoo 비판.
-- 한국 적용: 김영성 *스마트베타* 등 국내 입문서 소수.
+- Ang, A. (2014). *Asset Management: A Systematic Approach to Factor Investing*. — a comprehensive textbook.
+- Asness, C. et al. "Fact, Fiction, and Value Investing" (AQR research).
+- Critique: Harvey, Liu, Zhu (2016). "...and the Cross-Section of Expected Returns." — a critique of the factor zoo.
+- Korean application: a small number of domestic introductory books such as Kim Young-seong, *Smart Beta* (스마트베타).

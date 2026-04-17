@@ -1,148 +1,148 @@
 ---
 name: all-weather
 version: "0.1.0"
-description: "All Weather Portfolio (Ray Dalio, Bridgewater) — 경제 4분기(성장↑/↓ × 인플레↑/↓)별로 잘 작동하는 자산을 동등 위험으로 분산. Risk Parity 개념. 예측하지 않고 모든 환경에 대비."
+description: "All Weather Portfolio (Ray Dalio, Bridgewater) — diversifies across assets that perform well in each of the four economic quadrants (growth ↑/↓ × inflation ↑/↓) using equal risk contribution. Based on the Risk Parity concept. Prepares for every environment rather than predicting."
 ---
 
 # All Weather Portfolio
 
-## 한 줄 요약
+## One-Line Summary
 
-"언제 뭐가 오를지 모른다"를 전제로, **경제 4분기 각각에 강한 자산을 동등 위험으로 섞어** 어떤 환경에서도 -큰 손실이 없게- 버티는 포트폴리오. 예측을 포기하고 *대비*를 선택하는 전략.
+Built on the premise that "we don't know what will rise when," this portfolio **blends assets strong in each of the four economic quadrants at equal risk contribution** so it endures any environment without -severe losses-. A strategy that gives up prediction and chooses *preparedness*.
 
-## 이론 기원
+## Theoretical Origins
 
-- **Ray Dalio** (Bridgewater Associates) — 1990년대 자기 가족 신탁용으로 설계. 2011 공개.
-- **Risk Parity** 개념: Edward Qian (Panagora), 2005년 공식화.
-- MPT의 확장이지만, **기대수익 예측 의존을 없앤** 점이 핵심 차별화.
-- 2008 금융위기에서 상대적으로 잘 버텨 유명해짐.
+- **Ray Dalio** (Bridgewater Associates) — designed in the 1990s for his own family trust. Disclosed publicly in 2011.
+- **Risk Parity** concept: formalized by Edward Qian (Panagora) in 2005.
+- An extension of MPT, but its key differentiator is **eliminating reliance on expected return forecasts**.
+- Gained fame for holding up relatively well during the 2008 financial crisis.
 
-## 핵심 개념
+## Core Concepts
 
-### 1. 경제의 4분기 (Dalio)
+### 1. The Four Economic Quadrants (Dalio)
 
-|  | 성장 ↑ | 성장 ↓ |
+|  | Growth ↑ | Growth ↓ |
 |---|---|---|
-| **인플레 ↑** | 신흥시장주식 / 원자재 / 금 | 물가연동채(TIPS) / 원자재 / 금 |
-| **인플레 ↓** | 주식 / 회사채 | 장기국채 / 현금 |
+| **Inflation ↑** | Emerging market equities / Commodities / Gold | Inflation-linked bonds (TIPS) / Commodities / Gold |
+| **Inflation ↓** | Equities / Corporate bonds | Long-term Treasuries / Cash |
 
-- 각 분기는 **25% 확률**로 가정 (예측하지 않으므로)
-- 각 분기에서 잘 작동하는 자산을 각 25% 위험 기여도로 배치
+- Each quadrant is assumed to have a **25% probability** (since we do not predict)
+- Assets that perform well in each quadrant are allocated at 25% risk contribution each
 
-### 2. Risk Parity (위험 동등 배분)
+### 2. Risk Parity (Equal Risk Allocation)
 
-- 전통 60/40은 금액은 60·40이지만 *위험의 90%+가 주식*
-- Risk Parity는 **각 자산의 위험 기여도**를 균등화
-- 결과: 채권 비중이 커지고, 주식 비중은 줄어듦 (예: 30% 주식)
-- 레버리지 사용해 수익 수준 맞추는 것이 기관판 (개인은 보통 레버리지 없이)
+- Traditional 60/40 is 60·40 by dollar amount, but *90%+ of the risk comes from equities*
+- Risk Parity equalizes the **risk contribution of each asset**
+- Result: bond weighting increases, equity weighting decreases (e.g., 30% equities)
+- The institutional version uses leverage to match return levels (individuals typically do not use leverage)
 
-### 3. Dalio 표준 All Weather (개인판)
+### 3. Dalio's Standard All Weather (Retail Version)
 
-- **장기 미국 국채** 40%
-- **중기 미국 국채** 15%
-- **주식(미국 중심)** 30%
-- **금** 7.5%
-- **원자재** 7.5%
+- **Long-term US Treasuries** 40%
+- **Intermediate US Treasuries** 15%
+- **Equities (US-centric)** 30%
+- **Gold** 7.5%
+- **Commodities** 7.5%
 
-(이 비중은 *예시*이며 금리 환경에 따라 달라짐)
+(These weights are *illustrative* and vary with the interest rate environment)
 
-### 4. 왜 이렇게 섞나?
+### 4. Why This Blend?
 
-- 주식 30%로 성장↑·인플레↓
-- 채권 55%로 성장↓·인플레↓
-- 금·원자재 15%로 성장↑·인플레↑ 혹은 성장↓·인플레↑
-- 어느 분기가 오든 *큰 손실*은 피하게 설계
+- 30% equities for growth ↑ · inflation ↓
+- 55% bonds for growth ↓ · inflation ↓
+- 15% gold·commodities for growth ↑ · inflation ↑ or growth ↓ · inflation ↑
+- Designed to avoid *large losses* no matter which quadrant arrives
 
-## 언제 쓰나
+## When to Use
 
-- "시장이 언제 어디로 갈지 모르겠다" — 예측 포기자의 전략
-- **하락장 방어**가 목표일 때
-- 인출기(은퇴 후) 포트폴리오 — 대규모 하락 후 복구 시간 없을 때
-- 큰 변동성에 감정적으로 못 버티는 투자자
-- 자산 규모가 커서 "증식"보다 "보존"이 중요해진 단계
+- "I have no idea where or when the market is going" — a strategy for prediction abstainers
+- When **downside defense** is the goal
+- Withdrawal-phase (post-retirement) portfolios — when there is no time to recover after a major drawdown
+- Investors who cannot emotionally endure heavy volatility
+- When asset size has grown so that "preservation" matters more than "accumulation"
 
-## 실전 적용
+## Practical Application
 
-### 한국 투자자용 All Weather 예시 (추천 아님)
+### All Weather Example for Korean Investors (Not a Recommendation)
 
-| 자산 | 비중 | 한국 티커 예시 |
+| Asset | Weight | Example Korean Tickers |
 |---|---|---|
-| 장기 미국채 | 40% | TLT (직구) / KODEX 미국채울트라30년선물 |
-| 중기 미국채 / 한국 국채 | 15% | IEF / KODEX 국고채10년 |
-| 주식 (글로벌) | 30% | VT / VTI / KODEX 미국S&P500 |
-| 금 | 7.5% | GLD / KODEX 골드선물(H) |
-| 원자재 | 7.5% | DBC / KODEX WTI원유선물 (단 롤오버 비용 주의) |
+| Long-term US Treasuries | 40% | TLT (direct purchase) / KODEX US Ultra 30Y Treasury Futures |
+| Intermediate US Treasuries / Korean Treasuries | 15% | IEF / KODEX 10Y KTB |
+| Equities (global) | 30% | VT / VTI / KODEX US S&P500 |
+| Gold | 7.5% | GLD / KODEX Gold Futures (H) |
+| Commodities | 7.5% | DBC / KODEX WTI Crude Futures (watch out for rollover costs) |
 
-- **환헤지 여부 선택 필요**: 미국채의 환노출은 의도치 않은 위험
-- **ETF 보수** 확인 (국내형은 보수 낮고 세제 다름)
+- **Choice of FX hedging required**: FX exposure on US Treasuries is an unintended risk
+- Verify **ETF expense ratios** (domestic versions have lower fees and different tax treatment)
 
-## 한국 맥락
+## Korean Context
 
-### 1. 한국 투자자에게 All Weather가 어려운 이유
+### 1. Why All Weather Is Difficult for Korean Investors
 
-- **미국채 장기물 접근성**: 해외 ETF(TLT) 직구 시 양도세 22%, 환 리스크
-- **원자재 ETF**: 한국 원자재 ETF는 *선물 롤오버 비용*으로 장기 보유 비효율
-- **원화 vs 달러**: 달러자산은 위기에 강하지만 한국 내 소비·부동산은 원화 — 환 비중 설계 필요
-- **금리 환경 변화**: 2020년까지의 저금리 채권 강세는 2022 이후 재현 어려움 — 채권 55% 비중 재검토 필요
+- **Access to long-duration US Treasuries**: direct-buying overseas ETFs (TLT) incurs 22% capital gains tax and FX risk
+- **Commodity ETFs**: Korean commodity ETFs are inefficient for long-term holding due to *futures rollover costs*
+- **KRW vs. USD**: dollar assets are resilient in crises, but domestic consumption and real estate in Korea are in KRW — FX weighting must be designed deliberately
+- **Interest rate regime shift**: the bond bull market that lasted until 2020 is unlikely to repeat after 2022 — the 55% bond weight warrants reassessment
 
-### 2. 한국 투자자용 변형
+### 2. Variants for Korean Investors
 
-- 미국채 일부 → 한국 국채 / 미국채 환헤지 ETF
-- 원자재 비중 축소(5%), 금 비중 확대 (한국에선 KRX 금현물 세제 유리)
-- 주식 비중 상향(30→40) 고려 — 축적기 투자자의 경우
+- Replace part of US Treasuries → Korean government bonds / FX-hedged US Treasury ETFs
+- Reduce commodity weight (5%), increase gold weight (KRX physical gold has favorable tax treatment in Korea)
+- Consider raising equity weight (30→40) — for investors in the accumulation phase
 
-### 3. 세제
+### 3. Taxation
 
-- 국내 채권 ETF: 배당·이자 소득 15.4%
-- 해외 채권 ETF(직구): 양도세 22%, 배당 15%
-- 금 현물(KRX): 장기 보유 시 배당·양도세 이슈 유리 ← `korean-tax-optimization` 참조
+- Domestic bond ETFs: 15.4% tax on dividend/interest income
+- Overseas bond ETFs (direct purchase): 22% capital gains tax, 15% on dividends
+- Physical gold (KRX): favorable dividend/capital gains tax treatment for long-term holding ← see `korean-tax-optimization`
 
-## 안티패턴 & 과적용
+## Anti-Patterns & Overapplication
 
-- **과거 수익률로 포장** — All Weather가 2000~2020 좋았던 건 *채권 강세장*이기도 함. 금리 상승기엔 다름.
-- **저금리에서 채권 55%** — 2022년 같은 채권 급락 시 크게 깨짐. 실제로 깨졌음.
-- **"무적 포트폴리오" 오해** — All Weather는 *덜 깨지는* 포트폴리오이지 안 깨지는 게 아님
-- **축적기에 과도 적용** — 30대가 All Weather 쓰면 기대수익이 너무 낮아 은퇴자금 부족 위험
-- **Risk Parity 레버리지 개인 적용** — 기관이 쓰는 레버리지는 개인 계좌에선 파산 위험
+- **Packaging with past returns** — All Weather performed well from 2000–2020 partly because of a *bond bull market*. It looks different in a rising rate regime.
+- **55% bonds in a low-rate environment** — breaks hard in a bond crash like 2022. It actually did break.
+- **"Invincible portfolio" misconception** — All Weather is a *less breakable* portfolio, not an unbreakable one
+- **Excessive application during accumulation** — someone in their 30s using All Weather will have returns too low, risking insufficient retirement funds
+- **Risk Parity leverage in retail accounts** — the leverage institutions use poses bankruptcy risk in personal accounts
 
-## 2022년 실패 사례 학습
+## Lessons from the 2022 Failure Case
 
-2022년 All Weather의 최대 위기:
-- 연간 성과 약 -20% (장기 국채 -30%+, 주식 -18%, 금 -1%)
-- 원인: **인플레이션 상승 + 금리 인상 동시 발생** — Dalio의 4분기 중 "성장↓·인플레↑" 분기에 채권·주식이 **동시에** 깨짐
-- 1970년대 스태그플레이션 이후 처음 재현된 상관관계 상승 (주식·채권 양음의 분산 효과 소멸)
-- 교훈 1: **채권이 항상 안전자산이 아님** — 금리 상승기엔 주식과 같이 빠짐
-- 교훈 2: **TIPS·원자재·금 비중이 더 중요해졌을 수 있음** (인플레 방어)
-- 교훈 3: **Dalio 본인도 2023년 이후 포트폴리오 조정 시사** — 체제 전환 인정
-- 개인 적용: 2020년대 All Weather는 **채권 55%가 고정값이 아닌 체제 의존 변수**로 이해
+All Weather's biggest crisis in 2022:
+- Annual performance roughly -20% (long-term Treasuries -30%+, equities -18%, gold -1%)
+- Cause: **simultaneous rise in inflation + rate hikes** — in Dalio's "growth ↓ · inflation ↑" quadrant, bonds and equities **broke together**
+- The first correlation spike since 1970s stagflation (the equity-bond negative diversification benefit disappeared)
+- Lesson 1: **Bonds are not always a safe asset** — in rising rate regimes they fall alongside equities
+- Lesson 2: **TIPS, commodity, and gold weights may have become more important** (inflation defense)
+- Lesson 3: **Dalio himself signaled portfolio adjustments from 2023 onward** — acknowledging a regime shift
+- Retail application: understand 2020s All Weather with the **55% bond weight as a regime-dependent variable, not a fixed value**
 
-## 한계
+## Limitations
 
-1. **채권 의존** — 채권 강세장을 가정한 설계. 금리 상승기엔 채권이 안전자산이 아님.
-2. **기대수익 낮음** — 60/40이나 주식 100% 대비 CAGR 1~2%p 낮음 (장기).
-3. **인플레 대비 불완전** — 금·원자재 15%로는 하이퍼인플레 방어 부족.
-4. **꼬리 리스크 미반영** — MPT와 마찬가지로 정규분포 가정 — (→ `barbell-strategy` 대안).
-5. **한국 세후** — 해외자산·달러노출 비중 높아 한국 세제하에서 후퇴.
-6. **복잡도** — 5~7개 자산군을 정비중으로 리밸런싱 필요. 실행 비용·실수 가능성.
+1. **Bond dependency** — designed on the assumption of a bond bull market. In rising rate regimes, bonds are not a safe asset.
+2. **Low expected return** — CAGR is 1–2pp lower than 60/40 or 100% equities over the long run.
+3. **Incomplete inflation hedge** — 15% in gold·commodities is insufficient defense against hyperinflation.
+4. **Tail risk not reflected** — like MPT, assumes a normal distribution — (→ see `barbell-strategy` alternative).
+5. **After Korean taxes** — high weight in foreign assets·dollar exposure leads to underperformance under Korean tax treatment.
+6. **Complexity** — requires rebalancing 5–7 asset classes to target weights. Execution costs and potential mistakes.
 
-## 이 프레임워크와 함께 쓰는 것들
+## Use Alongside
 
-- `modern-portfolio-theory` — All Weather의 이론적 기반
-- `rebalancing` — 4분기 균형 유지를 위해 필수
-- `barbell-strategy` — All Weather를 "덜 깨지는" 자산배분, Barbell은 "깨져도 이득"
-- `korean-tax-optimization` — 세후 수익률 재계산
+- `modern-portfolio-theory` — theoretical foundation of All Weather
+- `rebalancing` — essential to maintain the four-quadrant balance
+- `barbell-strategy` — All Weather is "less breakable" asset allocation; Barbell is "profitable even when broken"
+- `korean-tax-optimization` — recalculate after-tax returns
 
-## 이 프레임워크가 *틀렸을 때*
+## When This Framework Is *Wrong*
 
-- 축적기·젊은 투자자 (기대수익 부족) → `bogleheads` + 높은 주식 비중
-- 극단 꼬리 리스크 대비 → `barbell-strategy`
-- 개별 종목 평가 → `value-investing` / `factor-investing`
-- 적극적 수익 추구 → `factor-investing`
+- Accumulation phase · young investors (insufficient expected return) → `bogleheads` + higher equity weight
+- Preparing for extreme tail risk → `barbell-strategy`
+- Individual stock evaluation → `value-investing` / `factor-investing`
+- Active return pursuit → `factor-investing`
 
-## 추가 학습
+## Further Reading
 
-- Dalio, R. (2017). *Principles: Life and Work*. (철학·원칙 중심)
-- Bridgewater "Engineering Targeted Returns and Risks" (Bridgewater 공개 리포트)
+- Dalio, R. (2017). *Principles: Life and Work*. (focused on philosophy and principles)
+- Bridgewater "Engineering Targeted Returns and Risks" (Bridgewater public report)
 - Qian, E. (2016). *Risk Parity Fundamentals*.
-- 한국 적용 논의: 홍춘욱·김성일 등의 자산배분 서적 (한국 세제·환 적용 변형)
-- 비판: Antti Ilmanen *Expected Returns* — 채권 강세장 종료 후 All Weather 한계 논의.
+- Korean application discussions: asset allocation books by Hong Chun-uk, Kim Sung-il, and others (variants adapted for Korean taxation and FX)
+- Critique: Antti Ilmanen *Expected Returns* — discusses the limits of All Weather after the end of the bond bull market.

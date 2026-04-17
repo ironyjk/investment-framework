@@ -1,215 +1,215 @@
 ---
 name: behavioral-biases
 version: "0.1.0"
-description: "Behavioral Finance (Kahneman, Tversky, Thaler) — 투자 실패의 대부분은 심리·인지 편향에서 온다. Loss aversion, anchoring, herding, overconfidence, recency bias 등. 편향 인식과 구조적 대응(규칙·자동화)이 최선."
+description: "Behavioral Finance (Kahneman, Tversky, Thaler) — most investment failures stem from psychological and cognitive biases. Loss aversion, anchoring, herding, overconfidence, recency bias, and more. Recognizing biases and responding structurally (rules and automation) is the best defense."
 ---
 
 # Behavioral Biases in Investing
 
-## 한 줄 요약
+## One-Line Summary
 
-**포트폴리오 수익률의 가장 큰 적은 시장이 아니라 투자자 자신이다.** Dalbar 연구: 개인 투자자 실제 수익률이 벤치마크보다 연 3~4%p 낮은 이유의 대부분이 행동 편향. 인식만으론 극복 안 됨 — *구조와 규칙*으로 자기 자신을 묶어야 한다.
+**The greatest enemy of portfolio returns is not the market, but the investor themselves.** Dalbar research: most of the 3–4 percentage point annual gap between actual individual investor returns and the benchmark stems from behavioral biases. Awareness alone cannot overcome them — you must bind yourself with *structure and rules*.
 
-## 이론 기원
+## Theoretical Origins
 
-- **Daniel Kahneman & Amos Tversky** — Prospect Theory (1979, *Econometrica*). Kahneman이 2002 노벨경제학상 수상 (Tversky는 1996년 타계로 수상 자격 못 갖춤).
-- **Richard Thaler** — *Nudge* (2008), *Misbehaving* (2015). 2017 노벨경제학상.
-- **Robert Shiller** — *Irrational Exuberance* (2000). 시장의 집단 심리.
+- **Daniel Kahneman & Amos Tversky** — Prospect Theory (1979, *Econometrica*). Kahneman won the 2002 Nobel Prize in Economics (Tversky did not qualify due to his death in 1996).
+- **Richard Thaler** — *Nudge* (2008), *Misbehaving* (2015). 2017 Nobel Prize in Economics.
+- **Robert Shiller** — *Irrational Exuberance* (2000). The collective psychology of markets.
 - **Hersh Shefrin, Meir Statman** — Behavioral Portfolio Theory.
-- **Dalbar QAIB** — 투자자 행동 편향의 경제적 비용 정기 측정.
+- **Dalbar QAIB** — Periodic measurement of the economic cost of investor behavioral biases.
 
-## 주요 편향 (투자 관련 Top 10)
+## Major Biases (Top 10 for Investing)
 
-### 1. Loss Aversion (손실회피)
-- 손실의 심리적 고통 = 같은 크기 이익의 약 2배
-- 결과: 손실 난 종목 붙잡고, 이익 난 종목 조기 매도 (disposition effect)
-- 대응: 사전 손절 규칙·체계적 리밸런싱
+### 1. Loss Aversion
+- The psychological pain of a loss ≈ 2x the pleasure of a gain of the same size
+- Result: holding onto losing positions while selling winners too early (disposition effect)
+- Response: predefined stop-loss rules and systematic rebalancing
 
-### 2. Anchoring (닻내림 효과)
-- 첫 정보·매수가를 기준으로 이후 판단 왜곡
-- 예: "내가 10만에 샀으니 15만 넘어야 판다"
-- 대응: 현재 시장가 기준 판단, 매수가 숨기기
+### 2. Anchoring
+- Initial information or purchase price distorts subsequent judgment
+- Example: "I bought at 100K, so I'll sell only above 150K"
+- Response: judge based on current market price; hide your purchase price
 
-### 3. Herding (군집 행동)
-- 남들이 사니까 사고, 남들이 파니까 판다
-- 버블·패닉의 핵심 엔진
-- 대응: 정보 소스 제한, 포트폴리오 확정 후 뉴스 차단
+### 3. Herding
+- Buying because others buy, selling because others sell
+- The core engine of bubbles and panics
+- Response: limit information sources; block news after locking in your portfolio
 
-### 4. Overconfidence (과신)
-- 자신의 예측력·스킬을 과대평가
-- 결과: 과도한 회전율, 집중 투자, 레버리지
-- 대응: 자신의 예측 기록·채점, 낮은 회전율 원칙
+### 4. Overconfidence
+- Overestimating one's predictive ability and skill
+- Result: excessive turnover, concentrated positions, leverage
+- Response: log and score your own predictions; principle of low turnover
 
-### 5. Recency Bias (최근성 편향)
-- 최근 경험이 미래에 지속된다고 믿음
-- 예: 코로나 랠리 이후 "주식은 항상 오른다", 2022 이후 "주식 끝났다"
-- 대응: 장기 데이터 참조, 체제 전환 시나리오 사전 작성
+### 5. Recency Bias
+- Believing recent experience will continue into the future
+- Example: post-COVID rally → "stocks always go up"; post-2022 → "stocks are dead"
+- Response: reference long-term data; pre-write regime-change scenarios
 
-### 6. Confirmation Bias (확증 편향)
-- 자기 의견 지지하는 정보만 수집
-- 대응: 반대 의견 의도적 검색 ("왜 내가 틀렸을까")
+### 6. Confirmation Bias
+- Collecting only information that supports your existing view
+- Response: deliberately search for opposing views ("why might I be wrong")
 
-### 7. Mental Accounting (심리 회계)
-- 돈을 출처별로 다르게 취급 (월급 vs 보너스 vs 주식 수익)
-- 결과: 보너스·수익금을 위험 투자에 과다 배분
-- 대응: 통합 자산 관점, 모든 원은 같은 원
+### 7. Mental Accounting
+- Treating money differently by source (salary vs. bonus vs. investment gains)
+- Result: over-allocating bonuses or gains to risky bets
+- Response: take an integrated wealth view — every won is the same won
 
-### 8. Sunk Cost Fallacy (매몰비용 오류)
-- 이미 잃은 돈 때문에 계속 보유
-- "원금 회복하면 팔게" → 대부분 회복 안 됨
-- 대응: "지금 다시 이 가격에 산다면 살 것인가" 질문
+### 8. Sunk Cost Fallacy
+- Continuing to hold because of money already lost
+- "I'll sell when I get back to break-even" → most never recover
+- Response: ask "would I buy this at this price right now?"
 
-### 9. FOMO (놓침 공포)
-- 오르는 자산에 뒤늦게 추격 매수
-- 2020~2021 크립토, 2021 성장주, 2023~2024 AI 주식 등
-- 대응: 규칙적 DCA, 사전 배분 한도
+### 9. FOMO (Fear of Missing Out)
+- Late chasing into rising assets
+- Crypto in 2020–2021, growth stocks in 2021, AI stocks in 2023–2024, etc.
+- Response: regular DCA, predefined allocation caps
 
-### 10. Availability Heuristic (가용성 휴리스틱)
-- 최근 떠오르는 뉴스·사례로 확률 과대평가
-- 예: "테슬라 10배 됐다더라" → 성공 확률 과대평가, 실패 사례는 보이지 않음
-- 대응: 기저율(base rate) 확인
+### 10. Availability Heuristic
+- Overestimating probability based on recent salient news or examples
+- Example: "I heard Tesla 10x'd" → overestimating the probability of success while failures remain invisible
+- Response: check the base rate
 
-## 추가 중요 편향
+## Additional Important Biases
 
-- **Overreaction / Underreaction** — 뉴스에 과·저반응
-- **Home Bias** — 자국 자산 편중 (한국 투자자의 원화 자산 집중)
-- **Endowment Effect** — 보유 자산 가치 과대평가
-- **Regret Aversion** — 후회 두려움에 결정 회피
-- **Hindsight Bias** — "그럴 줄 알았다" 착시
-- **Narrative Fallacy** — 인과관계 없는 사건들에 스토리 부여
+- **Overreaction / Underreaction** — over- or under-reacting to news
+- **Home Bias** — overconcentration in domestic assets (Korean investors clustering in won-denominated assets)
+- **Endowment Effect** — overvaluing assets you own
+- **Regret Aversion** — avoiding decisions out of fear of regret
+- **Hindsight Bias** — the "I knew it all along" illusion
+- **Narrative Fallacy** — imposing storylines on causally unrelated events
 
-## 실전 대응 구조
+## Practical Response Structure
 
-### 1. 자동화로 자신을 묶어라
+### 1. Bind Yourself Through Automation
 
-- 자동이체 DCA
-- 자동 리밸런싱 (로보어드바이저 or 주기 설정)
-- 사전 주문 (손절·익절 OCO)
+- Automatic DCA transfers
+- Automatic rebalancing (robo-advisor or scheduled cycles)
+- Pre-set orders (OCO stop-loss/take-profit)
 
-### 2. 투자 정책 문서(IPS) 작성
+### 2. Write an Investment Policy Statement (IPS)
 
-- 목표·기간·배분·리밸런싱 규칙 사전 문서화
-- 감정이 흔들릴 때 *과거의 냉정한 나*에게 묻기
-- 변경은 6개월 숙려 후에만
+- Pre-document goals, horizon, allocation, and rebalancing rules
+- When emotions waver, consult *the calmer past you*
+- Changes only after a 6-month deliberation period
 
-**IPS 최소 템플릿 (한국 개인 투자자용)**:
+**Minimum IPS Template (for Korean Individual Investors)**:
 
 ```
-1. 목표
-   - 은퇴 자산 목표: ___억 (___세 기준)
-   - 중간 목표: 주택·교육·의료 버킷 별도
-2. 기간
-   - 축적기 ___년 / 인출기 ___년
-3. 자산 배분 (세제 유리 계좌별로)
-   - 연금저축/IRP: 주식 __% / 채권 __% / 기타 __%
+1. Goals
+   - Retirement asset target: ___ hundred million won (at age ___)
+   - Intermediate goals: separate buckets for housing, education, medical
+2. Horizon
+   - Accumulation phase ___ years / withdrawal phase ___ years
+3. Asset Allocation (by tax-advantaged account)
+   - Pension savings (연금저축)/IRP: stocks __% / bonds __% / other __%
    - ISA: ___
-   - 일반계좌: ___
-4. 리밸런싱 규칙
-   - 주기: 연 __회
-   - 밴드: ±__%p 이탈 시
-   - 우선순위: 신규자금 → 연금·ISA 내 매도 → 일반계좌 매도
-5. 금지 행동 (자기 구속)
-   - 월 1회 초과 포트폴리오 조회 금지
-   - 뉴스 기반 매매 금지
-   - 대출·신용으로 레버리지 금지 (또는 상한 __%)
-6. 비상 규칙
-   - 50% 하락 시: 매수 지속, 매도 금지 (이미 선언)
-   - 20% 상승 시: 리밸런싱만 실행
-7. 재검토
-   - 연 1회 말일
-   - 변경 시 6개월 숙려 후 적용
-8. 서명·날짜 (자신과의 계약)
+   - General account: ___
+4. Rebalancing Rules
+   - Frequency: __ times per year
+   - Bands: when deviation exceeds ±__%p
+   - Priority: new contributions → sell within pension/ISA → sell in general account
+5. Forbidden Behaviors (Self-Binding)
+   - No portfolio checks more than once per month
+   - No news-driven trading
+   - No leverage via loans or margin (or cap at __%)
+6. Emergency Rules
+   - On 50% drawdown: continue buying, no selling (declared in advance)
+   - On 20% rally: execute rebalancing only
+7. Review
+   - Once per year, last day
+   - Apply changes only after a 6-month deliberation
+8. Signature & Date (a contract with yourself)
 ```
 
-### Pre-mortem 템플릿
+### Pre-mortem Template
 
-매수 전 질문:
-1. 이 포지션이 -50%가 된다면 가장 그럴듯한 이유 3가지?
-2. 그 시나리오가 실현되면 내 라이프 플랜(자녀 교육·주거·은퇴)에 어떤 영향?
-3. 지금 이 매수가 잘못이라고 1년 뒤 깨닫는다면, 그 깨달음의 단서는 무엇일까?
-4. 반대 포지션을 추천하는 사람에게 나는 어떻게 반박할까? 그 반박이 약하면 다시 생각.
+Pre-purchase questions:
+1. If this position drops -50%, what are the 3 most plausible reasons?
+2. If that scenario plays out, how does it affect your life plan (children's education, housing, retirement)?
+3. If you realize a year from now that this purchase was a mistake, what would be the leading clue?
+4. How would you rebut someone recommending the opposite position? If your rebuttal is weak, reconsider.
 
-### 3. 정보 다이어트
+### 3. Information Diet
 
-- 실시간 시세 보기 차단
-- 뉴스 단기 피드 구독 해지
-- 분기 1회 점검으로 충분
+- Block real-time price tickers
+- Unsubscribe from short-term news feeds
+- Quarterly review is sufficient
 
-### 4. Pre-mortem (사전 부검)
-- 매수 전: "이 투자가 50% 빠진다면 어떤 이유일까"
-- 시나리오를 미리 적어두면 실제 발생 시 패닉 감소
+### 4. Pre-mortem
+- Before buying: "If this investment drops 50%, what would be the reason?"
+- Pre-writing scenarios reduces panic when they actually occur
 
-### 5. 체크리스트
-- 매수·매도 전 15~20개 질문 체크
-- 충동 매매 방지
-- Atul Gawande *The Checklist Manifesto* 원리
+### 5. Checklists
+- Run through 15–20 questions before any buy/sell
+- Prevents impulsive trading
+- The principle behind Atul Gawande's *The Checklist Manifesto*
 
 ### 6. Investment Journal
-- 모든 결정 기록 (이유, 예상, 결과)
-- 6~12개월 후 재검토
-- 자신의 예측력 객관화
+- Record every decision (rationale, expectations, outcome)
+- Review 6–12 months later
+- Objectively measure your own predictive ability
 
-## 한국 맥락
+## Korean Context
 
-### 1. 한국 투자자 특유 편향
+### 1. Biases Particular to Korean Investors
 
-- **부동산 불패 신화** — Recency + Availability 결합. 1990~2020 경험의 과일반화.
-- **국내주식 홈 바이어스** — 2015~2023 동안 KOSPI 횡보, S&P500 대비 연 5%p+ 기회손실
-- **부채 레버리지 공격성** — 대출 활용한 부동산·주식이 평균적. 하락 시 강제청산 리스크
-- **테마주 군집 행동** — 개인 매수 집중 종목의 이후 수익률 낮음 (한국거래소 연구)
-- **SNS·유튜브 종목 추천 확증편향** — 한국 특유의 "동학개미운동" 프레임
+- **Real estate invincibility myth** — combined Recency + Availability. Overgeneralization of the 1990–2020 experience.
+- **Domestic equity home bias** — KOSPI moved sideways from 2015–2023, an opportunity loss of 5+ percentage points per year vs. S&P 500
+- **Aggressive debt leverage** — leveraged real estate and stocks via loans are average behavior; risk of forced liquidation in downturns
+- **Theme-stock herding** — concentrated retail buying tends to predict poor subsequent returns (KRX research)
+- **SNS/YouTube stock-pick confirmation bias** — Korea's distinctive "Donghak Ant Movement" (동학개미운동) framing
 
-### 2. 한국인의 주요 편향 트리거
+### 2. Major Bias Triggers for Koreans
 
-- **연말 테마 로테이션** 뉴스 홍수 → FOMO
-- **부동산 급등·급락 보도** → Recency
-- **주변 부자의 특정 성공 스토리** → Availability
-- **커뮤니티 익명 종목 정보** → Herding
-- **반대매매·강제청산 트라우마** → Loss Aversion 과작동
+- **Year-end theme rotation** news flood → FOMO
+- **Real estate boom/bust headlines** → Recency
+- **A specific success story from a wealthy acquaintance** → Availability
+- **Anonymous stock tips on community forums** → Herding
+- **Trauma from forced sell-offs and margin calls** → over-activated Loss Aversion
 
-### 3. 한국형 대응 팁
+### 3. Korea-Specific Response Tips
 
-- 증권사 앱 알림 모두 끄기
-- 네이버 종목 토론방 차단
-- 포트폴리오 확인 주기: 월 1회로 제한
-- 실거래가·단지 시세 앱도 투자 관점에선 월 1회
-- kakaopay 같은 손쉬운 매매 앱은 *의도적 장벽* (공인인증 복잡한 증권사 앱으로) 사용
+- Turn off all brokerage app notifications
+- Block Naver stock discussion forums
+- Limit portfolio checks to once a month
+- Even real-transaction-price and apartment quote apps: once a month from an investment standpoint
+- Use easy-trade apps like Kakao Pay only with *deliberate friction* (use brokerage apps with complex digital certificate (공인인증) flows instead)
 
-## 안티패턴 & 과적용
+## Anti-patterns & Over-application
 
-- **"나는 편향 없다"** — 가장 흔한 메타 편향. Bias blind spot.
-- **편향 학습 = 편향 극복 착각** — 지식만으론 행동 안 바뀜 (실증 연구 일치)
-- **편향 핑계** — 모든 손실을 "시장 편향"으로 돌리기
-- **전문가 환상** — 기관·전문가도 동일 편향에 시달림 (단 규칙·시스템으로 완화)
-- **Hindsight 적용** — "이번 하락은 내가 예측했었다" 식 자기기만
+- **"I have no biases"** — the most common meta-bias. Bias blind spot.
+- **Illusion that learning about biases = overcoming them** — knowledge alone does not change behavior (consistent across empirical studies)
+- **Bias as excuse** — blaming all losses on "market biases"
+- **Expert illusion** — institutions and experts suffer the same biases (mitigated only by rules and systems)
+- **Hindsight application** — self-deception of the form "I predicted this drop"
 
-## 한계
+## Limitations
 
-1. **편향 리스트는 끝없음** — 200+개 알려짐. 전부 기억·대응 불가능.
-2. **개인차 큼** — 특정 편향에 강한 사람도 있음. 자기 약점 파악 필요.
-3. **편향 대응이 또 다른 편향** — Overcorrecting 가능성 (예: 손실회피 극복하려다 과도 위험 감수)
-4. **문화·세대 차이** — 미국 연구가 한국에 그대로 적용되지 않을 수 있음
-5. **구조적 대응 비용** — 자동화·규칙화에도 심리적 에너지 필요
-6. **Tail Risk 경고와의 긴장** — "패닉 매도 금지"와 "진짜 위기 시 현금화" 사이 분별 어려움
+1. **The list of biases is endless** — 200+ are known. You cannot remember and counter them all.
+2. **Large individual differences** — some people are resistant to specific biases. Identify your own weaknesses.
+3. **Bias countermeasures become biases themselves** — Overcorrecting is possible (e.g., taking excessive risk while trying to overcome loss aversion)
+4. **Cultural and generational differences** — U.S. research may not apply directly to Korea
+5. **Cost of structural responses** — automation and rule-making still require psychological energy
+6. **Tension with tail-risk warnings** — hard to distinguish "do not panic-sell" from "go to cash in a real crisis"
 
-## 이 프레임워크와 함께 쓰는 것들
+## Frameworks That Pair Well With This
 
-- `dollar-cost-averaging` — 편향 제어의 실천 도구
-- `rebalancing` — 규칙 기반 매매
-- `bogleheads` — "Stay the course" 철학의 편향 대응판
-- `kelly-criterion` — 과신·도박성 편향에 대한 수학적 제어
+- `dollar-cost-averaging` — a practical tool for bias control
+- `rebalancing` — rule-based trading
+- `bogleheads` — the bias-response counterpart of the "Stay the course" philosophy
+- `kelly-criterion` — mathematical control over overconfidence and gambling-like biases
 
-## 이 프레임워크가 *틀렸을 때*
+## When This Framework Is *Wrong*
 
-- 실제 시장 구조 변화 → Recency 편향 아닌 진짜 체제 전환. 구분 어려움.
-- 전략 자체가 틀렸을 때 — 편향 교정으로 해결 안 됨. `modern-portfolio-theory`·`value-investing` 등 재검토 필요.
-- 심각한 심리적 고통 → 투자 문제가 아니라 심리 상담 대상 (→ `counsel` 스킬)
+- Genuine market structural change → not Recency bias but a real regime shift. Hard to distinguish.
+- When the strategy itself is wrong — bias correction will not solve it. Re-examine via `modern-portfolio-theory`, `value-investing`, etc.
+- Severe psychological distress → not an investment problem but a target for counseling (→ `counsel` skill)
 
-## 추가 학습
+## Further Reading
 
-- Kahneman, D. (2011). *Thinking, Fast and Slow*. — 필독.
-- Thaler, R. (2015). *Misbehaving*. — 행동경제학 발전사.
-- Shefrin, H. (2002). *Beyond Greed and Fear*. — 투자 특화.
-- Zweig, J. (2007). *Your Money and Your Brain*. — 신경경제학 관점.
-- Dalbar QAIB 리포트 (연간) — 투자자 vs 벤치마크 수익률 갭.
-- 한국 적용: 홍춘욱 *경제전망은 어떻게 오는가*, 채상욱 *뱅크샐러드* 등의 한국 투자자 행동 분석.
+- Kahneman, D. (2011). *Thinking, Fast and Slow*. — essential reading.
+- Thaler, R. (2015). *Misbehaving*. — history of behavioral economics.
+- Shefrin, H. (2002). *Beyond Greed and Fear*. — investment-specific.
+- Zweig, J. (2007). *Your Money and Your Brain*. — neuroeconomics perspective.
+- Dalbar QAIB report (annual) — investor vs. benchmark return gap.
+- Korean application: Hong Choon-wook's *How Economic Forecasts Arrive* (경제전망은 어떻게 오는가), Chae Sang-wook's *Bank Salad* (뱅크샐러드), and other analyses of Korean investor behavior.

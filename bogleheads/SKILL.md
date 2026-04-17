@@ -1,144 +1,144 @@
 ---
 name: bogleheads
 version: "0.1.0"
-description: "Bogleheads 철학 (John Bogle, Vanguard) — 저비용 인덱스 투자, 3-fund portfolio, 시장 효율성 가설, 비용이 유일한 확실한 알파. '건초더미에서 바늘 찾지 말고 건초더미를 사라'."
+description: "Bogleheads philosophy (John Bogle, Vanguard) — low-cost index investing, 3-fund portfolio, efficient market hypothesis, costs as the only certain alpha. 'Don't look for the needle in the haystack — buy the haystack.'"
 ---
 
 # Bogleheads Philosophy
 
-## 한 줄 요약
+## One-Line Summary
 
-**"시장을 이기려 하지 말고 시장을 사라."** 수익률은 예측 불가하지만 *비용은 확실*하다. 저비용 인덱스펀드 2~3개로 전 세계 시장을 통째로 보유하는 것이 개인 투자자의 합리적 기본값.
+**"Don't try to beat the market — buy the market."** Returns are unpredictable, but *costs are certain*. Holding the entire global market through 2–3 low-cost index funds is the rational default for individual investors.
 
-## 이론 기원
+## Theoretical Origins
 
-- **John C. Bogle** (1929–2019) — Vanguard 설립(1975), 세계 최초 공모 인덱스펀드(S&P500) 출시(1976).
-- **Eugene Fama** — 효율시장 가설(EMH, 1970). "시장 가격은 이미 이용 가능한 모든 정보를 반영".
-- **Burton Malkiel** — *A Random Walk Down Wall Street* (1973). 대중화 저작.
-- **SPIVA 리포트** (S&P) — 매년 액티브 펀드 대부분이 15년 누적으로 벤치마크에 진다는 것을 지속 실증.
+- **John C. Bogle** (1929–2019) — Founded Vanguard (1975), launched the world's first publicly available index fund (S&P500) in 1976.
+- **Eugene Fama** — Efficient Market Hypothesis (EMH, 1970). "Market prices already reflect all available information."
+- **Burton Malkiel** — *A Random Walk Down Wall Street* (1973). The popularizing classic.
+- **SPIVA Reports** (S&P) — Year after year, empirically demonstrate that most active funds lose to their benchmark on a 15-year cumulative basis.
 
-## 핵심 원칙
+## Core Principles
 
 ### 1. Cost Matters Hypothesis (Bogle)
 
-- *"시장 수익률 – 비용 = 투자자 수익률"*
-- 보수 1%p 차이가 30년 누적으로 자산의 25~30%를 잠식
-- 액티브 펀드가 인덱스를 이기려면 비용 차이(0.5~1.5%)를 초과하는 알파 필요 → 구조적으로 어려움
+- *"Market return – costs = investor return"*
+- A 1 percentage point difference in fees erodes 25–30% of assets cumulatively over 30 years
+- For an active fund to beat the index, it must generate alpha exceeding the cost gap (0.5–1.5%) → structurally difficult
 
 ### 2. 3-Fund Portfolio (Taylor Larimore)
 
-- **국내 전체시장 주식**
-- **해외 전체시장 주식**
-- **총채권시장**
-- 단순하지만 글로벌 자산의 99%를 커버. 리밸런싱 단순.
+- **Domestic total market stocks**
+- **International total market stocks**
+- **Total bond market**
+- Simple, but covers 99% of global assets. Rebalancing is straightforward.
 
-### 3. 시간을 아군으로
+### 3. Make Time Your Ally
 
-- 투자 기간 길수록 주식 비중 높여도 안전
-- **나이 ≈ 채권 비중** 또는 **(120 - 나이) = 주식 비중** 같은 거친 룰 (Bogle 계열에서 제안된 대중 공식, 현대엔 보수적이라는 비판·기대여명 연장 반영해 완화하는 견해 다수)
-- Sequence-of-returns 위험은 인출기에서만 심각 → 축적기엔 100% 주식도 합리적이라는 견해
+- The longer the investment horizon, the safer a higher equity allocation
+- **Age ≈ bond allocation** or **(120 − age) = equity allocation** — rough rules of thumb (popular formulas proposed within the Bogle camp; many today criticize these as conservative and relax them to reflect extended life expectancy)
+- Sequence-of-returns risk is severe only during the withdrawal phase → in the accumulation phase, even 100% equity is considered reasonable by some
 
 ### 4. Stay the Course
 
-- 시장 타이밍 시도 금지 (가장 중요한 행동 규칙)
-- 뉴스·예측가 무시
-- 하락장에도 *팔지 않기*가 가장 큰 스킬
+- No market timing attempts (the most important behavioral rule)
+- Ignore news and forecasters
+- *Not selling* during a downturn is the greatest skill
 
-### 5. 비용의 우선순위
-1. 보수(Expense Ratio)
-2. 거래비용·호가 스프레드
-3. 세금 (가장 큰 항목일 수 있음)
-4. 행동 비용 (감정 매매)
+### 5. Cost Priority Order
+1. Expense Ratio
+2. Transaction costs and bid-ask spreads
+3. Taxes (potentially the largest item)
+4. Behavioral costs (emotional trading)
 
-## 언제 쓰나
+## When to Use
 
-- **투자 초보** — 복잡한 결정 최소화
-- **시간 없는 직장인** — 관리 시간 최소화
-- "시장을 이길 수 있다"는 확신이 *없을* 때 (있어도 대부분 틀림)
-- 자산 규모 중간 이하(수억 미만) — 규모 커지면 세제 최적화 복잡도↑
-- 장기 투자 (15년+)
+- **Investing beginners** — Minimize complex decisions
+- **Busy working professionals** — Minimize management time
+- When you *don't* have conviction that "I can beat the market" (and even when you do, you're usually wrong)
+- Below-mid asset levels (under several hundred million KRW) — tax optimization complexity rises with scale
+- Long-term investing (15+ years)
 
-## 실전 적용
+## Practical Application
 
-### 한국 투자자용 3-Fund (추천 아님, 예시)
+### 3-Fund for Korean Investors (illustrative, not a recommendation)
 
-| 자산 | 비중 예시 | ETF 예시 |
+| Asset | Example Weight | Example ETFs |
 |---|---|---|
-| 해외 전체시장 주식 | 50~60% | VT / VTI + VXUS / KODEX 미국S&P500 / TIGER 미국나스닥100 |
-| 국내 주식 | 10~20% | KODEX 200 / TIGER KRX300 |
-| 채권 | 20~40% (나이·목표에 따라) | KODEX 국고채10년 / TIGER 미국채10년선물 |
+| International total market stocks | 50–60% | VT / VTI + VXUS / KODEX U.S. S&P500 / TIGER U.S. Nasdaq100 |
+| Domestic stocks | 10–20% | KODEX 200 / TIGER KRX300 |
+| Bonds | 20–40% (depending on age/goal) | KODEX 10Y KTB / TIGER U.S. 10Y Treasury Futures |
 
-### 실행 절차
+### Execution Steps
 
 ```
-1. 자산 배분 결정 (나이·목표·위험감내)
-2. 가장 저보수 인덱스 ETF 선택
-   - 국내형 0.1~0.3%, 해외형 직구 0.03~0.1%
-3. 계좌 우선순위:
-   연금저축/IRP → ISA → 일반위탁 (세제 유리한 순)
-4. 매월 자동이체로 정액 매수 (→ `dollar-cost-averaging`)
-5. 연 1회 리밸런싱 (→ `rebalancing`)
-6. 그 외엔 *아무것도 하지 않기*
+1. Decide asset allocation (age, goal, risk tolerance)
+2. Choose the lowest-fee index ETFs
+   - Korean-listed 0.1–0.3%, direct overseas purchase 0.03–0.1%
+3. Account priority:
+   pension savings (연금저축)/IRP → ISA → general brokerage (in order of tax efficiency)
+4. Buy fixed amounts via monthly auto-transfer (→ `dollar-cost-averaging`)
+5. Rebalance once a year (→ `rebalancing`)
+6. Otherwise, *do nothing*
 ```
 
-## 한국 맥락
+## Korean Context
 
-### 1. 한국에서 Bogleheads 실행의 이점
-- 세제 유리 계좌(ISA·연금저축·IRP)와 잘 맞음 — 저회전·장기 보유 전제라 세제 혜택 극대화
-- 개별주 매매 문화 대비 정반대 → 차별화된 경쟁력
-- 2026 기준 국내 ETF 보수 0.1~0.3%로 낮아짐 (미국 0.03~0.1% 대비 여전히 높음)
+### 1. Advantages of Executing Bogleheads in Korea
+- Pairs well with tax-advantaged accounts (ISA, pension savings (연금저축), IRP) — low turnover and long holding maximize tax benefits
+- The opposite of Korea's individual stock-trading culture → a differentiated edge
+- As of 2026, Korean ETF fees have dropped to 0.1–0.3% (still higher than the U.S. 0.03–0.1%)
 
-### 2. 한국 특유 고려사항
-- **국내 액티브 펀드 성과**: SPIVA Korea 리포트에서 10~15년 기준 액티브의 70~90%가 벤치마크 패배 — 미국과 동일 패턴
-- **해외주식 직구 양도세 22%**: 매도 시점에 세금 발생 → 장기 보유 시 과세 이연 효과
-- **국내형 해외주식 ETF**: 배당 15.4% + 매매차익 배당소득세 15.4% — 구조가 다름. 세제 비교 필수 (→ `korean-tax-optimization`)
-- **환율**: VT 같은 해외 ETF는 환 노출 포함. 원화 환산 변동성이 커짐
+### 2. Korea-Specific Considerations
+- **Korean active fund performance**: SPIVA Korea reports show 70–90% of active funds lose to the benchmark on a 10–15 year basis — the same pattern as the U.S.
+- **22% capital gains tax on direct overseas stocks**: Tax is triggered at sale → long-term holding produces tax deferral
+- **Korean-listed overseas equity ETFs**: 15.4% on dividends + 15.4% dividend income tax on capital gains — a different structure. Tax comparison is essential (→ `korean-tax-optimization`)
+- **FX**: Overseas ETFs like VT carry currency exposure. KRW-converted volatility increases.
 
-### 3. Boglehead 철학의 한국적 변형
+### 3. Korean Adaptations of Boglehead Philosophy
 
-- **Lazy Portfolio** 한국판: S&P500 ETF + 한국채권 ETF 단 2개만으로도 기본 구현 가능
-- **전체 자산 관점**: 부동산이 대부분인 한국 가계의 경우, 금융자산 전체를 Bogleheads로 운영하는 것도 상대적으로 분산 효과
+- **Lazy Portfolio** Korean version: Just two ETFs — an S&P500 ETF + a Korean bond ETF — can implement the basics
+- **Whole-balance-sheet view**: For Korean households dominated by real estate, running the entire financial-asset portion as Bogleheads provides relative diversification
 
-## 안티패턴 & 과적용
+## Anti-Patterns & Over-Application
 
-- **"인덱스면 다 같다"** 오해 — 보수·추적오차·세제·유동성 큰 차이
-- **Thematic ETF 착각** — "반도체 ETF", "2차전지 ETF"는 인덱스 아닌 테마 베팅
-- **레버리지 ETF** — Bogle 본인이 경계. 일일 리셋 구조로 장기 보유 시 감쇠
-- **국내주식만 인덱스** — 코스피 집중은 분산이 아닌 집중. 글로벌 인덱스 필수.
-- **인덱스는 안전하다는 오해** — 인덱스도 50% 하락 가능 (2008, 2020)
-- **너무 많은 펀드** — 3-fund가 10-fund 되면 관리·리밸런싱 비용 증가, 분산 이득 한계효용
+- **"All index funds are the same"** misconception — large differences in fees, tracking error, taxation, liquidity
+- **Thematic ETF illusion** — "Semiconductor ETFs" or "Battery ETFs" are not index funds, they are theme bets
+- **Leveraged ETFs** — Bogle himself was wary. Daily-reset structure causes decay over long holding periods
+- **Indexing only Korean stocks** — Concentration in KOSPI is concentration, not diversification. Global indexing is essential.
+- **The misconception that index funds are safe** — Index funds can also fall 50% (2008, 2020)
+- **Too many funds** — A 3-fund turning into a 10-fund increases management and rebalancing costs while diversification benefits hit diminishing returns
 
-## 한계
+## Limitations
 
-1. **효율시장 가설 논쟁** — 완전 효율시장은 없음. 이상현상(팩터) 존재 (→ `factor-investing`).
-2. **모든 시기 통하지 않음** — 일본 1990~2010 닛케이 인덱스 장기 정체 사례.
-3. **신흥시장·중소형주에선 패시브 비효율 주장** — 정보 비대칭 큰 시장.
-4. **ESG·윤리적 필터 적용 어려움** — 전체시장 매입이므로 문제 기업 포함.
-5. **감정적으로 쉬워 보이지만 실제론 어려움** — "가만히 있기"가 가장 어려움 (→ `behavioral-biases`).
-6. **집중 리스크 존재 (2025~2026 심화)**: S&P500 시가총액 상위 10종목이 **35%+ 비중**, MAG7(Apple·Microsoft·NVDA·Alphabet·Amazon·Meta·Tesla)만으로 **30%+ 비중**. 1960년대 Nifty Fifty·1999년 닷컴 버블과 유사한 집중도. "500개 분산"은 명목일 뿐, 실질적으로는 **대형 기술주 베팅**에 가까움.
-   - 대응 옵션: 시가가중 S&P500 대신 **동일가중(RSP)** 또는 **글로벌 시가총액 가중(VT)**. 단, 전자는 보수 높고 후자는 미국 비중이 여전히 60%+.
-   - 철학적 주의: Bogle 본인은 "시가총액 가중이 시장을 정의한다"고 했으며 집중을 회피하지 않음. 그러나 개인 투자자의 심리적 허용치와 다를 수 있음.
+1. **EMH debate** — No market is perfectly efficient. Anomalies (factors) exist (→ `factor-investing`).
+2. **Doesn't work in every era** — Japan's Nikkei index stagnated for 20 years (1990–2010).
+3. **Some argue passive is inefficient in emerging markets and small caps** — markets with large information asymmetry.
+4. **Hard to apply ESG/ethical filters** — Total market purchases include problematic companies by definition.
+5. **Emotionally seems easy but is actually hard** — "Doing nothing" is the hardest part (→ `behavioral-biases`).
+6. **Concentration risk exists (intensified in 2025–2026)**: The top 10 names by market cap in the S&P500 make up **35%+** of the index, with MAG7 (Apple, Microsoft, NVDA, Alphabet, Amazon, Meta, Tesla) alone accounting for **30%+**. Concentration is comparable to the 1960s Nifty Fifty and the 1999 dot-com bubble. "500-stock diversification" is nominal — substantively, it is closer to a **mega-cap tech bet**.
+   - Mitigation options: Instead of cap-weighted S&P500, use **equal-weight (RSP)** or **global cap-weighted (VT)**. However, the former has higher fees and the latter still has 60%+ U.S. weight.
+   - Philosophical caveat: Bogle himself argued "cap weighting defines the market" and did not avoid concentration. But this may not align with an individual investor's psychological tolerance.
 
-## 이 프레임워크와 함께 쓰는 것들
+## Frameworks That Pair Well With This One
 
-- `modern-portfolio-theory` — Bogleheads는 MPT의 *최소비용 구현체*
-- `dollar-cost-averaging` — 인덱스 매수 방식
-- `rebalancing` — 장기 비중 유지
-- `korean-tax-optimization` — 한국 세후 수익률 극대화
-- `fire-korean` — 인덱스 기반 FIRE 축적의 표준 엔진
+- `modern-portfolio-theory` — Bogleheads is the *minimum-cost implementation* of MPT
+- `dollar-cost-averaging` — How you buy the index
+- `rebalancing` — Maintaining long-term weights
+- `korean-tax-optimization` — Maximizing after-tax returns in Korea
+- `fire-korean` — The standard accumulation engine for index-based FIRE
 
-## 이 프레임워크가 *틀렸을 때*
+## When This Framework Is *Wrong*
 
-- 고액 자산가의 세제·상속 복잡도 → `korean-tax-optimization` 심화
-- 시장 전체가 고평가라고 확신 → `value-investing` (단, 대부분의 경우 확신은 틀림)
-- 꼬리 리스크 극단 대비 → `barbell-strategy`
-- 행동·감정 문제 → `behavioral-biases`
+- High-net-worth tax/inheritance complexity → deeper `korean-tax-optimization`
+- Conviction that the entire market is overvalued → `value-investing` (though such conviction is usually wrong)
+- Preparing for extreme tail risk → `barbell-strategy`
+- Behavioral/emotional issues → `behavioral-biases`
 
-## 추가 학습
+## Further Learning
 
-- Bogle, J. (2017). *The Little Book of Common Sense Investing* (개정판). — 입문서 결정판.
+- Bogle, J. (2017). *The Little Book of Common Sense Investing* (revised ed.). — The definitive primer.
 - Larimore, T. (2018). *The Bogleheads' Guide to the Three-Fund Portfolio*.
 - Malkiel, B. (2019). *A Random Walk Down Wall Street* (12th ed.).
-- 온라인: bogleheads.org 포럼 — 실전 Q&A 최대 커뮤니티.
-- 한국 적용: 김성일 *마법의 돈 굴리기* — 한국판 자산배분 대중서.
-- SPIVA 리포트 (spglobal.com/spdji/en/research-insights/spiva/) — 액티브 vs 패시브 공식 통계.
+- Online: bogleheads.org forum — the largest community for practical Q&A.
+- Korean adaptation: Kim Sung-il, *Magic Money Rolling* (마법의 돈 굴리기) — popular Korean-language asset allocation book.
+- SPIVA Reports (spglobal.com/spdji/en/research-insights/spiva/) — Official statistics on active vs. passive.

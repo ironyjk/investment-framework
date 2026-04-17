@@ -1,176 +1,176 @@
 ---
 name: barbell-strategy
 version: "0.1.0"
-description: "Barbell Strategy (Nassim Taleb, Antifragile) — 안전자산 85~90% + 고위험·고볼록성 10~15%, 중간 위험은 회피. 꼬리 리스크를 피하면서 상방 옵션을 잡는 구조. 불확실성 극대인 환경에서 특히."
+description: "Barbell Strategy (Nassim Taleb, Antifragile) — 85–90% in safe assets + 10–15% in high-risk, high-convexity bets, avoiding the middle. A structure that sidesteps tail risk while capturing upside optionality. Especially suited for environments of extreme uncertainty."
 ---
 
 # Barbell Strategy
 
-## 한 줄 요약
+## One-Line Summary
 
-**"양 극단에 몰빵하고 중간은 피하라."** 자산의 85~90%는 *절대 잃지 않는* 초안전자산, 10~15%는 *극도로 공격적인* 고변동성 자산. 중위험 중수익 자산은 회피. 꼬리 리스크(파산)를 원천 차단하면서 상방 폭발력은 보존한다.
+**"Go all-in on both extremes, avoid the middle."** 85–90% of assets in *never-lose* ultra-safe holdings, 10–15% in *extremely aggressive* high-volatility bets. Avoid medium-risk / medium-return assets. Eliminate tail risk (ruin) at the source while preserving explosive upside.
 
-## 이론 기원
+## Theoretical Origin
 
-- **Nassim Nicholas Taleb** — *The Black Swan* (2007), *Antifragile* (2012). 옵션 트레이더 출신.
-- 배경 개념: 볼록성(Convexity), 꼬리 리스크, **비대칭 손익(asymmetric payoff)**.
-- 고전적 뿌리: Pascal의 내기, Kelly Criterion, 옵션 이론의 "limited loss, unlimited gain".
-- 2008 위기 이후 실증적 권위 획득 (Taleb 본인 펀드 Universa의 수익).
+- **Nassim Nicholas Taleb** — *The Black Swan* (2007), *Antifragile* (2012). Former options trader.
+- Underlying concepts: Convexity, tail risk, **asymmetric payoff**.
+- Classical roots: Pascal's Wager, Kelly Criterion, the "limited loss, unlimited gain" of options theory.
+- Gained empirical authority after the 2008 crisis (returns of Taleb's own fund, Universa).
 
-## 핵심 개념
+## Core Concepts
 
-### 1. 중간은 가장 위험하다
+### 1. The Middle Is the Most Dangerous
 
-- 중위험 자산(회사채, BBB등급, 신흥국 주식, 혼합형 펀드)은 *조용히 손실*이 누적되다 위기에 폭락
-- "보통 때는 안전해 보이지만 드문 사건에 크게 깨지는" = **Fragile**
-- Barbell: 양 끝만 — 중간 회피
+- Medium-risk assets (corporate bonds, BBB-rated, emerging-market equities, balanced funds) *quietly accumulate losses* and then collapse in a crisis
+- "Looks safe in normal times but breaks badly in rare events" = **Fragile**
+- Barbell: only the two ends — avoid the middle
 
-### 2. 손실 한계 + 이익 무한
+### 2. Capped Loss + Uncapped Gain
 
 ```
-85~90%: 극도 안전 (국채·현금·TIPS·금 일부)
-  → 잃을 수 있는 최대: 0~5% (인플레 손실만)
-10~15%: 극도 공격 (VC, 소형주, 옵션, 암호화폐, 바이오 스타트업)
-  → 잃을 수 있는 최대: 이 부분 전체(자산의 10~15%)
-  → 이길 수 있는 최대: 10배, 100배 (비대칭)
+85~90%: Extremely safe (Treasuries, cash, TIPS, some gold)
+  → Maximum possible loss: 0~5% (inflation drag only)
+10~15%: Extremely aggressive (VC, small caps, options, crypto, biotech startups)
+  → Maximum possible loss: this entire slice (10~15% of assets)
+  → Maximum possible gain: 10x, 100x (asymmetric)
 ```
 
-- **파산 확률 0, 상방 노출 유지**이 핵심 수학
-- Kelly Criterion의 극단적 변형 (→ `kelly-criterion`)
+- **Zero probability of ruin, retained upside exposure** — this is the core math
+- An extreme variant of the Kelly Criterion (→ `kelly-criterion`)
 
-### 3. 볼록성(Convexity)
+### 3. Convexity
 
-- 작은 리스크에 큰 잠재 이익을 거는 포지션
-- 옵션 매수가 대표적 — 프리미엄만 잃고 기초자산 상승은 무한
-- VC, 초기 스타트업 투자, 일부 암호화폐도 유사 구조
+- A position that risks a little to gain potentially a lot
+- Buying options is the prototypical example — you lose only the premium, while the upside on the underlying is unlimited
+- VC, early-stage startup investments, and some crypto positions have a similar structure
 
-### 4. 불확실성과 Barbell
+### 4. Uncertainty and the Barbell
 
-- 확률 분포를 *알 수 없을 때* 특히 유효
-- "평균"보다 "극단"을 다루는 전략
-- Taleb: "미래가 불확실할수록 Barbell을 선호하라"
+- Particularly effective when the probability distribution *cannot be known*
+- A strategy that deals with "extremes" rather than "averages"
+- Taleb: "The more uncertain the future, the more you should prefer the Barbell"
 
-## 언제 쓰나
+## When to Use
 
-- **체제 전환기** — 금리·인플레·지정학적 불확실성 극대
-- **보존 자산 큰 투자자** — 이미 모은 자산을 지키면서 상방 일부만 노출
-- **변동성 공포가 큰 투자자** — 큰 자산이 절대 안전하므로 심리 안정
-- **은퇴 인출기** — 큰 하락 방어 필수, 상방은 일부면 충분
-- **전문 트레이더 / 고유 통찰 있는 사람** — 고위험 15%를 진짜 볼록한 베팅에 쓸 수 있을 때
+- **Regime transitions** — extreme uncertainty in interest rates, inflation, and geopolitics
+- **Investors with large preserved capital** — those who want to protect what they have already accumulated while keeping only a sliver of upside exposure
+- **Investors with high volatility aversion** — psychologically stabilized by the fact that the large slice is absolutely safe
+- **Retirement drawdown phase** — defending against large drawdowns is essential; only a small upside allocation is needed
+- **Professional traders / those with proprietary insight** — when the aggressive 15% can actually be deployed into genuinely convex bets
 
-## 실전 적용
+## Practical Application
 
-### 전형적 배분 (Taleb 제안 유사)
+### Typical Allocation (similar to Taleb's proposal)
 
-| 부분 | 비중 | 자산 예시 |
+| Part | Weight | Example Assets |
 |---|---|---|
-| 안전 | 85~90% | 미국 단기국채 / TIPS / 고등급 국채 / 현금 / 금 일부 |
-| 공격 | 10~15% | 초기 스타트업 / VC 펀드 / 옵션 / 소형 성장주 / 일부 암호화폐 / 레버리지 ETF (단기) |
+| Safe | 85–90% | US short-term Treasuries / TIPS / high-grade government bonds / cash / some gold |
+| Aggressive | 10–15% | Early-stage startups / VC funds / options / small-cap growth stocks / some crypto / leveraged ETFs (short-term) |
 
-### 한국 투자자용 변형 예시
+### Korean Investor Variants
 
-- **안전 85%**: 국고채 / ISA 예금형 / RP / 달러 MMF / 금현물(KRX) / 물가연동국채
-- **공격 15%**: 개별 성장주 몇 개 / 나스닥100·SOXL 같은 레버리지 / 크립토 소액 / 스타트업 투자(앤젤) / 특화 테마 ETF
-- 중간 회피: BBB 회사채, 부동산 간접투자(리츠), 코스닥 중소형주 혼합, 혼합형 펀드
+- **Safe 85%**: KTBs / ISA deposit-type / RP / USD MMF / physical gold (KRX) / inflation-linked government bonds
+- **Aggressive 15%**: A few individual growth stocks / leveraged products such as Nasdaq 100 / SOXL / small crypto allocation / startup investing (angel) / specialty thematic ETFs
+- Avoid the middle: BBB corporate bonds, indirect real estate (REITs), a mix of KOSDAQ mid/small caps, balanced funds
 
-### 실행 규칙
-
-```
-1. "잃으면 안 되는 돈"을 먼저 산정
-   - 생활비 5년치 + 필수 부채 상환 + 은퇴자금 최소선 = 안전 파트
-2. "100% 잃어도 괜찮은 돈"만 공격 파트에
-   - 공격 파트 0이 되어도 라이프 플랜에 영향 없어야
-3. 두 파트 섞지 않기
-   - 안전 → 공격 이동은 금지 규칙 (유혹 차단)
-4. 공격 파트는 진짜 볼록한 베팅만
-   - 중위험 종목을 공격 파트에 넣는 건 의미 상실
-5. 공격 파트 성공 시 일부만 안전으로 이동 ("집으로 가져가기")
-```
-
-### 한국형 "잃어도 되는 돈" 정량 공식
-
-전체 순자산을 5개 레이어로 분해:
+### Execution Rules
 
 ```
-Layer 1 (절대 안전): 생활비 × 12개월 + 필수 부채 상환 12개월
-Layer 2 (단기 확정 지출): 2~5년 내 확정 지출 (주택 갈아타기·교육비·의료비)
-Layer 3 (은퇴 최소선): 65세 기준 월 200만 수령 PV = 약 5~6억 (국민연금 제외)
-Layer 4 (여유 버퍼): Layer 1~3의 30% 추가
-Layer 5 (잃어도 되는 돈) = 총 순자산 - (Layer 1+2+3+4)
-
-Barbell 공격 파트 상한 = Layer 5 × 0.5
-(즉 Layer 5의 나머지 50%는 여전히 안전 파트에 둔다 — "잃어도 되는"이
- "전액 걸어도 되는"은 아님)
+1. First quantify the "money you cannot afford to lose"
+   - 5 years of living expenses + essential debt servicing + retirement minimum = safe part
+2. Put only "money you are fine losing 100% of" into the aggressive part
+   - Even if the aggressive part goes to zero, your life plan must be unaffected
+3. Do not blend the two parts
+   - Moving from safe → aggressive is a forbidden rule (cut off temptation)
+4. Put only genuinely convex bets in the aggressive part
+   - Putting medium-risk names in the aggressive part defeats the purpose
+5. On a successful aggressive bet, shift some gains back to safe ("take it home")
 ```
 
-**사용자 맥락(1.8억 근로·자녀 3·울산 갈아타기) 적용 예시**:
-- 총 순자산 가정 12억 (자가 7 + 대출 -2 + 금융 5 + 연금 2)
-- Layer 1 (생활비 4천×1 + 대출이자 1천) = 5천
-- Layer 2 (갈아타기 차액 3억 + 2년간 교육비 6천) = 3.6억
-- Layer 3 (은퇴 최소선 PV) = 5억
-- Layer 4 (30% 버퍼) = 2.6억
-- Layer 5 = 12억 - 11.7억 = 3천만 원
-- **Barbell 공격 상한 = 1.5천만 원** (kisdev $8K = 약 1.1천만 원이면 범위 내)
+### Korean Quantitative Formula for "Money You Can Afford to Lose"
 
-이 계산은 갈아타기 완료 후 재계산 필요 — Layer 2가 해소되면 Layer 5 확대 가능.
+Decompose total net worth into 5 layers:
 
-## 한국 맥락
+```
+Layer 1 (Absolute safety): Living expenses × 12 months + essential debt service for 12 months
+Layer 2 (Short-term committed spending): Committed spending within 2–5 years (home upgrade, education, medical)
+Layer 3 (Retirement minimum): PV of receiving KRW 2M/month from age 65 ≈ KRW 500–600M (excluding National Pension)
+Layer 4 (Cushion buffer): Additional 30% of Layers 1–3
+Layer 5 (Money you can afford to lose) = Total net worth – (Layer 1+2+3+4)
 
-### 1. 한국형 Barbell의 주의점
+Barbell aggressive-part cap = Layer 5 × 0.5
+(i.e., the remaining 50% of Layer 5 still stays in the safe part — "affordable to lose"
+ is not the same as "fine to bet in full")
+```
 
-- **부동산이 이미 중위험 자산** — 대부분 한국 가계는 부동산 70%+로 *중위험에 집중됨*. Barbell 철학과 정면 충돌.
-- **부동산 제외 금융자산으로만 Barbell** 또는 **부동산 포함 전체 자산 재설계** 중 선택 필요.
-- **세제**: 공격 파트 수익은 양도세(22% 해외주식)·금투세(예정 시점 확인) 부담. 세후 수익률로 보면 Barbell 기대 수익이 기대보다 낮아짐.
+**Applied to the user's context (KRW 180M earner, 3 children, Ulsan home upgrade)**:
+- Total net worth assumption KRW 1.2B (own home 7 + loans −2 + financial 5 + pension 2, in KRW 100M units)
+- Layer 1 (living 40M × 1 + loan interest 10M) = KRW 50M
+- Layer 2 (home-upgrade difference KRW 300M + 2 years of education KRW 60M) = KRW 360M
+- Layer 3 (retirement minimum PV) = KRW 500M
+- Layer 4 (30% buffer) = KRW 260M
+- Layer 5 = KRW 1.2B − KRW 1.17B = KRW 30M
+- **Barbell aggressive cap = KRW 15M** (kisdev $8K ≈ KRW 11M is within the range)
 
-### 2. 한국 투자자 공격 파트 선택지
+This calculation must be redone after the home upgrade is completed — once Layer 2 is resolved, Layer 5 can expand.
 
-- **국내 중소형 성장주** — 유동성·변동성 유리, 세제(금투세 이전엔 비과세) 유리
-- **나스닥/반도체/바이오 레버리지 ETF** — 단, 장기 보유 시 감쇠
-- **암호화폐** — 세제 변경 유의 (2027년 부과 예정 논의 지속)
-- **크라우드펀딩·엔젤** — 벤처기업 개인투자조합 등 투자 시 소득공제(투자금의 10~100% 구간별) + 일정 보유기간(통상 3~5년) 후 양도 시 과세 특례. 7년 등 기간·한도는 상품별 상이 (조세특례제한법 제16조·제14조 계열 — *확인 필요*)
-- **개인형 VC 펀드** — 2억+ 이상 자산가 대상
+## Korean Context
 
-### 3. kisdev 같은 개인 자동매매 봇
+### 1. Cautions for a Korean-Style Barbell
 
-- 사용자의 SOXL 자동매매 봇(kisdev)은 *Barbell의 공격 파트* 구현 사례로 해석 가능
-- 운용 $8K가 전체 자산의 10~15% 안쪽이면 Barbell 철학에 부합
-- 원금 추가 시 "공격 파트 비중 상한"을 사전에 정의하는 것이 중요
+- **Real estate is already a medium-risk asset** — most Korean households have 70%+ in real estate, meaning they are *already concentrated in the middle*. This directly conflicts with the Barbell philosophy.
+- You must choose between **running a Barbell only on financial assets excluding real estate** or **redesigning the entire portfolio including real estate**.
+- **Taxation**: Gains on the aggressive part are subject to capital gains tax (22% on overseas stocks) and the financial investment income tax (check the schedule). After-tax returns make Barbell expected returns lower than they appear headline.
 
-## 안티패턴 & 과적용
+### 2. Aggressive-Part Options for Korean Investors
 
-- **공격 파트에 몰빵** — 15%가 아니라 50%로 쓰면 Barbell 아닌 도박
-- **공격 파트를 중위험으로** — 삼성전자 매수는 Barbell의 공격 파트 아님 (중위험)
-- **안전 파트에 회사채·BBB** — Taleb이 가장 비판하는 자산. 실제 안전 아님.
-- **레버리지를 안전 파트에** — 레버리지 자체가 fragile
-- **공격 파트 성공 후 안주** — "100배 난 종목" 팔지 않고 들고 있다가 원점 복귀는 자주 발생. 부분 익절 규칙 필수.
-- **"중간이 위험"을 과확대 해석** — 전 세계 인덱스(Bogleheads)는 "중간"이 아니라 *시장 전체*. 이걸 피하자는 건 Taleb의 의도 아님.
+- **Domestic small/mid-cap growth stocks** — favorable in terms of liquidity / volatility, and advantageous in taxation (tax-free before the financial investment income tax)
+- **Nasdaq / semiconductor / biotech leveraged ETFs** — but subject to decay if held long-term
+- **Crypto** — note tax changes (imposition in 2027 is still under debate)
+- **Crowdfunding / angel investing** — investments in venture-company personal investment associations offer income deduction (10–100% of investment amount, tiered) + a preferential tax treatment on disposal after a minimum holding period (typically 3–5 years). Specific periods and caps (e.g., 7 years) vary by product (Article 16 / Article 14 series of the Restriction of Special Taxation Act — *verification required*)
+- **Personal VC funds** — targeted at investors with KRW 200M+ in assets
 
-## 한계
+### 3. Personal Auto-Trading Bots Like kisdev
 
-1. **기대수익 낮음** — 안전 85%가 거의 이자 수준이므로 장기 CAGR은 주식 100%보다 낮기 쉬움.
-2. **공격 파트 선택이 어려움** — "볼록한 베팅"을 실제로 찾는 것은 전문 영역. 개인은 도박으로 변질 위험.
-3. **장기 약세장에선 안전 파트도 깎임** — 인플레가 높을 때 국채·현금은 실질 손실.
-4. **심리적 어려움** — 공격 파트 -90% 받아들일 수 있어야. 대부분 못 버팀.
-5. **Taleb 본인 스타일 의존** — 옵션 트레이더 경험 기반. 일반 개인에겐 공격 파트 구조화 어려움.
-6. **축적 초기 부적합** — 자산 5천만 원인데 15%면 750만 원. 의미 있는 상방 잡기 어려움.
+- The user's SOXL auto-trading bot (kisdev) can be interpreted as an implementation of *the Barbell's aggressive part*
+- If the $8K under management is within 10–15% of total assets, it aligns with the Barbell philosophy
+- When adding capital, it is important to predefine the "aggressive-part allocation cap"
 
-## 이 프레임워크와 함께 쓰는 것들
+## Anti-Patterns & Over-Application
 
-- `all-weather` — 둘 다 예측 거부 전략이지만, All Weather는 *덜 깨짐*, Barbell은 *깨져도 이익*
-- `kelly-criterion` — 공격 파트 내부 사이징에 유용
-- `behavioral-biases` — 공격 파트 폭등·폭락 시 편향 대응
-- `korean-tax-optimization` — 안전·공격 각각 세제 설계
+- **All-in on the aggressive part** — using 50% instead of 15% is no longer a Barbell, it is gambling
+- **Medium-risk assets in the aggressive part** — buying Samsung Electronics is not the Barbell's aggressive part (it is medium-risk)
+- **Corporate bonds / BBB in the safe part** — the asset class Taleb criticizes most. It is not actually safe.
+- **Leverage in the safe part** — leverage itself is fragile
+- **Complacency after an aggressive-part win** — holding onto the "100-bagger" and letting it round-trip back to zero happens often. Partial profit-taking rules are essential.
+- **Over-extending "the middle is dangerous"** — a global index (Bogleheads) is not "the middle" but *the entire market*. Avoiding that was not Taleb's intent.
 
-## 이 프레임워크가 *틀렸을 때*
+## Limitations
 
-- 축적기·낮은 자산 규모 → `bogleheads` / `dollar-cost-averaging`
-- 평범한 자산 배분 목표 → `modern-portfolio-theory`
-- 팩터 기반 체계 투자 → `factor-investing`
-- 세금 자체가 병목 → `korean-tax-optimization`
+1. **Low expected return** — with 85% in safe assets earning near-interest-rate returns, long-term CAGR tends to be lower than 100% equities.
+2. **Selecting the aggressive part is hard** — actually finding "convex bets" is a professional skill. For individuals, it risks degenerating into gambling.
+3. **The safe part also erodes in long bear markets** — in high-inflation regimes, Treasuries and cash suffer real losses.
+4. **Psychologically demanding** — you must be able to accept −90% on the aggressive part. Most people cannot hold through it.
+5. **Dependent on Taleb's own style** — based on his options-trader experience. For ordinary individuals, structuring the aggressive part is difficult.
+6. **Unsuitable in the early accumulation phase** — with KRW 50M in assets, 15% is KRW 7.5M. It is hard to capture meaningful upside.
 
-## 추가 학습
+## Frameworks to Use Alongside
+
+- `all-weather` — both are strategies that refuse to forecast, but All Weather is *less breakable*, while Barbell *profits from breaking*
+- `kelly-criterion` — useful for sizing within the aggressive part
+- `behavioral-biases` — for coping with biases during aggressive-part surges and crashes
+- `korean-tax-optimization` — for tax design of both safe and aggressive parts
+
+## When This Framework Is *Wrong*
+
+- Accumulation phase / small asset base → `bogleheads` / `dollar-cost-averaging`
+- Ordinary asset-allocation goals → `modern-portfolio-theory`
+- Factor-based systematic investing → `factor-investing`
+- Tax itself is the bottleneck → `korean-tax-optimization`
+
+## Further Reading
 
 - Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*.
 - Taleb, N. N. (2007). *The Black Swan*.
-- Spitznagel, M. (2021). *Safe Haven: Investing for Financial Storms*. (Taleb의 파트너, Universa)
-- 비판: "Barbell은 결국 옵션 매수 전략이다, 대부분 개인은 옵션 프리미엄만 태운다" — Antti Ilmanen 류의 비판 참조.
+- Spitznagel, M. (2021). *Safe Haven: Investing for Financial Storms*. (Taleb's partner at Universa)
+- Criticism: "The Barbell is ultimately an option-buying strategy; most individuals simply burn option premium" — see critiques in the vein of Antti Ilmanen.
