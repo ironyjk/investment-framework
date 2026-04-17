@@ -71,3 +71,7 @@ For situations that require evaluating real estate + financial assets together f
 - Korean tax content is current as of 2026-04-17 and may change. Consult a tax accountant or private banker for actual tax decisions.
 - Past returns and cycles do not guarantee future results.
 - All frameworks here are *models that can be wrong*. If reality diverges from the model, reality wins.
+
+## License
+
+CC-BY-NC-4.0 — see [LICENSE](LICENSE) for details. Commercial licensing: ironyjk@gmail.com
