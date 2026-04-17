@@ -9,8 +9,17 @@
   "homepage": "https://github.com/ironyjk/investment-framework",
   "repository": "https://github.com/ironyjk/investment-framework",
   "license": "CC-BY-NC-4.0",
-  "keywords": ["investment", "portfolio", "korean-tax", "fire", "markowitz", "dalio", "korean"],
+  "keywords": [
+    "investment",
+    "portfolio",
+    "korean-tax",
+    "fire",
+    "markowitz",
+    "dalio",
+    "korean"
+  ],
   "skills": [
+    "./money",
     "./all-weather",
     "./barbell-strategy",
     "./behavioral-biases",
