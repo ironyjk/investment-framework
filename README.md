@@ -72,6 +72,17 @@ For situations that require evaluating real estate + financial assets together f
 - Past returns and cycles do not guarantee future results.
 - All frameworks here are *models that can be wrong*. If reality diverges from the model, reality wins.
 
+## Attribution & Trademarks
+
+This project implements well-known investment frameworks for educational purposes. The following are acknowledged:
+
+- **Bogleheads®** is a registered trademark of the John C. Bogle Center for Financial Literacy (bogleheads.org). Inspired by the philosophy of John C. Bogle, founder of Vanguard.
+- **All Weather Portfolio** concept by Ray Dalio, Bridgewater Associates.
+
+All other framework names reference published academic works and are used descriptively.
+
+This project is not affiliated with, endorsed by, or sponsored by any of the above trademark holders.
+
 ## License
 
 CC-BY-NC-4.0 — see [LICENSE](LICENSE) for details. Commercial licensing: ironyjk@gmail.com
