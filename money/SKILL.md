@@ -4,7 +4,7 @@ version: "0.2.0"
 last_verified: "2026-04-17"
 valid_until: "2026-10-17"
 description: "Personal investment decision meta-router — auto-selects from 12 frameworks (MPT, All Weather, Bogleheads, Barbell, Value/Factor Investing, DCA, Rebalancing, Behavioral Biases, Kelly Criterion, Korean Tax Optimization, Korean FIRE). Covers asset allocation, drawdown defense, tax optimization, and retirement planning. Korean tax regime built-in. NO stock recommendations. 2026-04-17 baseline."
-tools: ["Read", "Skill"]
+tools: ["Read", "Skill", "Bash", "Agent"]
 subskills:
   - modern-portfolio-theory
   - all-weather
@@ -192,3 +192,11 @@ Financial decisions aren't a single domain. Cross-reference recommended:
 - **Past return generalization warning** — "S&P500 averaged 10% last decade, so it will continue" is forbidden logic.
 - **Regime validity dates** — tax and pension figures tagged "2026-04 baseline, subject to change". Direct users to official verification.
 - **Say "I don't know"** — when a request falls outside the router's reach (individual security analysis, market forecasts, business tax, estate planning), explicitly declare out-of-scope and redirect to `realty` or professional advisors.
+
+## Execution Strategy
+
+When a framework requires deeper analysis (e.g., multi-scenario FIRE simulation, after-tax IRR calculation, Kelly sizing with real data):
+
+1. **Use Bash** for numerical calculations — Python one-liners, compound interest, Monte Carlo snippets
+2. **Use Agent** for parallel framework analysis — dispatch sub-analyses to separate agents when combining 3+ frameworks
+3. **Read sub-skill references** — each sub-skill has `references/foundation.md` with theory; load only when the user needs theoretical depth
